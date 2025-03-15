@@ -1,8 +1,9 @@
-[gd_scene load_steps=8 format=3 uid="uid://d0b44yhwb3r7h"]
+[gd_scene load_steps=9 format=3 uid="uid://d0b44yhwb3r7h"]
 
-[ext_resource type="Script" uid="uid://12dykyi3vd3x" path="res://Scripts/title_screen.gd" id="1_4gxqj"]
-[ext_resource type="Texture2D" uid="uid://bj3fj865j0go5" path="res://Art/Pixel Shape Tiles/Pixel background/64x64/3. Color/Picture/color_background_37.png" id="2_twnyg"]
+[ext_resource type="Script" path="res://Scripts/title_screen.gd" id="1_4gxqj"]
+[ext_resource type="Texture2D" uid="uid://be2c6ipkeavsi" path="res://Art/Pixel Shape Tiles/Pixel background/32x32/3. Color/Picture/color_background_83.png" id="2_8rulb"]
 [ext_resource type="FontFile" uid="uid://cn25gdhs56fp8" path="res://Art/Fonts/advanced_pixel-7.ttf" id="3_55kwv"]
+[ext_resource type="Script" path="res://Scripts/title_label_effect.gd" id="4_8w1sg"]
 
 [sub_resource type="Theme" id="Theme_v303f"]
 
@@ -15,64 +16,69 @@ default_font = ExtResource("3_55kwv")
 default_font_size = 150
 
 [sub_resource type="Theme" id="Theme_sr01b"]
+default_base_scale = 2.0
 default_font = ExtResource("3_55kwv")
 
 [node name="TitleScreen" type="Control"]
 layout_mode = 3
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
+anchor_right = 2.543
+anchor_bottom = 2.475
+offset_right = -4644.03
+offset_bottom = -2859.9
 grow_horizontal = 2
 grow_vertical = 2
 theme = SubResource("Theme_v303f")
 script = ExtResource("1_4gxqj")
 
 [node name="Background" type="Sprite2D" parent="."]
-position = Vector2(576, 324)
-scale = Vector2(18, 10.125)
-texture = ExtResource("2_twnyg")
+position = Vector2(1524, 966)
+scale = Vector2(95.0625, 60.5625)
+texture = ExtResource("2_8rulb")
 
 [node name="TitleLabel1" type="Label" parent="."]
 layout_mode = 0
-offset_left = -130.0
-offset_top = -33.0
-offset_right = 1282.0
-offset_bottom = 227.0
+offset_left = 76.0
+offset_top = 35.0
+offset_right = 2215.0
+offset_bottom = 435.0
 theme = SubResource("Theme_sgcfn")
-theme_override_colors/font_color = Color(0.163751, 0.530946, 0.86056, 1)
+theme_override_colors/font_color = Color(0.537308, 0.324746, 0.882955, 1)
+theme_override_font_sizes/font_size = 400
 text = "Collage Creator
 "
 horizontal_alignment = 1
+script = ExtResource("4_8w1sg")
 
 [node name="TitleLabel2" type="Label" parent="."]
 layout_mode = 0
-offset_left = 45.0
-offset_top = 113.0
-offset_right = 1110.0
-offset_bottom = 297.0
+offset_left = 541.0
+offset_top = 393.0
+offset_right = 1791.0
+offset_bottom = 644.0
 theme = SubResource("Theme_5olp2")
+theme_override_font_sizes/font_size = 250
 text = "Express Yourself"
 horizontal_alignment = 1
 
 [node name="StartButton" type="Button" parent="."]
 layout_mode = 0
-offset_left = 364.0
-offset_top = 305.0
-offset_right = 773.0
-offset_bottom = 414.0
+offset_left = 667.0
+offset_top = 747.0
+offset_right = 1595.0
+offset_bottom = 941.0
 theme = SubResource("Theme_sr01b")
 theme_override_colors/font_pressed_color = Color(0.927533, 0.927533, 0.927533, 1)
-theme_override_font_sizes/font_size = 47
+theme_override_font_sizes/font_size = 200
 text = "Start"
 
 [node name="QuitButton" type="Button" parent="."]
 layout_mode = 0
-offset_left = 364.0
-offset_top = 435.0
-offset_right = 773.0
-offset_bottom = 544.0
+offset_left = 666.0
+offset_top = 994.0
+offset_right = 1596.0
+offset_bottom = 1164.0
 theme = SubResource("Theme_sr01b")
-theme_override_font_sizes/font_size = 47
+theme_override_font_sizes/font_size = 200
 text = "Quit
 "
 

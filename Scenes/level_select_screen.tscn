@@ -1,0 +1,62 @@
+[gd_scene load_steps=7 format=3 uid="uid://dvaopj5kysy54"]
+
+[ext_resource type="Texture2D" uid="uid://be2c6ipkeavsi" path="res://Art/Pixel Shape Tiles/Pixel background/32x32/3. Color/Picture/color_background_83.png" id="1_8rrgl"]
+[ext_resource type="Script" path="res://Scripts/level_select_screen.gd" id="1_mxgb1"]
+[ext_resource type="FontFile" uid="uid://cn25gdhs56fp8" path="res://Art/Fonts/advanced_pixel-7.ttf" id="2_2s6mp"]
+
+[sub_resource type="Theme" id="Theme_vwfpj"]
+
+[sub_resource type="Theme" id="Theme_71ivv"]
+
+[sub_resource type="Theme" id="Theme_75chc"]
+
+[node name="LevelSelectScreen" type="Control"]
+layout_mode = 3
+anchor_right = 1.0
+anchor_bottom = 1.005
+offset_right = 10.0
+offset_bottom = 0.180054
+script = ExtResource("1_mxgb1")
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(1524, 966)
+scale = Vector2(95.0625, 60.5625)
+texture = ExtResource("1_8rrgl")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 309.0
+offset_top = 17.0
+offset_right = 2036.0
+offset_bottom = 370.0
+theme = SubResource("Theme_vwfpj")
+theme_override_colors/font_color = Color(0.537255, 0.32549, 0.882353, 1)
+theme_override_fonts/font = ExtResource("2_2s6mp")
+theme_override_font_sizes/font_size = 350
+text = "Select an Order
+"
+
+[node name="Order1Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 575.0
+offset_top = 383.0
+offset_right = 1645.0
+offset_bottom = 533.0
+theme = SubResource("Theme_71ivv")
+theme_override_colors/font_pressed_color = Color(0.537255, 0.32549, 0.882353, 1)
+theme_override_fonts/font = ExtResource("2_2s6mp")
+theme_override_font_sizes/font_size = 75
+text = "Awesome Order We Dont have a name for yet"
+
+[node name="BackButton" type="Button" parent="."]
+layout_mode = 0
+offset_right = 229.0
+offset_bottom = 104.0
+theme = SubResource("Theme_75chc")
+theme_override_fonts/font = ExtResource("2_2s6mp")
+theme_override_font_sizes/font_size = 75
+text = "Back
+"
+
+[connection signal="pressed" from="Order1Button" to="." method="_on_order_1_button_pressed"]
+[connection signal="pressed" from="BackButton" to="." method="_on_back_button_pressed"]

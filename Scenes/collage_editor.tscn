@@ -1,34 +1,73 @@
-[gd_scene load_steps=4 format=3 uid="uid://d0bs5lobl2xpy"]
+[gd_scene load_steps=8 format=3 uid="uid://d0bs5lobl2xpy"]
 
-[ext_resource type="Script" uid="uid://cp7i5uxpm2uao" path="res://Scripts/button_sidebar.gd" id="1_qwjiq"]
-[ext_resource type="Texture2D" uid="uid://bl02kimvv1b8t" path="res://Icons/icon.svg" id="2_8bi3n"]
-[ext_resource type="Script" uid="uid://b3vedihjqeir1" path="res://Scripts/image.gd" id="3_j0w6o"]
+[ext_resource type="Script" path="res://Scripts/button_sidebar.gd" id="1_qwjiq"]
+[ext_resource type="Texture2D" uid="uid://mvdeu6ekqdrj" path="res://Icons/character.png" id="2_ba6nw"]
+[ext_resource type="Script" path="res://Scripts/image.gd" id="3_j0w6o"]
+[ext_resource type="Texture2D" uid="uid://de1lfgblxpnkf" path="res://Icons/explosion.png" id="4_s85d4"]
+[ext_resource type="FontFile" uid="uid://cn25gdhs56fp8" path="res://Art/Fonts/advanced_pixel-7.ttf" id="5_hyoc1"]
+
+[sub_resource type="Theme" id="Theme_1eej3"]
+
+[sub_resource type="Theme" id="Theme_pujwx"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
-anchors_preset = 0
-offset_right = 228.0
-offset_bottom = 54.0
+anchor_right = 0.636
+anchor_bottom = 0.525
+offset_right = -1695.26
+offset_bottom = -977.1
 script = ExtResource("1_qwjiq")
 
 [node name="Canvas" type="ColorRect" parent="."]
 layout_mode = 0
-offset_right = 1152.0
-offset_bottom = 648.0
+offset_left = 1.0
+offset_top = -8.0
+offset_right = 2407.0
+offset_bottom = 1939.0
 
 [node name="Sidebar" type="Panel" parent="."]
 layout_mode = 0
-offset_right = 228.0
-offset_bottom = 648.0
+offset_left = 6.0
+offset_right = 225.0
+offset_bottom = 1972.0
 
 [node name="Image" type="Sprite2D" parent="Sidebar"]
-position = Vector2(115, 162)
-texture = ExtResource("2_8bi3n")
+position = Vector2(110, 264)
+scale = Vector2(0.283203, 0.308594)
+texture = ExtResource("2_ba6nw")
+script = ExtResource("3_j0w6o")
+
+[node name="image" type="Sprite2D" parent="Sidebar"]
+position = Vector2(116, 492)
+scale = Vector2(0.292969, 0.261719)
+texture = ExtResource("4_s85d4")
 script = ExtResource("3_j0w6o")
 
 [node name="Button" type="Button" parent="."]
 layout_mode = 0
-offset_right = 228.0
-offset_bottom = 54.0
-text = "Button
+offset_right = 225.0
+offset_bottom = 110.0
+theme = SubResource("Theme_1eej3")
+theme_override_fonts/font = ExtResource("5_hyoc1")
+theme_override_font_sizes/font_size = 50
+text = "Press To
+Open Menu
 "
+
+[node name="Button2" type="Button" parent="."]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
+
+[node name="BackButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 1978.0
+offset_top = -8.0
+offset_right = 2307.0
+offset_bottom = 128.0
+theme = SubResource("Theme_pujwx")
+theme_override_fonts/font = ExtResource("5_hyoc1")
+theme_override_font_sizes/font_size = 50
+text = "Back To Home"
+
+[connection signal="pressed" from="BackButton" to="." method="_on_back_button_pressed"]
