@@ -22,7 +22,7 @@ script = ExtResource("1_qwjiq")
 layout_mode = 0
 offset_left = 1.0
 offset_top = -8.0
-offset_right = 2407.0
+offset_right = 3020.0
 offset_bottom = 1939.0
 
 [node name="Sidebar" type="Panel" parent="."]
@@ -61,13 +61,15 @@ offset_bottom = 8.0
 
 [node name="BackButton" type="Button" parent="."]
 layout_mode = 0
-offset_left = 1978.0
-offset_top = -8.0
-offset_right = 2307.0
-offset_bottom = 128.0
+offset_left = 2694.0
+offset_top = -5.0
+offset_right = 3023.0
+offset_bottom = 131.0
+scale = Vector2(1, 1.28272)
 theme = SubResource("Theme_pujwx")
 theme_override_fonts/font = ExtResource("5_hyoc1")
 theme_override_font_sizes/font_size = 50
-text = "Back To Home"
+text = "Back To Title
+"
 
 [connection signal="pressed" from="BackButton" to="." method="_on_back_button_pressed"]

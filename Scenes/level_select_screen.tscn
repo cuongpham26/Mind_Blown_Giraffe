@@ -15,7 +15,8 @@ layout_mode = 3
 anchor_right = 1.0
 anchor_bottom = 1.005
 offset_right = 10.0
-offset_bottom = 0.180054
+offset_bottom = -50.8199
+scale = Vector2(1.00071, 1)
 script = ExtResource("1_mxgb1")
 
 [node name="Background" type="Sprite2D" parent="."]
@@ -25,10 +26,10 @@ texture = ExtResource("1_8rrgl")
 
 [node name="Label" type="Label" parent="."]
 layout_mode = 0
-offset_left = 309.0
-offset_top = 17.0
-offset_right = 2036.0
-offset_bottom = 370.0
+offset_left = 670.0
+offset_top = 20.0
+offset_right = 2397.0
+offset_bottom = 373.0
 theme = SubResource("Theme_vwfpj")
 theme_override_colors/font_color = Color(0.537255, 0.32549, 0.882353, 1)
 theme_override_fonts/font = ExtResource("2_2s6mp")
@@ -38,10 +39,10 @@ text = "Select an Order
 
 [node name="Order1Button" type="Button" parent="."]
 layout_mode = 0
-offset_left = 575.0
-offset_top = 383.0
-offset_right = 1645.0
-offset_bottom = 533.0
+offset_left = 876.378
+offset_top = 430.0
+offset_right = 1946.38
+offset_bottom = 580.0
 theme = SubResource("Theme_71ivv")
 theme_override_colors/font_pressed_color = Color(0.537255, 0.32549, 0.882353, 1)
 theme_override_fonts/font = ExtResource("2_2s6mp")

@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1741984830
+::res://::1742053313
 README.md::TextFile::-1::1741820730::0::1::::<><>::
 ::res://Art/::1741971733
 ::res://Art/Fonts/::1741971794
@@ -781,14 +781,14 @@ explosion.png::CompressedTexture2D::7494368380342978069::1741972193::1741972194:
 icon.svg::CompressedTexture2D::3211765064014380473::1741820730::1741971780::1::::<><>::
 image.png::CompressedTexture2D::8357523332589945704::1741820730::1741971780::1::::<><>::
 Notes for icons.txt::TextFile::-1::1741820730::0::1::::<><>::
-::res://Scenes/::1741985710
-collage_editor.tscn::PackedScene::8917194598916452634::1741985710::0::1::::<><>::res://Scripts/button_sidebar.gd<>uid://mvdeu6ekqdrj::::res://Icons/character.png<>res://Scripts/image.gd<>uid://de1lfgblxpnkf::::res://Icons/explosion.png<>uid://cn25gdhs56fp8::::res://Art/Fonts/advanced_pixel-7.ttf
-level_select_screen.tscn::PackedScene::8634105111826733513::1741985861::0::1::::<><>::uid://be2c6ipkeavsi::::res://Art/Pixel Shape Tiles/Pixel background/32x32/3. Color/Picture/color_background_83.png<>res://Scenes/level_select_screen.gd<>uid://cn25gdhs56fp8::::res://Art/Fonts/advanced_pixel-7.ttf
-level_select_screen.gd::GDScript::-1::1741985861::0::1::::<>Control<>::
-title_screen.tscn::PackedScene::8917861372973713275::1741985710::0::1::::<><>::res://Scripts/title_screen.gd<>uid://be2c6ipkeavsi::::res://Art/Pixel Shape Tiles/Pixel background/32x32/3. Color/Picture/color_background_83.png<>uid://cn25gdhs56fp8::::res://Art/Fonts/advanced_pixel-7.ttf<>res://Scripts/title_label_effect.gd
-::res://Scripts/::1741985398
-button_sidebar.gd::GDScript::-1::1741820730::0::1::::<>Control<>res://Icons/control.png::
+::res://Scenes/::1742053309
+collage_editor.tscn::PackedScene::8917194598916452634::1742053304::0::1::::<><>::res://Scripts/button_sidebar.gd<>uid://mvdeu6ekqdrj::::res://Icons/character.png<>res://Scripts/image.gd<>uid://de1lfgblxpnkf::::res://Icons/explosion.png<>uid://cn25gdhs56fp8::::res://Art/Fonts/advanced_pixel-7.ttf
+level_select_screen.tscn::PackedScene::8634105111826733513::1742053309::0::1::::<><>::uid://be2c6ipkeavsi::::res://Art/Pixel Shape Tiles/Pixel background/32x32/3. Color/Picture/color_background_83.png<>res://Scripts/level_select_screen.gd<>uid://cn25gdhs56fp8::::res://Art/Fonts/advanced_pixel-7.ttf
+title_screen.tscn::PackedScene::8917861372973713275::1742053245::0::1::::<><>::res://Scripts/title_screen.gd<>uid://be2c6ipkeavsi::::res://Art/Pixel Shape Tiles/Pixel background/32x32/3. Color/Picture/color_background_83.png<>uid://cn25gdhs56fp8::::res://Art/Fonts/advanced_pixel-7.ttf<>res://Scripts/title_label_effect.gd
+::res://Scripts/::1741986508
+button_sidebar.gd::GDScript::-1::1741986508::0::1::::<>Control<>res://Icons/control.png::
 image.gd::GDScript::-1::1741972596::0::1::::image<>Sprite2D<>res://Icons/image.png::
+level_select_screen.gd::GDScript::-1::1741986067::0::1::::<>Control<>::
 player.gd::GDScript::-1::1741820730::0::1::::Player<>RefCounted<>res://Icons/character.png::
 title_label_effect.gd::GDScript::-1::1741974942::0::1::::<>Label<>::
 title_screen.gd::GDScript::-1::1741985398::0::1::::<>Control<>::

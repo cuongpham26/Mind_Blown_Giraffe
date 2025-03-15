@@ -21,10 +21,10 @@ default_font = ExtResource("3_55kwv")
 
 [node name="TitleScreen" type="Control"]
 layout_mode = 3
-anchor_right = 2.543
-anchor_bottom = 2.475
-offset_right = -4644.03
-offset_bottom = -2859.9
+anchor_right = 1.0
+anchor_bottom = 1.019
+offset_right = 22.002
+offset_bottom = -0.316162
 grow_horizontal = 2
 grow_vertical = 2
 theme = SubResource("Theme_v303f")
@@ -37,10 +37,10 @@ texture = ExtResource("2_8rulb")
 
 [node name="TitleLabel1" type="Label" parent="."]
 layout_mode = 0
-offset_left = 76.0
-offset_top = 35.0
-offset_right = 2215.0
-offset_bottom = 435.0
+offset_left = 388.0
+offset_top = 217.0
+offset_right = 2527.0
+offset_bottom = 617.0
 theme = SubResource("Theme_sgcfn")
 theme_override_colors/font_color = Color(0.537308, 0.324746, 0.882955, 1)
 theme_override_font_sizes/font_size = 400
@@ -51,10 +51,10 @@ script = ExtResource("4_8w1sg")
 
 [node name="TitleLabel2" type="Label" parent="."]
 layout_mode = 0
-offset_left = 541.0
-offset_top = 393.0
-offset_right = 1791.0
-offset_bottom = 644.0
+offset_left = 820.0
+offset_top = 599.0
+offset_right = 2070.0
+offset_bottom = 850.0
 theme = SubResource("Theme_5olp2")
 theme_override_font_sizes/font_size = 250
 text = "Express Yourself"
@@ -62,10 +62,10 @@ horizontal_alignment = 1
 
 [node name="StartButton" type="Button" parent="."]
 layout_mode = 0
-offset_left = 667.0
-offset_top = 747.0
-offset_right = 1595.0
-offset_bottom = 941.0
+offset_left = 958.0
+offset_top = 984.0
+offset_right = 1886.0
+offset_bottom = 1192.0
 theme = SubResource("Theme_sr01b")
 theme_override_colors/font_pressed_color = Color(0.927533, 0.927533, 0.927533, 1)
 theme_override_font_sizes/font_size = 200
@@ -73,10 +73,10 @@ text = "Start"
 
 [node name="QuitButton" type="Button" parent="."]
 layout_mode = 0
-offset_left = 666.0
-offset_top = 994.0
-offset_right = 1596.0
-offset_bottom = 1164.0
+offset_left = 959.0
+offset_top = 1261.0
+offset_right = 1889.0
+offset_bottom = 1469.0
 theme = SubResource("Theme_sr01b")
 theme_override_font_sizes/font_size = 200
 text = "Quit
