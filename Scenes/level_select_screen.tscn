@@ -1,8 +1,9 @@
-[gd_scene load_steps=7 format=3 uid="uid://dvaopj5kysy54"]
+[gd_scene load_steps=8 format=3 uid="uid://dvaopj5kysy54"]
 
 [ext_resource type="Texture2D" uid="uid://be2c6ipkeavsi" path="res://Art/Pixel Shape Tiles/Pixel background/32x32/3. Color/Picture/color_background_83.png" id="1_8rrgl"]
 [ext_resource type="Script" path="res://Scripts/level_select_screen.gd" id="1_mxgb1"]
 [ext_resource type="FontFile" uid="uid://cn25gdhs56fp8" path="res://Art/Fonts/advanced_pixel-7.ttf" id="2_2s6mp"]
+[ext_resource type="Script" path="res://Scripts/label_effect.gd" id="4_2evgv"]
 
 [sub_resource type="Theme" id="Theme_vwfpj"]
 
@@ -12,10 +13,10 @@
 
 [node name="LevelSelectScreen" type="Control"]
 layout_mode = 3
-anchor_right = 1.0
-anchor_bottom = 1.005
-offset_right = 10.0
-offset_bottom = -50.8199
+anchor_right = 2.387
+anchor_bottom = 2.159
+offset_right = -2.36011
+offset_bottom = -0.100098
 scale = Vector2(1.00071, 1)
 script = ExtResource("1_mxgb1")
 
@@ -36,6 +37,7 @@ theme_override_fonts/font = ExtResource("2_2s6mp")
 theme_override_font_sizes/font_size = 350
 text = "Select an Order
 "
+script = ExtResource("4_2evgv")
 
 [node name="Order1Button" type="Button" parent="."]
 layout_mode = 0

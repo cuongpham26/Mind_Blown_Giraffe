@@ -22,25 +22,25 @@ default_font = ExtResource("3_55kwv")
 [node name="TitleScreen" type="Control"]
 layout_mode = 3
 anchor_right = 1.0
-anchor_bottom = 1.019
-offset_right = 22.002
-offset_bottom = -0.316162
+anchor_bottom = 1.0
+offset_right = -35.0
+offset_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 theme = SubResource("Theme_v303f")
 script = ExtResource("1_4gxqj")
 
 [node name="Background" type="Sprite2D" parent="."]
-position = Vector2(1524, 966)
-scale = Vector2(95.0625, 60.5625)
+position = Vector2(636, 352)
+scale = Vector2(39.5625, 23.25)
 texture = ExtResource("2_8rulb")
 
 [node name="TitleLabel1" type="Label" parent="."]
 layout_mode = 0
-offset_left = 388.0
-offset_top = 217.0
-offset_right = 2527.0
-offset_bottom = 617.0
+offset_left = -428.0
+offset_top = -52.0
+offset_right = 1711.0
+offset_bottom = 348.0
 theme = SubResource("Theme_sgcfn")
 theme_override_colors/font_color = Color(0.537308, 0.324746, 0.882955, 1)
 theme_override_font_sizes/font_size = 400
@@ -51,10 +51,10 @@ script = ExtResource("4_8w1sg")
 
 [node name="TitleLabel2" type="Label" parent="."]
 layout_mode = 0
-offset_left = 820.0
-offset_top = 599.0
-offset_right = 2070.0
-offset_bottom = 850.0
+offset_left = 864.0
+offset_top = 602.0
+offset_right = 2114.0
+offset_bottom = 853.0
 theme = SubResource("Theme_5olp2")
 theme_override_font_sizes/font_size = 250
 text = "Express Yourself"
@@ -62,10 +62,10 @@ horizontal_alignment = 1
 
 [node name="StartButton" type="Button" parent="."]
 layout_mode = 0
-offset_left = 958.0
-offset_top = 984.0
-offset_right = 1886.0
-offset_bottom = 1192.0
+offset_left = 1017.0
+offset_top = 969.0
+offset_right = 1945.0
+offset_bottom = 1177.0
 theme = SubResource("Theme_sr01b")
 theme_override_colors/font_pressed_color = Color(0.927533, 0.927533, 0.927533, 1)
 theme_override_font_sizes/font_size = 200
@@ -73,10 +73,10 @@ text = "Start"
 
 [node name="QuitButton" type="Button" parent="."]
 layout_mode = 0
-offset_left = 959.0
-offset_top = 1261.0
-offset_right = 1889.0
-offset_bottom = 1469.0
+offset_left = 1012.0
+offset_top = 1229.0
+offset_right = 1942.0
+offset_bottom = 1437.0
 theme = SubResource("Theme_sr01b")
 theme_override_font_sizes/font_size = 200
 text = "Quit
