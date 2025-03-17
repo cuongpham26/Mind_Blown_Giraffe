@@ -1,6 +1,5 @@
 @icon("../Icons/image.png")
 class_name image extends Sprite2D
-@onready var trashcan = get_tree().root.get_node("Control/Trashcan")
 #random comment to see if it works in git	 
 # Drag and drop variables
 var draggable: bool = false
@@ -28,8 +27,6 @@ func _input(event: InputEvent) -> void:
 			z_index = get_tree().get_node_count()  # Bring sprite to the top when clicked
 		else:
 			draggable = false
-			if trashcan.is_inside(global_position) and not is_original:
-				trashcan.delete(self)
 
 	# Resizing logic
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_RIGHT:

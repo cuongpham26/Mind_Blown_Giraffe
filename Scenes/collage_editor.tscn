@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://d0bs5lobl2xpy"]
+[gd_scene load_steps=11 format=3 uid="uid://d0bs5lobl2xpy"]
 
 [ext_resource type="Script" path="res://Scripts/button_sidebar.gd" id="1_qwjiq"]
 [ext_resource type="Texture2D" uid="uid://mvdeu6ekqdrj" path="res://Icons/character.png" id="2_ba6nw"]
@@ -8,8 +8,6 @@
 [ext_resource type="Texture2D" uid="uid://m21ivj8qdwh0" path="res://Art/Tileable Cloth/Cloth_01-256x256.png" id="5_q7gwf"]
 [ext_resource type="Texture2D" uid="uid://c8fj8vc4tgq6g" path="res://Art/Pixel Food/80_pancakes_dish.png" id="6_lv5nj"]
 [ext_resource type="Texture2D" uid="uid://da7lfs1hawhsu" path="res://Art/Tileable Cloth/Cloth_13-256x256.png" id="7_3jsic"]
-[ext_resource type="Texture2D" uid="uid://lt6oj8ahou2q" path="res://Icons/trashcan.png" id="9_6h7hg"]
-[ext_resource type="Script" path="res://Scripts/trashcan.gd" id="10_osdiq"]
 
 [sub_resource type="Theme" id="Theme_1eej3"]
 
@@ -94,11 +92,5 @@ theme_override_fonts/font = ExtResource("5_hyoc1")
 theme_override_font_sizes/font_size = 50
 text = "Back To Title
 "
-
-[node name="Trashcan" type="Sprite2D" parent="."]
-position = Vector2(2912, 1869)
-scale = Vector2(0.231445, 0.169922)
-texture = ExtResource("9_6h7hg")
-script = ExtResource("10_osdiq")
 
 [connection signal="pressed" from="BackButton" to="." method="_on_back_button_pressed"]

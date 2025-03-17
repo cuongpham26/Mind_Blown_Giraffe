@@ -21,26 +21,26 @@ default_font = ExtResource("3_55kwv")
 
 [node name="TitleScreen" type="Control"]
 layout_mode = 3
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_right = -35.0
-offset_bottom = 1.0
+anchor_right = 2.395
+anchor_bottom = 2.124
+offset_right = 0.399658
+offset_bottom = 0.399902
 grow_horizontal = 2
 grow_vertical = 2
 theme = SubResource("Theme_v303f")
 script = ExtResource("1_4gxqj")
 
 [node name="Background" type="Sprite2D" parent="."]
-position = Vector2(636, 352)
-scale = Vector2(39.5625, 23.25)
+position = Vector2(1529.5, 943.5)
+scale = Vector2(95.4063, 60.2188)
 texture = ExtResource("2_8rulb")
 
 [node name="TitleLabel1" type="Label" parent="."]
 layout_mode = 0
-offset_left = -428.0
-offset_top = -52.0
-offset_right = 1711.0
-offset_bottom = 348.0
+offset_left = 473.0
+offset_top = 226.0
+offset_right = 2612.0
+offset_bottom = 626.0
 theme = SubResource("Theme_sgcfn")
 theme_override_colors/font_color = Color(0.537308, 0.324746, 0.882955, 1)
 theme_override_font_sizes/font_size = 400
