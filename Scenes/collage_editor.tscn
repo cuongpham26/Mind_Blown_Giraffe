@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://d0bs5lobl2xpy"]
+[gd_scene load_steps=12 format=3 uid="uid://d0bs5lobl2xpy"]
 
 [ext_resource type="Script" path="res://Scripts/button_sidebar.gd" id="1_qwjiq"]
 [ext_resource type="Texture2D" uid="uid://mvdeu6ekqdrj" path="res://Icons/character.png" id="2_ba6nw"]
@@ -8,6 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://m21ivj8qdwh0" path="res://Art/Tileable Cloth/Cloth_01-256x256.png" id="5_q7gwf"]
 [ext_resource type="Texture2D" uid="uid://c8fj8vc4tgq6g" path="res://Art/Pixel Food/80_pancakes_dish.png" id="6_lv5nj"]
 [ext_resource type="Texture2D" uid="uid://da7lfs1hawhsu" path="res://Art/Tileable Cloth/Cloth_13-256x256.png" id="7_3jsic"]
+[ext_resource type="Texture2D" uid="uid://lt6oj8ahou2q" path="res://Icons/trashcan.png" id="8_8fnwg"]
 
 [sub_resource type="Theme" id="Theme_1eej3"]
 
@@ -59,9 +60,15 @@ texture = ExtResource("6_lv5nj")
 script = ExtResource("3_j0w6o")
 
 [node name="Cloth2" type="Sprite2D" parent="Sidebar"]
-position = Vector2(107, 1297)
+position = Vector2(108, 1232)
 scale = Vector2(0.609375, 0.621094)
 texture = ExtResource("7_3jsic")
+script = ExtResource("3_j0w6o")
+
+[node name="Trash Can" type="Sprite2D" parent="Sidebar"]
+position = Vector2(109, 1518)
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("8_8fnwg")
 script = ExtResource("3_j0w6o")
 
 [node name="Button" type="Button" parent="."]

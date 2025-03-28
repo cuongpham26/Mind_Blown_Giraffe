@@ -1,4 +1,5 @@
-res://Scenes/title_screen.tscn
 res://Scenes/collage_editor.tscn
-res://Scenes/level_select_screen.tscn
 res://Scripts/image.gd
+res://Scenes/level_select_screen.tscn
+res://Scenes/title_screen.tscn
+res://Scenes/highlight_shader.gdshader
