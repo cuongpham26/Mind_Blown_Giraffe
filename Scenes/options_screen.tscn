@@ -1,0 +1,73 @@
+[gd_scene load_steps=7 format=3 uid="uid://6jlafq26gg7g"]
+
+[ext_resource type="Texture2D" uid="uid://bpenb88366m05" path="res://Art/Pixel Shape Tiles/Pixel background/64x64/3. Color/Picture/color_background_83.png" id="1_a4uy1"]
+[ext_resource type="Script" path="res://Scripts/volume_slider.gd" id="1_u7c5x"]
+[ext_resource type="FontFile" uid="uid://cn25gdhs56fp8" path="res://Art/Fonts/advanced_pixel-7.ttf" id="2_mqgxe"]
+[ext_resource type="Script" path="res://Scripts/settings_label_effect.gd" id="4_5wvdm"]
+[ext_resource type="Texture2D" uid="uid://c8h0nbyd7eiad" path="res://Art/Pixel Shape Tiles/Pixel background/64x64/3. Color/Picture/color_background_91.png" id="4_krm4l"]
+
+[sub_resource type="Theme" id="Theme_6ekmk"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchor_right = 2.533
+anchor_bottom = 2.74
+offset_right = -0.240234
+offset_bottom = 0.199829
+script = ExtResource("1_u7c5x")
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(1626, 980)
+scale = Vector2(50.9375, 30.625)
+texture = ExtResource("1_a4uy1")
+
+[node name="SettingsLabel" type="Label" parent="."]
+layout_mode = 0
+offset_left = 1029.0
+offset_top = 108.0
+offset_right = 2229.0
+offset_bottom = 608.0
+theme = SubResource("Theme_6ekmk")
+theme_override_colors/font_color = Color(0.537255, 0.32549, 0.882353, 1)
+theme_override_fonts/font = ExtResource("2_mqgxe")
+theme_override_font_sizes/font_size = 400
+text = "Settings
+"
+script = ExtResource("4_5wvdm")
+
+[node name="VolumeLabel" type="Label" parent="."]
+layout_mode = 0
+offset_left = 882.0
+offset_top = 641.0
+offset_right = 1167.0
+offset_bottom = 792.0
+theme_override_colors/font_color = Color(0.537255, 0.32549, 0.882353, 1)
+theme_override_fonts/font = ExtResource("2_mqgxe")
+theme_override_font_sizes/font_size = 150
+text = "Volume"
+
+[node name="VolumeSlider" type="HSlider" parent="."]
+layout_mode = 0
+offset_left = 1292.0
+offset_top = 515.0
+offset_right = 2272.0
+offset_bottom = 955.0
+theme_override_icons/grabber = ExtResource("4_krm4l")
+theme_override_icons/grabber_highlight = ExtResource("4_krm4l")
+theme_override_icons/grabber_disabled = ExtResource("4_krm4l")
+max_value = 1.0
+step = 0.01
+
+[node name="BackButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = -6.0
+offset_top = -1.0
+offset_right = 412.0
+offset_bottom = 107.0
+theme_override_fonts/font = ExtResource("2_mqgxe")
+theme_override_font_sizes/font_size = 100
+text = "Back to Title
+"
+
+[connection signal="value_changed" from="VolumeSlider" to="." method="_on_volume_slider_value_changed"]
+[connection signal="pressed" from="BackButton" to="." method="_on_back_button_pressed"]

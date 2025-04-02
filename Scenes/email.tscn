@@ -1,0 +1,25 @@
+[gd_scene load_steps=3 format=3 uid="uid://b0ci678klg5us"]
+
+[ext_resource type="Texture2D" uid="uid://bpenb88366m05" path="res://Art/Pixel Shape Tiles/Pixel background/64x64/3. Color/Picture/color_background_83.png" id="1_x0cem"]
+[ext_resource type="Texture2D" uid="uid://5wsfprv8bn24" path="res://Icons/computer.png" id="2_giriu"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(1777, 1092)
+scale = Vector2(56.3594, 35.5313)
+texture = ExtResource("1_x0cem")
+
+[node name="Computer" type="Sprite2D" parent="."]
+position = Vector2(1398, 818)
+scale = Vector2(6.25143, 5.41)
+texture = ExtResource("2_giriu")
+
+[node name="EmailPanel" type="Panel" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0

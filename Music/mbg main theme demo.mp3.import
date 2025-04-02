@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://ebbcyqh0ftmo"
+path="res://.godot/imported/mbg main theme demo.mp3-7c7ae9eafd48572e7d6b6111657b7e7f.mp3str"
+
+[deps]
+
+source_file="res://Music/mbg main theme demo.mp3"
+dest_files=["res://.godot/imported/mbg main theme demo.mp3-7c7ae9eafd48572e7d6b6111657b7e7f.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

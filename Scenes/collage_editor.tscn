@@ -15,10 +15,7 @@
 
 [node name="Control" type="Control"]
 layout_mode = 3
-anchor_right = 2.324
-anchor_bottom = 2.121
-offset_right = -4426.19
-offset_bottom = -2539.68
+anchors_preset = 0
 script = ExtResource("1_qwjiq")
 
 [node name="Canvas" type="ColorRect" parent="."]
