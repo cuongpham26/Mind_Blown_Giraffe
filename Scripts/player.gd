@@ -4,14 +4,27 @@ class_name Player
 
 var name: String
 var age: int = -1  # Default to -1 if not given
-var interest: String = ""
 var stars: int = 0  # Star currency
+var inventory: Array[Item]
 
 # Constructor
-func _init(p_name: String, p_age: int = -1, p_interest: String = ""):
+func _init(p_name: String, p_age: int = -1):
 	name = p_name
 	age = p_age
-	interest = p_interest
+	
+# Function to add an item to the player's inventory
+func add_item(item: Item) -> void:
+	if item in inventory:
+		print("Item already in inventory")
+	else:
+		inventory.append(item)
+
+# Function to remove an item from the player's inventory
+func remove_item(item: Item) -> void:
+	if item not in inventory:
+		print("Item not in inventory")
+	else:
+		inventory.erase(item)
 
 # Evaluate performance (Confidant always passes, Client can fail)
 func evaluate_performance(score: int, is_confidant: bool) -> void:
@@ -44,7 +57,8 @@ func evaluate_performance(score: int, is_confidant: bool) -> void:
 
 # Display player information
 # Only here for now for testing purpose
-# Will likely removefunc show_info():
+# Will likely remove
+func show_info():
 	print("Player Name:", name)
 	if age != -1:
 		print("Age:", age)

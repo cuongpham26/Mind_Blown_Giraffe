@@ -1,9 +1,9 @@
 [gd_scene load_steps=8 format=3 uid="uid://dvaopj5kysy54"]
 
 [ext_resource type="Texture2D" uid="uid://be2c6ipkeavsi" path="res://Art/Pixel Shape Tiles/Pixel background/32x32/3. Color/Picture/color_background_83.png" id="1_8rrgl"]
-[ext_resource type="Script" path="res://Scripts/level_select_screen.gd" id="1_mxgb1"]
+[ext_resource type="Script" uid="uid://fryghld3ya6c" path="res://Scripts/level_select_screen.gd" id="1_mxgb1"]
 [ext_resource type="FontFile" uid="uid://cn25gdhs56fp8" path="res://Art/Fonts/advanced_pixel-7.ttf" id="2_2s6mp"]
-[ext_resource type="Script" path="res://Scripts/label_effect.gd" id="4_2evgv"]
+[ext_resource type="Script" uid="uid://lfs6gw3deeb0" path="res://Scripts/label_effect.gd" id="4_2evgv"]
 
 [sub_resource type="Theme" id="Theme_vwfpj"]
 

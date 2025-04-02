@@ -1,5 +1,6 @@
-Sprite2D
 image
+TextureButton
+Sprite2D
 Button
 Label
 ParallaxBackground
