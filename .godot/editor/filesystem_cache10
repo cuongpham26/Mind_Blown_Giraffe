@@ -1,8 +1,9 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1741812192
-::res://Art/::1741809991
-::res://Art/Fonts/::1741810127
-advanced_pixel-7.ttf::FontFile/FontFile::5742866927829494155::1741809990::1741810091::1::::<><><>0<>0<>ee0ea623efdf9ebd5c82de250051843f<>res://.godot/imported/advanced_pixel-7.ttf-c29aac2e01acac786b3b3192b4eadf16.fontdata::
+::res://::1743607389
+README.md::TextFile/TextFile::-1::1741814938::0::1::::<><><>0<>0<><>::
+::res://Art/::1742400202
+::res://Art/Fonts/::1743431849
+advanced_pixel-7.ttf::FontFile/FontFile::5742866927829494155::1741809990::1743431849::1::::<><><>0<>0<>ee0ea623efdf9ebd5c82de250051843f<>res://.godot/imported/advanced_pixel-7.ttf-c29aac2e01acac786b3b3192b4eadf16.fontdata::
 advanced_pixel-7_screen.png::CompressedTexture2D/CompressedTexture2D::5587311098005166425::1741809990::1741810127::1::::<><><>0<>0<>7bfb4fe237bc81363b1986811a48413b<>res://.godot/imported/advanced_pixel-7_screen.png-ad7869f4d7752f8a57ab8ea4459c4af9.ctex::
 readme.txt::TextFile/TextFile::-1::1741809990::0::1::::<><><>0<>0<><>::
 ::res://Art/Pixel Food/::1741810127
@@ -108,7 +109,7 @@ readme.txt::TextFile/TextFile::-1::1741809990::0::1::::<><><>0<>0<><>::
 100_taco_dish.png::CompressedTexture2D/CompressedTexture2D::5562548488809569998::1741809996::1741810126::1::::<><><>0<>0<>de8fb67f3ec7e9a3172f613371273d5f<>res://.godot/imported/100_taco_dish.png-c8a064b899566c9c2726dfe6afc438f4.ctex::
 101_waffle.png::CompressedTexture2D/CompressedTexture2D::1637418483110234088::1741809997::1741810126::1::::<><><>0<>0<>c33b8e84a3a5301d014cc9e473d1a196<>res://.godot/imported/101_waffle.png-f8e3d80334378d5c08841aa5e869f053.ctex::
 102_waffle_dish.png::CompressedTexture2D/CompressedTexture2D::7071384501972071215::1741809995::1741810126::1::::<><><>0<>0<>25890dedc5ac8d0cb893705d08ea00da<>res://.godot/imported/102_waffle_dish.png-8421ddda781cbbaec59d51df3194bf88.ctex::
-::res://Art/Pixel Shape Tiles/::1741809955
+::res://Art/Pixel Shape Tiles/::1742400202
 ::res://Art/Pixel Shape Tiles/Pixel background/::1741809972
 ::res://Art/Pixel Shape Tiles/Pixel background/32x32/::1741809967
 ::res://Art/Pixel Shape Tiles/Pixel background/32x32/1. Grey/::1741809955
@@ -773,17 +774,26 @@ Art Texture 056.JPG::CompressedTexture2D/CompressedTexture2D::488808773258346495
 Art Texture 057.JPG::CompressedTexture2D/CompressedTexture2D::8778366753589286968::1741809952::1741810112::1::::<><><>0<>0<>f3aad383d3e9d74df8ad7c3b89f1ab13<>res://.godot/imported/Art Texture 057.JPG-e036b020905460989a499d0bd794a753.ctex::
 Art Texture 058.JPG::CompressedTexture2D/CompressedTexture2D::4596094114036190643::1741809952::1741810112::1::::<><><>0<>0<>5ba63740ad00981935027de38a406de0<>res://.godot/imported/Art Texture 058.JPG-aef38a88748dd904bf8576bb927cc867.ctex::
 Art Texture 059.JPG::CompressedTexture2D/CompressedTexture2D::4080024615371369005::1741809952::1741810113::1::::<><><>0<>0<>8b34ae32451e042eadab04f381825bfb<>res://.godot/imported/Art Texture 059.JPG-36569ebdc65450096f3bbe6b46f1a00e.ctex::
-::res://Icons/::1741811479
+::res://Icons/::1743431849
 character.png::CompressedTexture2D/CompressedTexture2D::885808449197240631::1741811083::1741811083::1::::<><><>0<>0<>42c9041864f1d30177b8715b4dfa4ae4<>res://.godot/imported/character.png-8a452269f42dccf2b2480b93c768c75d.ctex::
 control.png::CompressedTexture2D/CompressedTexture2D::3449119481954268827::1741810961::1741811479::1::::<><><>0<>0<>e3fa2d17f42e037b0bb8c934a294c287<>res://.godot/imported/control.png-8bf3e97f4d538de21699426afc695c8d.ctex::
+explosion.png::CompressedTexture2D/CompressedTexture2D::7494368380342978069::1742400202::1743431849::1::::<><><>0<>0<>0499a017d8bce0b4d9bc8eb305e8e6ee<>res://.godot/imported/explosion.png-e87986fb9f7a5ef196e9c4820511f197.ctex::
+giraffe_hover.png::CompressedTexture2D/CompressedTexture2D::4478796848877561450::1743431844::1743431849::1::::<><><>0<>0<>296691b684ebdf7dd539b09248995262<>res://.godot/imported/giraffe_hover.png-bc372ca9d73960057dcc42e4283e525d.ctex::
 icon.svg::CompressedTexture2D/CompressedTexture2D::3211765064014380473::1741809894::1741810225::1::::<><><>0<>0<>91c6ba1005c875160c41378d96165c18<>res://.godot/imported/icon.svg-ed7653cfceda465bd029c9408192217c.ctex::
 image.png::CompressedTexture2D/CompressedTexture2D::8357523332589945704::1741810966::1741810974::1::::<><><>0<>0<>3fc4152f82348569fb3ffe18533111db<>res://.godot/imported/image.png-3dd795f1a6223cfc33ffc5be3ab8ad83.ctex::
 Notes for icons.txt::TextFile/TextFile::-1::1741810860::0::1::::<><><>0<>0<><>::
-::res://Scenes/::1741811970
-collage_editor.tscn::PackedScene::8917194598916452634::1741811970::0::1::::<><><>0<>0<><>::uid://cp7i5uxpm2uao::::res://Scripts/button_sidebar.gd<>uid://bl02kimvv1b8t::::res://Icons/icon.svg<>uid://b3vedihjqeir1::::res://Scripts/image.gd
-title_screen.tscn::PackedScene::8917861372973713275::1741811970::0::1::::<><><>0<>0<><>::uid://12dykyi3vd3x::::res://Scripts/title_screen.gd<>uid://bj3fj865j0go5::::res://Art/Pixel Shape Tiles/Pixel background/64x64/3. Color/Picture/color_background_37.png<>uid://cn25gdhs56fp8::::res://Art/Fonts/advanced_pixel-7.ttf
-::res://Scripts/::1741811655
-button_sidebar.gd::GDScript/GDScript::5892274506542035478::1741811545::0::1::::<>Control<>res://Icons/control.png<>0<>0<><>::
-image.gd::GDScript/GDScript::4395308895176942972::1741811401::0::1::::image<>Sprite2D<>res://Icons/image.png<>0<>0<><>::
-player.gd::GDScript/GDScript::5987153776803543885::1741811595::0::1::::Player<>RefCounted<>res://Icons/character.png<>0<>0<><>::
-title_screen.gd::GDScript/GDScript::1880873706691010883::1741811655::0::1::::<>Control<><>0<>0<><>::
+trashcan.png::CompressedTexture2D/CompressedTexture2D::813208208934546582::1742400202::1743431849::1::::<><><>0<>0<>76885dceef0a4afc5001f50f03af0e61<>res://.godot/imported/trashcan.png-a5892e07f1f1e534e5280f33edf341a5.ctex::
+::res://Scenes/::1743439070
+collage_editor.tscn::PackedScene::8917194598916452634::1743431878::0::1::::<><><>0<>0<><>::uid://cp7i5uxpm2uao::::res://Scripts/button_sidebar.gd<>uid://mvdeu6ekqdrj::::res://Icons/character.png<>uid://b3vedihjqeir1::::res://Scripts/image.gd<>uid://de1lfgblxpnkf::::res://Icons/explosion.png<>uid://cn25gdhs56fp8::::res://Art/Fonts/advanced_pixel-7.ttf<>uid://m21ivj8qdwh0::::res://Art/Tileable Cloth/Cloth_01-256x256.png<>uid://c8fj8vc4tgq6g::::res://Art/Pixel Food/80_pancakes_dish.png<>uid://da7lfs1hawhsu::::res://Art/Tileable Cloth/Cloth_13-256x256.png<>uid://lt6oj8ahou2q::::res://Icons/trashcan.png
+highlight_shader.gdshader::Shader::3850894003162246799::1743439070::0::1::::<><><>0<>0<><>::
+level_select_screen.tscn::PackedScene::8634105111826733513::1743432917::0::1::::<><><>0<>0<><>::uid://be2c6ipkeavsi::::res://Art/Pixel Shape Tiles/Pixel background/32x32/3. Color/Picture/color_background_83.png<>uid://fryghld3ya6c::::res://Scripts/level_select_screen.gd<>uid://cn25gdhs56fp8::::res://Art/Fonts/advanced_pixel-7.ttf<>uid://lfs6gw3deeb0::::res://Scripts/label_effect.gd
+title_screen.tscn::PackedScene::8917861372973713275::1743431878::0::1::::<><><>0<>0<><>::uid://12dykyi3vd3x::::res://Scripts/title_screen.gd<>uid://be2c6ipkeavsi::::res://Art/Pixel Shape Tiles/Pixel background/32x32/3. Color/Picture/color_background_83.png<>uid://cn25gdhs56fp8::::res://Art/Fonts/advanced_pixel-7.ttf<>uid://bktit25op6cjm::::res://Scripts/title_label_effect.gd
+::res://Scripts/::1743432917
+button_sidebar.gd::GDScript/GDScript::5892274506542035478::1742400202::0::1::::<>Control<>res://Icons/control.png<>0<>0<><>::
+image.gd::GDScript/GDScript::4395308895176942972::1743431844::0::1::::image<>Sprite2D<>res://Icons/image.png<>0<>0<><>::
+item.gd::GDScript::4752598118964773595::1743432644::0::1::::Item<>Node<><>0<>0<><>::
+label_effect.gd::GDScript/GDScript::783547784671664027::1742400202::0::1::::<>Label<><>0<>0<><>::
+level_select_screen.gd::GDScript/GDScript::387506947429970240::1742400202::0::1::::<>Control<><>0<>0<><>::
+player.gd::GDScript::5987153776803543885::1743432917::0::1::::Player<>RefCounted<>res://Icons/character.png<>0<>0<><>::
+title_label_effect.gd::GDScript/GDScript::3128053428558833774::1742400202::0::1::::<>Label<><>0<>0<><>::
+title_screen.gd::GDScript/GDScript::1880873706691010883::1742400202::0::1::::<>Control<><>0<>0<><>::
