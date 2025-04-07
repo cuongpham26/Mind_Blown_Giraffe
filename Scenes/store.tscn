@@ -5,7 +5,11 @@
 [ext_resource type="FontFile" uid="uid://cn25gdhs56fp8" path="res://Art/Fonts/advanced_pixel-7.ttf" id="3_rfncq"]
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 [node name="Control" type="Control"]
+=======
+[node name="Control3" type="Control"]
+>>>>>>> Stashed changes
 =======
 [node name="Control3" type="Control"]
 >>>>>>> Stashed changes
@@ -16,27 +20,27 @@ offset_bottom = 40.0
 script = ExtResource("1_8xben")
 
 [node name="Background" type="Sprite2D" parent="."]
-position = Vector2(1849.5, 1226)
-scale = Vector2(58.7969, 39.3125)
+position = Vector2(639, 352)
+scale = Vector2(20.1875, 11.25)
 texture = ExtResource("1_43d6v")
 
 [node name="StoreLabel" type="Label" parent="."]
 layout_mode = 0
-offset_left = 1320.0
-offset_top = -77.0
-offset_right = 2440.0
-offset_bottom = 623.0
+offset_left = 456.0
+offset_top = 8.0
+offset_right = 776.0
+offset_bottom = 208.0
 theme_override_fonts/font = ExtResource("3_rfncq")
-theme_override_font_sizes/font_size = 700
+theme_override_font_sizes/font_size = 200
 text = "Store
 "
 
 [node name="BackButton" type="Button" parent="."]
 layout_mode = 0
-offset_right = 368.0
-offset_bottom = 163.0
+offset_right = 129.0
+offset_bottom = 39.0
 theme_override_fonts/font = ExtResource("3_rfncq")
-theme_override_font_sizes/font_size = 150
+theme_override_font_sizes/font_size = 30
 text = "Back 
 "
 

@@ -1,9 +1,18 @@
 ea4bc82a6ad023ab7ee23ee620429895
+<<<<<<< Updated upstream
 ::res://::1744044153
 README.md::TextFile::-1::1741820730::0::1::::<><>::
 ::res://Art/::1744043456
 ::res://Art/Fonts/::1744044153
 advanced_pixel-7.ttf::FontFile::5742866927829494155::1741820729::1744044160::1::::<><>::
+=======
+::res://::1744047443
+README.md::TextFile::-1::1741820730::0::1::::<><>::
+yapping.tscn::PackedScene::4162320997888697507::1744047410::0::1::::<><>::uid://bpenb88366m05::::res://Art/Pixel Shape Tiles/Pixel background/64x64/3. Color/Picture/color_background_83.png
+::res://Art/::1744045205
+::res://Art/Fonts/::1744044618
+advanced_pixel-7.ttf::FontFile::5742866927829494155::1741820729::1744044618::1::::<><>::
+>>>>>>> Stashed changes
 advanced_pixel-7_screen.png::CompressedTexture2D::5587311098005166425::1741820729::1743608789::1::::<><>::
 readme.txt::TextFile::-1::1741820729::0::1::::<><>::
 ::res://Art/Pixel Food/::1743608789
@@ -774,11 +783,16 @@ Art Texture 056.JPG::CompressedTexture2D::4888087732583464953::1741820730::17436
 Art Texture 057.JPG::CompressedTexture2D::8778366753589286968::1741820730::1743608779::1::::<><>::
 Art Texture 058.JPG::CompressedTexture2D::4596094114036190643::1741820730::1743608778::1::::<><>::
 Art Texture 059.JPG::CompressedTexture2D::4080024615371369005::1741820730::1743608779::1::::<><>::
+<<<<<<< Updated upstream
 ::res://Icons/::1744044007
+=======
+::res://Icons/::1744047230
+>>>>>>> Stashed changes
 character.png::CompressedTexture2D::885808449197240631::1741820730::1743608776::1::::<><>::
 computer.png::CompressedTexture2D::2152184269679832927::1742581618::1742581635::1::::<><>::
 control.png::CompressedTexture2D::3449119481954268827::1741820730::1743608776::1::::<><>::
 explosion.png::CompressedTexture2D::7494368380342978069::1741972193::1743608776::1::::<><>::
+<<<<<<< Updated upstream
 giraffe_hover.png::CompressedTexture2D::4478796848877561450::1744043985::1744044007::1::::<><>::
 icon.svg::CompressedTexture2D::3211765064014380473::1741820730::1743608776::1::::<><>::
 keys.png::CompressedTexture2D::8278446259394636691::1744041645::1744041649::1::::<><>::
@@ -786,10 +800,22 @@ mouse.png::CompressedTexture2D::1720247023936884330::1742525085::1742570823::1::
 mouse.svg::CompressedTexture2D::2270406731781421593::1743536035::1743536036::1::::<><>::
 mouse_effect.svg::CompressedTexture2D::1591386049467333403::1743541221::1743541315::1::::<><>::
 mouse_outline.svg::CompressedTexture2D::2208037278888310401::1743536031::1743536031::1::::<><>::
+=======
+giraffe_hover.png::CompressedTexture2D::4478796848877561450::1744046151::1744046328::1::::<><>::
+icon.svg::CompressedTexture2D::3211765064014380473::1741820730::1743608776::1::::<><>::
+keys.png::CompressedTexture2D::8278446259394636691::1744047223::1744047224::1::::<><>::
+keys_light.png::CompressedTexture2D::3395317251732476876::1744047226::1744047226::1::::<><>::
+mouse.png::CompressedTexture2D::1720247023936884330::1744047228::1744047229::1::::<><>::
+mouse.svg::CompressedTexture2D::2270406731781421593::1744046111::1744046328::1::::<><>::
+mouse_effect.svg::CompressedTexture2D::1591386049467333403::1744046111::1744046328::1::::<><>::
+mouse_lighter.png::CompressedTexture2D::1893073904972401761::1744047230::1744047230::1::::<><>::
+mouse_outline.svg::CompressedTexture2D::2208037278888310401::1744046111::1744046328::1::::<><>::
+>>>>>>> Stashed changes
 Notes for icons.txt::TextFile::-1::1741820730::0::1::::<><>::
 paper.png::CompressedTexture2D::850606619124652806::1742525068::1742570644::1::::<><>::
 ruler.png::CompressedTexture2D::5853766136630642076::1742524391::1742570610::1::::<><>::
 sissors.png::CompressedTexture2D::8357523332589945704::1742524277::1742581168::1::::<><>::
+<<<<<<< Updated upstream
 trashcan.png::CompressedTexture2D::813208208934546582::1742175109::1743608776::1::::<><>::
 ::res://Music/::1742501023
 mbg main theme demo.mp3::AudioStreamMP3::282885326515714954::1742500987::1742501023::1::::<><>::
@@ -801,10 +827,26 @@ options_screen.tscn::PackedScene::2195101728088021086::1744044015::0::1::::<><>:
 store.tscn::PackedScene::249161795532238069::1744044015::0::1::::<><>::res://Scripts/store.gd<>uid://bpenb88366m05::::res://Art/Pixel Shape Tiles/Pixel background/64x64/3. Color/Picture/color_background_83.png<>uid://cn25gdhs56fp8::::res://Art/Fonts/advanced_pixel-7.ttf
 title_screen.tscn::PackedScene::8917861372973713275::1744044015::0::1::::<><>::res://Scripts/title_screen.gd<>uid://be2c6ipkeavsi::::res://Art/Pixel Shape Tiles/Pixel background/32x32/3. Color/Picture/color_background_83.png<>uid://cn25gdhs56fp8::::res://Art/Fonts/advanced_pixel-7.ttf<>res://Scripts/title_label_effect.gd
 ::res://Scripts/::1744043985
+=======
+trashcan.png::CompressedTexture2D::813208208934546582::1744046111::1744046328::1::::<><>::
+::res://Music/::1742501023
+mbg main theme demo.mp3::AudioStreamMP3::282885326515714954::1742500987::1742501023::1::::<><>::
+::res://Scenes/::1744047410
+collage_editor.tscn::PackedScene::8917194598916452634::1744047410::0::1::::<><>::res://Scripts/button_sidebar.gd<>uid://mvdeu6ekqdrj::::res://Icons/character.png<>res://Scenes/item_panel.gd<>res://Scripts/image.gd<>uid://de1lfgblxpnkf::::res://Icons/explosion.png<>uid://cn25gdhs56fp8::::res://Art/Fonts/advanced_pixel-7.ttf<>uid://m21ivj8qdwh0::::res://Art/Tileable Cloth/Cloth_01-256x256.png<>uid://c8fj8vc4tgq6g::::res://Art/Pixel Food/80_pancakes_dish.png<>uid://da7lfs1hawhsu::::res://Art/Tileable Cloth/Cloth_13-256x256.png<>uid://lt6oj8ahou2q::::res://Icons/trashcan.png<>res://Scenes/texture_panel.gd
+email.tscn::PackedScene::4145813357900289170::1744047410::0::1::::<><>::uid://bpenb88366m05::::res://Art/Pixel Shape Tiles/Pixel background/64x64/3. Color/Picture/color_background_83.png<>uid://5wsfprv8bn24::::res://Icons/computer.png
+item_panel.gd::GDScript::-1::1744046151::0::1::::<>Panel<>::
+main_select_screen.tscn::PackedScene::8634105111826733513::1744047410::0::1::::<><>::res://Scripts/level_select_screen.gd<>uid://be2c6ipkeavsi::::res://Art/Pixel Shape Tiles/Pixel background/32x32/3. Color/Picture/color_background_83.png<>uid://yrkhna8m346y::::res://Icons/mouse.png<>uid://18aweeq0rppp::::res://Icons/mouse_lighter.png<>uid://cn25gdhs56fp8::::res://Art/Fonts/advanced_pixel-7.ttf<>res://Scripts/mouse_label_effect.gd<>uid://dp7e2hi1d6b2r::::res://Icons/keys.png<>uid://bd7vmpg61hro1::::res://Sounds/click.wav<>uid://mebmp7ojhhgw::::res://Icons/paper.png<>res://Scripts/free_collage_label_effect.gd<>uid://bu401djfhomsq::::res://Sounds/store.wav<>uid://cpnuw5asxv7ca::::res://Icons/ruler.png<>uid://bomym5heg140w::::res://Icons/keys_light.png<>uid://drcpgnurvx6yu::::res://Icons/sissors.png
+options_screen.tscn::PackedScene::2195101728088021086::1744047410::0::1::::<><>::uid://bpenb88366m05::::res://Art/Pixel Shape Tiles/Pixel background/64x64/3. Color/Picture/color_background_83.png<>res://Scripts/volume_slider.gd<>uid://cn25gdhs56fp8::::res://Art/Fonts/advanced_pixel-7.ttf<>res://Scripts/settings_label_effect.gd<>uid://c8h0nbyd7eiad::::res://Art/Pixel Shape Tiles/Pixel background/64x64/3. Color/Picture/color_background_91.png
+store.tscn::PackedScene::249161795532238069::1744047410::0::1::::<><>::res://Scripts/store.gd<>uid://bpenb88366m05::::res://Art/Pixel Shape Tiles/Pixel background/64x64/3. Color/Picture/color_background_83.png<>uid://cn25gdhs56fp8::::res://Art/Fonts/advanced_pixel-7.ttf
+texture_panel.gd::GDScript::-1::1744046151::0::1::::<>Panel<>::
+title_screen.tscn::PackedScene::8917861372973713275::1744047410::0::1::::<><>::res://Scripts/title_screen.gd<>uid://be2c6ipkeavsi::::res://Art/Pixel Shape Tiles/Pixel background/32x32/3. Color/Picture/color_background_83.png<>uid://cn25gdhs56fp8::::res://Art/Fonts/advanced_pixel-7.ttf<>res://Scripts/title_label_effect.gd
+::res://Scripts/::1744046151
+>>>>>>> Stashed changes
 back_button_effect.gd::GDScript::-1::1742579341::0::1::::<>Button<>::
 button_sidebar.gd::GDScript::-1::1744041645::0::1::::<>Control<>res://Icons/control.png::
 email_client.gd::GDScript::-1::1744041645::0::1::::<>RefCounted<>::
 free_collage_label_effect.gd::GDScript::-1::1742574270::0::1::::<>Label<>::
+<<<<<<< Updated upstream
 image.gd::GDScript::-1::1744043985::0::1::::image<>Sprite2D<>res://Icons/image.png::
 item.gd::GDScript::-1::1744043985::0::1::::Item<>Node<>::
 label_effect.gd::GDScript::-1::1742174253::0::1::::<>Label<>::
@@ -812,6 +854,15 @@ level_select_screen.gd::GDScript::-1::1744041645::0::1::::<>Control<>::
 mouse_label_effect.gd::GDScript::-1::1742579184::0::1::::<>Label<>::
 music_player.gd::GDScript::-1::1742521144::0::1::::<>Node<>::
 player.gd::GDScript::-1::1744043985::0::1::::Player<>RefCounted<>res://Icons/character.png::
+=======
+image.gd::GDScript::-1::1744046151::0::1::::image<>Sprite2D<>res://Icons/image.png::
+item.gd::GDScript::-1::1744046151::0::1::::Item<>Node<>::
+label_effect.gd::GDScript::-1::1742174253::0::1::::<>Label<>::
+level_select_screen.gd::GDScript::-1::1744046111::0::1::::<>Control<>::
+mouse_label_effect.gd::GDScript::-1::1742579184::0::1::::<>Label<>::
+music_player.gd::GDScript::-1::1742521144::0::1::::<>Node<>::
+player.gd::GDScript::-1::1744046151::0::1::::Player<>RefCounted<>res://Icons/character.png::
+>>>>>>> Stashed changes
 settings_label_effect.gd::GDScript::-1::1742522984::0::1::::<>Label<>::
 store.gd::GDScript::-1::1744041645::0::1::::<>Control<>::
 title_label_effect.gd::GDScript::-1::1742522875::0::1::::<>Label<>::
