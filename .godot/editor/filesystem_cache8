@@ -1,12 +1,12 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1743608756
+::res://::1744044153
 README.md::TextFile::-1::1741820730::0::1::::<><>::
-::res://Art/::1741971733
-::res://Art/Fonts/::1743608720
-advanced_pixel-7.ttf::FontFile::5742866927829494155::1741820729::1743608759::1::::<><>::
+::res://Art/::1744043456
+::res://Art/Fonts/::1744044153
+advanced_pixel-7.ttf::FontFile::5742866927829494155::1741820729::1744044160::1::::<><>::
 advanced_pixel-7_screen.png::CompressedTexture2D::5587311098005166425::1741820729::1743608789::1::::<><>::
 readme.txt::TextFile::-1::1741820729::0::1::::<><>::
-::res://Art/Pixel Food/::1741971794
+::res://Art/Pixel Food/::1743608789
 01_dish.png::CompressedTexture2D::442291665946005568::1741820729::1743608789::1::::<><>::
 02_dish_2.png::CompressedTexture2D::9176448933918072547::1741820729::1743608789::1::::<><>::
 03_dish_pile.png::CompressedTexture2D::4145333828007780384::1741820729::1743608789::1::::<><>::
@@ -113,7 +113,7 @@ readme.txt::TextFile::-1::1741820729::0::1::::<><>::
 ::res://Art/Pixel Shape Tiles/Pixel background/::1741824581
 ::res://Art/Pixel Shape Tiles/Pixel background/32x32/::1741820756
 ::res://Art/Pixel Shape Tiles/Pixel background/32x32/1. Grey/::1741820761
-::res://Art/Pixel Shape Tiles/Pixel background/32x32/1. Grey/Picture/::1741971794
+::res://Art/Pixel Shape Tiles/Pixel background/32x32/1. Grey/Picture/::1743608789
 Grey_background_1.png::CompressedTexture2D::2394720369573025327::1741820729::1743608789::1::::<><>::
 Grey_background_2.png::CompressedTexture2D::3540343080024093181::1741820729::1743608789::1::::<><>::
 Grey_background_3.png::CompressedTexture2D::2288065502298937028::1741820729::1743608789::1::::<><>::
@@ -205,11 +205,11 @@ Grey_background_88.png::CompressedTexture2D::6853046404479238167::1741820729::17
 Grey_background_89.png::CompressedTexture2D::8389454694805852787::1741820729::1743608789::1::::<><>::
 Grey_background_90.png::CompressedTexture2D::1628901280383696877::1741820729::1743608789::1::::<><>::
 Grey_background_91.png::CompressedTexture2D::6922300956867675951::1741820729::1743608789::1::::<><>::
-::res://Art/Pixel Shape Tiles/Pixel background/32x32/1. Grey/Sprite/::1741971794
+::res://Art/Pixel Shape Tiles/Pixel background/32x32/1. Grey/Sprite/::1743608790
 Grey_backgrounds_a (32x32).png::CompressedTexture2D::2927581253405386578::1741820729::1743608790::1::::<><>::
 Grey_backgrounds_b (32x32).png::CompressedTexture2D::4317393253648469477::1741820729::1743608790::1::::<><>::
 ::res://Art/Pixel Shape Tiles/Pixel background/32x32/2. Black and white/::1741820761
-::res://Art/Pixel Shape Tiles/Pixel background/32x32/2. Black and white/Picture/::1741971794
+::res://Art/Pixel Shape Tiles/Pixel background/32x32/2. Black and white/Picture/::1743608790
 black_background_1.png::CompressedTexture2D::11730179823356079::1741820729::1743608789::1::::<><>::
 black_background_2.png::CompressedTexture2D::1202396701483023472::1741820729::1743608789::1::::<><>::
 black_background_3.png::CompressedTexture2D::6257168248750806112::1741820729::1743608790::1::::<><>::
@@ -301,11 +301,11 @@ black_background_88.png::CompressedTexture2D::50927581995356811::1741820729::174
 black_background_89.png::CompressedTexture2D::2150025919160031572::1741820729::1743608789::1::::<><>::
 black_background_90.png::CompressedTexture2D::3883596316026652152::1741820729::1743608789::1::::<><>::
 black_background_91.png::CompressedTexture2D::8371886632355560484::1741820729::1743608789::1::::<><>::
-::res://Art/Pixel Shape Tiles/Pixel background/32x32/2. Black and white/Sprite/::1741971794
+::res://Art/Pixel Shape Tiles/Pixel background/32x32/2. Black and white/Sprite/::1743608789
 black_backgrounds_a (32x32).png::CompressedTexture2D::4561722377569642448::1741820729::1743608789::1::::<><>::
 black_background_sb (32x32).png::CompressedTexture2D::5534955163787579651::1741820729::1743608789::1::::<><>::
 ::res://Art/Pixel Shape Tiles/Pixel background/32x32/3. Color/::1741820761
-::res://Art/Pixel Shape Tiles/Pixel background/32x32/3. Color/Picture/::1741971794
+::res://Art/Pixel Shape Tiles/Pixel background/32x32/3. Color/Picture/::1743608789
 color_background_1.png::CompressedTexture2D::4074998344443835039::1741820729::1743608789::1::::<><>::
 color_background_2.png::CompressedTexture2D::3887948186721858781::1741820729::1743608789::1::::<><>::
 color_background_3.png::CompressedTexture2D::8855427736506518126::1741820729::1743608789::1::::<><>::
@@ -397,12 +397,12 @@ color_background_88.png::CompressedTexture2D::9113305256927251729::1741820729::1
 color_background_89.png::CompressedTexture2D::5027469554784581386::1741820729::1743608760::1::::<><>::
 color_background_90.png::CompressedTexture2D::2473419775970126050::1741820729::1743608760::1::::<><>::
 color_background_91.png::CompressedTexture2D::1931191480328574811::1741820729::1743608760::1::::<><>::
-::res://Art/Pixel Shape Tiles/Pixel background/32x32/3. Color/Sprite/::1741971764
+::res://Art/Pixel Shape Tiles/Pixel background/32x32/3. Color/Sprite/::1743608760
 Color_backgrounds_a (32x32).png::CompressedTexture2D::2512603323473157475::1741820729::1743608760::1::::<><>::
 Color_backgrounds_b (32x32).png::CompressedTexture2D::1367587637108996248::1741820729::1743608760::1::::<><>::
 ::res://Art/Pixel Shape Tiles/Pixel background/64x64/::1741824581
 ::res://Art/Pixel Shape Tiles/Pixel background/64x64/1. Grey/::1741820761
-::res://Art/Pixel Shape Tiles/Pixel background/64x64/1. Grey/Picture/::1741971765
+::res://Art/Pixel Shape Tiles/Pixel background/64x64/1. Grey/Picture/::1743608760
 Grey_background_1.png::CompressedTexture2D::3620356254836293174::1741820729::1743608760::1::::<><>::
 Grey_background_2.png::CompressedTexture2D::6989313919535035185::1741820729::1743608760::1::::<><>::
 Grey_background_3.png::CompressedTexture2D::3145004974778076605::1741820729::1743608760::1::::<><>::
@@ -494,11 +494,11 @@ Grey_background_88.png::CompressedTexture2D::6459798622703949313::1741820729::17
 Grey_background_89.png::CompressedTexture2D::3668724321967023453::1741820729::1743608759::1::::<><>::
 Grey_background_90.png::CompressedTexture2D::8372511624879802501::1741820729::1743608759::1::::<><>::
 Grey_background_91.png::CompressedTexture2D::8487895997372434553::1741820729::1743608759::1::::<><>::
-::res://Art/Pixel Shape Tiles/Pixel background/64x64/1. Grey/Sprite/::1741971764
+::res://Art/Pixel Shape Tiles/Pixel background/64x64/1. Grey/Sprite/::1743608759
 Grey_backgrounds_a (64x64).png::CompressedTexture2D::5479095281114851138::1741820729::1743608759::1::::<><>::
 Grey_backgrounds_b (64x64).png::CompressedTexture2D::4503007638672477294::1741820729::1743608759::1::::<><>::
 ::res://Art/Pixel Shape Tiles/Pixel background/64x64/2. Black and white/::1741824581
-::res://Art/Pixel Shape Tiles/Pixel background/64x64/2. Black and white/Picture/::1741971793
+::res://Art/Pixel Shape Tiles/Pixel background/64x64/2. Black and white/Picture/::1743608789
 black_background_1.png::CompressedTexture2D::7351892776127383511::1741820729::1743608759::1::::<><>::
 black_background_2.png::CompressedTexture2D::2455750606075650857::1741820729::1743608759::1::::<><>::
 black_background_3.png::CompressedTexture2D::1433902242319049913::1741820729::1743608759::1::::<><>::
@@ -590,11 +590,11 @@ black_background_88.png::CompressedTexture2D::5390626514742677343::1741820729::1
 black_background_89.png::CompressedTexture2D::2861519186355371102::1741820729::1743608789::1::::<><>::
 black_background_90.png::CompressedTexture2D::1803803203521805758::1741820729::1743608789::1::::<><>::
 black_background_91.png::CompressedTexture2D::7565205045578484867::1741820729::1743608789::1::::<><>::
-::res://Art/Pixel Shape Tiles/Pixel background/64x64/2. Black and white/Sprite/::1741971793
+::res://Art/Pixel Shape Tiles/Pixel background/64x64/2. Black and white/Sprite/::1743608789
 black_backgrounds_a (64x64).png::CompressedTexture2D::7652613937700485526::1741820729::1743608789::1::::<><>::
 black_backgrounds_b (64x64).png::CompressedTexture2D::8659176495760027233::1741820729::1743608789::1::::<><>::
 ::res://Art/Pixel Shape Tiles/Pixel background/64x64/3. Color/::1741824581
-::res://Art/Pixel Shape Tiles/Pixel background/64x64/3. Color/Picture/::1741971793
+::res://Art/Pixel Shape Tiles/Pixel background/64x64/3. Color/Picture/::1743608789
 color_background_1.png::CompressedTexture2D::6858986556263174616::1741820729::1743608789::1::::<><>::
 color_background_2.png::CompressedTexture2D::2979268977218869103::1741820729::1743608789::1::::<><>::
 color_background_3.png::CompressedTexture2D::2727878179680164103::1741820730::1743608789::1::::<><>::
@@ -686,10 +686,10 @@ color_background_88.png::CompressedTexture2D::5428700718519644996::1741820730::1
 color_background_89.png::CompressedTexture2D::6989316519188091516::1741820730::1743608768::1::::<><>::
 color_background_90.png::CompressedTexture2D::2388443069530003338::1741820730::1743608768::1::::<><>::
 color_background_91.png::CompressedTexture2D::7105065081637506083::1741820730::1743608768::1::::<><>::
-::res://Art/Pixel Shape Tiles/Pixel background/64x64/3. Color/Sprite/::1741971771
+::res://Art/Pixel Shape Tiles/Pixel background/64x64/3. Color/Sprite/::1743608769
 Color_backgrounds_a (64x64).png::CompressedTexture2D::1758175420409008139::1741820730::1743608768::1::::<><>::
 Color_backgrounds_b (64x64).png::CompressedTexture2D::6471856995303731215::1741820730::1743608769::1::::<><>::
-::res://Art/Tileable Cloth/::1741971771
+::res://Art/Tileable Cloth/::1743608769
 Cloth_01-256x256.png::CompressedTexture2D::899598369593656535::1741820730::1743608769::1::::<><>::
 Cloth_02-256x256.png::CompressedTexture2D::7595466280887548649::1741820730::1743608769::1::::<><>::
 Cloth_03-256x256.png::CompressedTexture2D::205238466329346222::1741820730::1743608769::1::::<><>::
@@ -714,7 +714,7 @@ Cloth_21-256x256.png::CompressedTexture2D::1753558621488054650::1741820730::1743
 Cloth_22-256x256.png::CompressedTexture2D::1795429161407137644::1741820730::1743608760::1::::<><>::
 Cloth_23-256x256.png::CompressedTexture2D::365023102372117745::1741820730::1743608760::1::::<><>::
 Cloth_24-256x256.png::CompressedTexture2D::747218175776217920::1741820730::1743608760::1::::<><>::
-::res://Art/Watercolor Textures/::1741971796
+::res://Art/Watercolor Textures/::1743608791
 Art Texture 01.jpg::CompressedTexture2D::3284846659167515866::1741820730::1743608765::1::::<><>::
 Art Texture 02.jpg::CompressedTexture2D::822844259500478326::1741820730::1743608763::1::::<><>::
 Art Texture 03.jpg::CompressedTexture2D::9002338229664767282::1741820730::1743608764::1::::<><>::
@@ -774,14 +774,14 @@ Art Texture 056.JPG::CompressedTexture2D::4888087732583464953::1741820730::17436
 Art Texture 057.JPG::CompressedTexture2D::8778366753589286968::1741820730::1743608779::1::::<><>::
 Art Texture 058.JPG::CompressedTexture2D::4596094114036190643::1741820730::1743608778::1::::<><>::
 Art Texture 059.JPG::CompressedTexture2D::4080024615371369005::1741820730::1743608779::1::::<><>::
-::res://Icons/::1743608720
+::res://Icons/::1744044007
 character.png::CompressedTexture2D::885808449197240631::1741820730::1743608776::1::::<><>::
 computer.png::CompressedTexture2D::2152184269679832927::1742581618::1742581635::1::::<><>::
 control.png::CompressedTexture2D::3449119481954268827::1741820730::1743608776::1::::<><>::
 explosion.png::CompressedTexture2D::7494368380342978069::1741972193::1743608776::1::::<><>::
-giraffe_hover.png::CompressedTexture2D::4478796848877561450::1743608720::1743608776::1::::<><>::
+giraffe_hover.png::CompressedTexture2D::4478796848877561450::1744043985::1744044007::1::::<><>::
 icon.svg::CompressedTexture2D::3211765064014380473::1741820730::1743608776::1::::<><>::
-keys.png::CompressedTexture2D::8278446259394636691::1742524573::1742570619::1::::<><>::
+keys.png::CompressedTexture2D::8278446259394636691::1744041645::1744041649::1::::<><>::
 mouse.png::CompressedTexture2D::1720247023936884330::1742525085::1742570823::1::::<><>::
 mouse.svg::CompressedTexture2D::2270406731781421593::1743536035::1743536036::1::::<><>::
 mouse_effect.svg::CompressedTexture2D::1591386049467333403::1743541221::1743541315::1::::<><>::
@@ -793,31 +793,30 @@ sissors.png::CompressedTexture2D::8357523332589945704::1742524277::1742581168::1
 trashcan.png::CompressedTexture2D::813208208934546582::1742175109::1743608776::1::::<><>::
 ::res://Music/::1742501023
 mbg main theme demo.mp3::AudioStreamMP3::282885326515714954::1742500987::1742501023::1::::<><>::
-::res://Scenes/::1743608720
-collage_editor.tscn::PackedScene::8917194598916452634::1743608720::0::1::::<><>::uid://cp7i5uxpm2uao::::res://Scripts/button_sidebar.gd<>uid://mvdeu6ekqdrj::::res://Icons/character.png<>uid://b3vedihjqeir1::::res://Scripts/image.gd<>uid://de1lfgblxpnkf::::res://Icons/explosion.png<>uid://cn25gdhs56fp8::::res://Art/Fonts/advanced_pixel-7.ttf<>uid://m21ivj8qdwh0::::res://Art/Tileable Cloth/Cloth_01-256x256.png<>uid://c8fj8vc4tgq6g::::res://Art/Pixel Food/80_pancakes_dish.png<>uid://da7lfs1hawhsu::::res://Art/Tileable Cloth/Cloth_13-256x256.png<>uid://lt6oj8ahou2q::::res://Icons/trashcan.png
-email.tscn::PackedScene::4145813357900289170::1743607731::0::1::::<><>::uid://bpenb88366m05::::res://Art/Pixel Shape Tiles/Pixel background/64x64/3. Color/Picture/color_background_83.png<>uid://5wsfprv8bn24::::res://Icons/computer.png
-level_select_screen.tscn::PackedScene::8634105111826733513::1743608720::0::1::::<><>::uid://be2c6ipkeavsi::::res://Art/Pixel Shape Tiles/Pixel background/32x32/3. Color/Picture/color_background_83.png<>uid://fryghld3ya6c::::res://Scripts/level_select_screen.gd<>uid://cn25gdhs56fp8::::res://Art/Fonts/advanced_pixel-7.ttf<>uid://lfs6gw3deeb0::::res://Scripts/label_effect.gd
-main_select_screen.tscn::PackedScene::8634105111826733513::1743607731::0::1::::<><>::res://Scripts/level_select_screen.gd<>uid://be2c6ipkeavsi::::res://Art/Pixel Shape Tiles/Pixel background/32x32/3. Color/Picture/color_background_83.png<>uid://7l2jc3savb6p::::res://Icons/mouse.svg<>uid://ww45pp1wwyi2::::res://Icons/mouse_effect.svg<>uid://cn25gdhs56fp8::::res://Art/Fonts/advanced_pixel-7.ttf<>res://Scripts/mouse_label_effect.gd<>uid://dp7e2hi1d6b2r::::res://Icons/keys.png<>uid://bd7vmpg61hro1::::res://Sounds/click.wav<>uid://mebmp7ojhhgw::::res://Icons/paper.png<>res://Scripts/free_collage_label_effect.gd<>uid://bu401djfhomsq::::res://Sounds/store.wav<>uid://cpnuw5asxv7ca::::res://Icons/ruler.png<>uid://drcpgnurvx6yu::::res://Icons/sissors.png
-options_screen.tscn::PackedScene::2195101728088021086::1743607731::0::1::::<><>::uid://bpenb88366m05::::res://Art/Pixel Shape Tiles/Pixel background/64x64/3. Color/Picture/color_background_83.png<>res://Scripts/volume_slider.gd<>uid://cn25gdhs56fp8::::res://Art/Fonts/advanced_pixel-7.ttf<>res://Scripts/settings_label_effect.gd<>uid://c8h0nbyd7eiad::::res://Art/Pixel Shape Tiles/Pixel background/64x64/3. Color/Picture/color_background_91.png
-store.tscn::PackedScene::249161795532238069::1743004013::0::1::::<><>::res://Scripts/store.gd<>uid://bpenb88366m05::::res://Art/Pixel Shape Tiles/Pixel background/64x64/3. Color/Picture/color_background_83.png<>uid://cn25gdhs56fp8::::res://Art/Fonts/advanced_pixel-7.ttf
-title_screen.tscn::PackedScene::8917861372973713275::1743608720::0::1::::<><>::uid://12dykyi3vd3x::::res://Scripts/title_screen.gd<>uid://be2c6ipkeavsi::::res://Art/Pixel Shape Tiles/Pixel background/32x32/3. Color/Picture/color_background_83.png<>uid://cn25gdhs56fp8::::res://Art/Fonts/advanced_pixel-7.ttf<>uid://bktit25op6cjm::::res://Scripts/title_label_effect.gd
-::res://Scripts/::1743608720
+::res://Scenes/::1744044153
+collage_editor.tscn::PackedScene::8917194598916452634::1744044015::0::1::::<><>::res://Scripts/button_sidebar.gd<>uid://mvdeu6ekqdrj::::res://Icons/character.png<>res://Scripts/image.gd<>uid://de1lfgblxpnkf::::res://Icons/explosion.png<>uid://cn25gdhs56fp8::::res://Art/Fonts/advanced_pixel-7.ttf<>uid://m21ivj8qdwh0::::res://Art/Tileable Cloth/Cloth_01-256x256.png<>uid://c8fj8vc4tgq6g::::res://Art/Pixel Food/80_pancakes_dish.png<>uid://da7lfs1hawhsu::::res://Art/Tileable Cloth/Cloth_13-256x256.png<>uid://lt6oj8ahou2q::::res://Icons/trashcan.png
+email.tscn::PackedScene::4145813357900289170::1744044015::0::1::::<><>::uid://bpenb88366m05::::res://Art/Pixel Shape Tiles/Pixel background/64x64/3. Color/Picture/color_background_83.png<>uid://5wsfprv8bn24::::res://Icons/computer.png
+main_select_screen.tscn::PackedScene::8634105111826733513::1744044015::0::1::::<><>::res://Scripts/level_select_screen.gd<>uid://be2c6ipkeavsi::::res://Art/Pixel Shape Tiles/Pixel background/32x32/3. Color/Picture/color_background_83.png<>uid://7l2jc3savb6p::::res://Icons/mouse.svg<>uid://ww45pp1wwyi2::::res://Icons/mouse_effect.svg<>uid://cn25gdhs56fp8::::res://Art/Fonts/advanced_pixel-7.ttf<>res://Scripts/mouse_label_effect.gd<>uid://dp7e2hi1d6b2r::::res://Icons/keys.png<>uid://bd7vmpg61hro1::::res://Sounds/click.wav<>uid://mebmp7ojhhgw::::res://Icons/paper.png<>res://Scripts/free_collage_label_effect.gd<>uid://bu401djfhomsq::::res://Sounds/store.wav<>uid://cpnuw5asxv7ca::::res://Icons/ruler.png<>uid://drcpgnurvx6yu::::res://Icons/sissors.png
+options_screen.tscn::PackedScene::2195101728088021086::1744044015::0::1::::<><>::uid://bpenb88366m05::::res://Art/Pixel Shape Tiles/Pixel background/64x64/3. Color/Picture/color_background_83.png<>res://Scripts/volume_slider.gd<>uid://cn25gdhs56fp8::::res://Art/Fonts/advanced_pixel-7.ttf<>res://Scripts/settings_label_effect.gd<>uid://c8h0nbyd7eiad::::res://Art/Pixel Shape Tiles/Pixel background/64x64/3. Color/Picture/color_background_91.png
+store.tscn::PackedScene::249161795532238069::1744044015::0::1::::<><>::res://Scripts/store.gd<>uid://bpenb88366m05::::res://Art/Pixel Shape Tiles/Pixel background/64x64/3. Color/Picture/color_background_83.png<>uid://cn25gdhs56fp8::::res://Art/Fonts/advanced_pixel-7.ttf
+title_screen.tscn::PackedScene::8917861372973713275::1744044015::0::1::::<><>::res://Scripts/title_screen.gd<>uid://be2c6ipkeavsi::::res://Art/Pixel Shape Tiles/Pixel background/32x32/3. Color/Picture/color_background_83.png<>uid://cn25gdhs56fp8::::res://Art/Fonts/advanced_pixel-7.ttf<>res://Scripts/title_label_effect.gd
+::res://Scripts/::1744043985
 back_button_effect.gd::GDScript::-1::1742579341::0::1::::<>Button<>::
-button_sidebar.gd::GDScript::-1::1741986508::0::1::::<>Control<>res://Icons/control.png::
-email_client.gd::GDScript::-1::1743438855::0::1::::<>RefCounted<>::
+button_sidebar.gd::GDScript::-1::1744041645::0::1::::<>Control<>res://Icons/control.png::
+email_client.gd::GDScript::-1::1744041645::0::1::::<>RefCounted<>::
 free_collage_label_effect.gd::GDScript::-1::1742574270::0::1::::<>Label<>::
-image.gd::GDScript::-1::1743608720::0::1::::image<>Sprite2D<>res://Icons/image.png::
-item.gd::GDScript::-1::1743608720::0::1::::Item<>Node<>::
+image.gd::GDScript::-1::1744043985::0::1::::image<>Sprite2D<>res://Icons/image.png::
+item.gd::GDScript::-1::1744043985::0::1::::Item<>Node<>::
 label_effect.gd::GDScript::-1::1742174253::0::1::::<>Label<>::
-level_select_screen.gd::GDScript::-1::1743547664::0::1::::<>Control<>::
+level_select_screen.gd::GDScript::-1::1744041645::0::1::::<>Control<>::
 mouse_label_effect.gd::GDScript::-1::1742579184::0::1::::<>Label<>::
 music_player.gd::GDScript::-1::1742521144::0::1::::<>Node<>::
-player.gd::GDScript::-1::1743608720::0::1::::Player<>RefCounted<>res://Icons/character.png::
+player.gd::GDScript::-1::1744043985::0::1::::Player<>RefCounted<>res://Icons/character.png::
 settings_label_effect.gd::GDScript::-1::1742522984::0::1::::<>Label<>::
-store.gd::GDScript::-1::1742682368::0::1::::<>Control<>::
+store.gd::GDScript::-1::1744041645::0::1::::<>Control<>::
 title_label_effect.gd::GDScript::-1::1742522875::0::1::::<>Label<>::
-title_screen.gd::GDScript::-1::1742578989::0::1::::<>Control<>::
+title_screen.gd::GDScript::-1::1744041645::0::1::::<>Control<>::
 volume_slider.gd::GDScript::-1::1742522936::0::1::::<>Control<>::
-::res://Sounds/::1743545086
-click.wav::AudioStreamWAV::2664344587674682354::1743538123::1743544821::1::::<><>::
+::res://Sounds/::1744041645
+click.wav::AudioStreamWAV::2664344587674682354::1743538123::1743703175::1::::<><>::
 store.wav::AudioStreamWAV::3851629038492557540::1743544802::1743545086::1::::<><>::
