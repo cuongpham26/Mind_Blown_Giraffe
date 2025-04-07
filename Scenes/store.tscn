@@ -4,7 +4,11 @@
 [ext_resource type="Texture2D" uid="uid://bpenb88366m05" path="res://Art/Pixel Shape Tiles/Pixel background/64x64/3. Color/Picture/color_background_83.png" id="1_43d6v"]
 [ext_resource type="FontFile" uid="uid://cn25gdhs56fp8" path="res://Art/Fonts/advanced_pixel-7.ttf" id="3_rfncq"]
 
+<<<<<<< Updated upstream
 [node name="Control" type="Control"]
+=======
+[node name="Control3" type="Control"]
+>>>>>>> Stashed changes
 layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
