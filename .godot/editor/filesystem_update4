@@ -1,7 +1,9 @@
 res://Scenes/title_screen.tscn
 res://Scenes/email.tscn
+res://Scenes/options_screen.tscn
+res://yapping.tscn
 res://Scenes/main_select_screen.tscn
 res://Scenes/collage_editor.tscn
-res://Scenes/options_screen.tscn
+res://Scripts/level_select_screen.gd
+res://store.tscn
 res://Scenes/store.tscn
-res://yapping.tscn

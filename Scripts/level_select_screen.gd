@@ -2,6 +2,7 @@ extends Control
 
 @onready var mouse_clicked = $MouseButton/AudioStreamPlayer2D
 @onready var keys = $KeysButton/AudioStreamPlayer2D
+@onready var paper = $FreeCollageButton/AudioStreamPlayer
 
 func _on_back_button_pressed() -> void:
 	get_tree().change_scene_to_file("res://Scenes/title_screen.tscn")
@@ -9,11 +10,13 @@ func _on_back_button_pressed() -> void:
 
 func _on_mouse_button_pressed() -> void:
 	mouse_clicked.play()
-	await mouse_clicked
-	get_tree().change_scene_to_file("res://Scenes/collage_editor.tscn")
+	await mouse_clicked.finished
+	get_tree().change_scene_to_file("res://Scenes/email.tscn")
 
 
 func _on_free_collage_button_pressed() -> void:
+	paper.play()
+	await paper.finished
 	get_tree().change_scene_to_file("res://Scenes/collage_editor.tscn")
 
 

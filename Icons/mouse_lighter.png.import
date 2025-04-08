@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ww45pp1wwyi2"
-path="res://.godot/imported/mouse_effect.svg-d3665b9b17b9c03d68cb1ebcc32fbddd.ctex"
+uid="uid://b3p3m5pcx7fw5"
+path="res://.godot/imported/mouse_lighter.png-d8b11e31ec2dde7930026bc4fe45d98c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Icons/mouse_effect.svg"
-dest_files=["res://.godot/imported/mouse_effect.svg-d3665b9b17b9c03d68cb1ebcc32fbddd.ctex"]
+source_file="res://Icons/mouse_lighter.png"
+dest_files=["res://.godot/imported/mouse_lighter.png-d8b11e31ec2dde7930026bc4fe45d98c.ctex"]
 
 [params]
 
@@ -32,6 +32,3 @@ process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
 detect_3d/compress_to=1
-svg/scale=1.0
-editor/scale_with_editor_scale=false
-editor/convert_colors_with_editor_theme=false

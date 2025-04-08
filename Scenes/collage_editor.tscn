@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://d0bs5lobl2xpy"]
+[gd_scene load_steps=12 format=3 uid="uid://bl0rwrutydt33"]
 
 [ext_resource type="Script" path="res://Scripts/button_sidebar.gd" id="1_qwjiq"]
 [ext_resource type="Texture2D" uid="uid://mvdeu6ekqdrj" path="res://Icons/character.png" id="2_ba6nw"]
@@ -8,7 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://m21ivj8qdwh0" path="res://Art/Tileable Cloth/Cloth_01-256x256.png" id="5_q7gwf"]
 [ext_resource type="Texture2D" uid="uid://c8fj8vc4tgq6g" path="res://Art/Pixel Food/80_pancakes_dish.png" id="6_lv5nj"]
 [ext_resource type="Texture2D" uid="uid://da7lfs1hawhsu" path="res://Art/Tileable Cloth/Cloth_13-256x256.png" id="7_3jsic"]
-[ext_resource type="Texture2D" uid="uid://lt6oj8ahou2q" path="res://Icons/trashcan.png" id="8_8fnwg"]
+[ext_resource type="Texture2D" uid="uid://d23v7xg3420qb" path="res://Icons/trashcan.png" id="8_8fnwg"]
 
 [sub_resource type="Theme" id="Theme_1eej3"]
 
@@ -23,55 +23,55 @@ script = ExtResource("1_qwjiq")
 layout_mode = 0
 offset_left = 1.0
 offset_top = -8.0
-offset_right = 3020.0
-offset_bottom = 1939.0
+offset_right = 1282.0
+offset_bottom = 717.0
 
 [node name="Sidebar" type="Panel" parent="."]
 layout_mode = 0
-offset_left = 6.0
 offset_right = 225.0
-offset_bottom = 1972.0
+offset_bottom = 720.0
 
 [node name="Giraffe" type="Sprite2D" parent="Sidebar"]
-position = Vector2(110, 264)
-scale = Vector2(0.283203, 0.308594)
+position = Vector2(110, 166)
+scale = Vector2(0.176758, 0.203125)
 texture = ExtResource("2_ba6nw")
 script = ExtResource("3_j0w6o")
 
 [node name="MindBlown" type="Sprite2D" parent="Sidebar"]
-position = Vector2(116, 492)
-scale = Vector2(0.292969, 0.261719)
+position = Vector2(101, 264)
+scale = Vector2(0.137695, 0.148438)
 texture = ExtResource("4_s85d4")
 script = ExtResource("3_j0w6o")
 
 [node name="Cloth1" type="Sprite2D" parent="Sidebar"]
-position = Vector2(109, 730)
-scale = Vector2(0.5625, 0.576172)
+position = Vector2(99, 345)
+scale = Vector2(0.259766, 0.222168)
 texture = ExtResource("5_q7gwf")
 script = ExtResource("3_j0w6o")
 
 [node name="pancake" type="Sprite2D" parent="Sidebar"]
-position = Vector2(106, 963)
-scale = Vector2(5.5, 4.75)
+position = Vector2(99, 438)
+scale = Vector2(2.82812, 2.82813)
 texture = ExtResource("6_lv5nj")
 script = ExtResource("3_j0w6o")
 
 [node name="Cloth2" type="Sprite2D" parent="Sidebar"]
-position = Vector2(108, 1232)
-scale = Vector2(0.609375, 0.621094)
+position = Vector2(102, 540)
+scale = Vector2(0.279297, 0.272461)
 texture = ExtResource("7_3jsic")
 script = ExtResource("3_j0w6o")
 
 [node name="Trash Can" type="Sprite2D" parent="Sidebar"]
-position = Vector2(109, 1518)
-scale = Vector2(0.4, 0.4)
+position = Vector2(100, 642)
+scale = Vector2(0.188867, 0.209375)
 texture = ExtResource("8_8fnwg")
 script = ExtResource("3_j0w6o")
 
 [node name="Button" type="Button" parent="."]
 layout_mode = 0
+offset_top = -4.0
 offset_right = 225.0
-offset_bottom = 110.0
+offset_bottom = 106.0
 theme = SubResource("Theme_1eej3")
 theme_override_fonts/font = ExtResource("5_hyoc1")
 theme_override_font_sizes/font_size = 50
@@ -86,10 +86,10 @@ offset_bottom = 8.0
 
 [node name="BackButton" type="Button" parent="."]
 layout_mode = 0
-offset_left = 2694.0
-offset_top = -5.0
-offset_right = 3023.0
-offset_bottom = 131.0
+offset_left = 1057.0
+offset_top = -9.0
+offset_right = 1280.0
+offset_bottom = 50.0
 scale = Vector2(1, 1.28272)
 theme = SubResource("Theme_pujwx")
 theme_override_fonts/font = ExtResource("5_hyoc1")
