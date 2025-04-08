@@ -1,4 +1,3 @@
-@icon("../Icons/control.png")
 extends Control
 
 @onready var sidebar: Panel = $Sidebar

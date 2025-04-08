@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://b0ki23oxan4db"]
 
-[ext_resource type="Texture2D" uid="uid://bpenb88366m05" path="res://Art/Pixel Shape Tiles/Pixel background/64x64/3. Color/Picture/color_background_83.png" id="1_wulsi"]
+[ext_resource type="Texture2D" uid="uid://bpenb88366m05" path="res://Art/Pixel Shape Tiles/Pixel background/64x64/3. Color/Picture/color_background_83.png" id="1_me7aq"]
 
 [node name="Control3" type="Control"]
 layout_mode = 3
@@ -11,6 +11,6 @@ offset_bottom = 40.0
 [node name="Background" type="Sprite2D" parent="."]
 position = Vector2(1619.5, 1011)
 scale = Vector2(51.6094, 32.5938)
-texture = ExtResource("1_wulsi")
+texture = ExtResource("1_me7aq")
 
 [node name="Computer" type="Sprite2D" parent="."]

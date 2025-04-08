@@ -1,8 +1,8 @@
 [gd_scene load_steps=12 format=3 uid="uid://bl0rwrutydt33"]
 
-[ext_resource type="Script" path="res://Scripts/button_sidebar.gd" id="1_qwjiq"]
+[ext_resource type="Script" uid="uid://cp7i5uxpm2uao" path="res://Scripts/button_sidebar.gd" id="1_qwjiq"]
 [ext_resource type="Texture2D" uid="uid://mvdeu6ekqdrj" path="res://Icons/character.png" id="2_ba6nw"]
-[ext_resource type="Script" path="res://Scripts/image.gd" id="3_j0w6o"]
+[ext_resource type="Script" uid="uid://b3vedihjqeir1" path="res://Scripts/image.gd" id="3_j0w6o"]
 [ext_resource type="Texture2D" uid="uid://de1lfgblxpnkf" path="res://Icons/explosion.png" id="4_s85d4"]
 [ext_resource type="FontFile" uid="uid://cn25gdhs56fp8" path="res://Art/Fonts/advanced_pixel-7.ttf" id="5_hyoc1"]
 [ext_resource type="Texture2D" uid="uid://m21ivj8qdwh0" path="res://Art/Tileable Cloth/Cloth_01-256x256.png" id="5_q7gwf"]
