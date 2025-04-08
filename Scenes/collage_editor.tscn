@@ -23,17 +23,15 @@ script = ExtResource("1_qwjiq")
 layout_mode = 0
 offset_left = 1.0
 offset_top = -8.0
-offset_right = 1280.0
-offset_bottom = 720.0
+offset_right = 3020.0
+offset_bottom = 1939.0
 
 [node name="Sidebar" type="Panel" parent="."]
 layout_mode = 0
-offset_left = 1.0
-offset_top = -10.0
-offset_right = 224.0
-offset_bottom = 720.0
+offset_left = 6.0
+offset_right = 225.0
+offset_bottom = 1972.0
 
-<<<<<<< Updated upstream
 [node name="Giraffe" type="Sprite2D" parent="Sidebar"]
 position = Vector2(110, 264)
 scale = Vector2(0.283203, 0.308594)
@@ -68,74 +66,6 @@ script = ExtResource("3_j0w6o")
 position = Vector2(109, 1518)
 scale = Vector2(0.4, 0.4)
 texture = ExtResource("8_8fnwg")
-=======
-[node name="ItemButton" type="Button" parent="Sidebar"]
-layout_mode = 0
-offset_left = 12.0
-offset_top = 130.0
-offset_right = 85.0
-offset_bottom = 200.0
-theme_override_fonts/font = ExtResource("5_hyoc1")
-theme_override_font_sizes/font_size = 30
-text = "Items"
-
-[node name="TextureButton" type="Button" parent="Sidebar"]
-layout_mode = 0
-offset_left = 118.0
-offset_top = 131.0
-offset_right = 194.0
-offset_bottom = 199.0
-theme_override_fonts/font = ExtResource("5_hyoc1")
-theme_override_font_sizes/font_size = 30
-text = "Textures"
-
-[node name="ItemPanel" type="Panel" parent="Sidebar"]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
-script = ExtResource("2_x6s1a")
-
-[node name="Giraffe" type="Sprite2D" parent="Sidebar/ItemPanel"]
-position = Vector2(95, 261)
-scale = Vector2(0.14209, 0.148438)
-texture = ExtResource("2_ba6nw")
-script = ExtResource("3_j0w6o")
-
-[node name="MindBlown" type="Sprite2D" parent="Sidebar/ItemPanel"]
-position = Vector2(90, 350)
-scale = Vector2(0.132813, 0.141602)
-texture = ExtResource("4_s85d4")
-script = ExtResource("3_j0w6o")
-
-[node name="pancake" type="Sprite2D" parent="Sidebar/ItemPanel"]
-position = Vector2(92, 431)
-scale = Vector2(2.20312, 2.1875)
-texture = ExtResource("6_lv5nj")
-script = ExtResource("3_j0w6o")
-
-[node name="Trash Can" type="Sprite2D" parent="Sidebar/ItemPanel"]
-position = Vector2(109, 1518)
-scale = Vector2(0.4, 0.4)
-texture = ExtResource("8_8fnwg")
-script = ExtResource("3_j0w6o")
-
-[node name="TexturePanel" type="Panel" parent="Sidebar"]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
-script = ExtResource("8_yo4vw")
-
-[node name="Cloth2" type="Sprite2D" parent="Sidebar/TexturePanel"]
-position = Vector2(91, 517)
-scale = Vector2(0.263672, 0.241211)
-texture = ExtResource("7_3jsic")
-script = ExtResource("3_j0w6o")
-
-[node name="Cloth1" type="Sprite2D" parent="Sidebar/TexturePanel"]
-position = Vector2(91, 618)
-scale = Vector2(0.308594, 0.310059)
-texture = ExtResource("5_q7gwf")
->>>>>>> Stashed changes
 script = ExtResource("3_j0w6o")
 
 [node name="Button" type="Button" parent="."]
@@ -156,14 +86,14 @@ offset_bottom = 8.0
 
 [node name="BackButton" type="Button" parent="."]
 layout_mode = 0
-offset_left = 1102.0
-offset_top = -10.0
-offset_right = 1283.0
-offset_bottom = 29.0
+offset_left = 2694.0
+offset_top = -5.0
+offset_right = 3023.0
+offset_bottom = 131.0
 scale = Vector2(1, 1.28272)
 theme = SubResource("Theme_pujwx")
 theme_override_fonts/font = ExtResource("5_hyoc1")
-theme_override_font_sizes/font_size = 30
+theme_override_font_sizes/font_size = 50
 text = "Back To Title
 "
 
