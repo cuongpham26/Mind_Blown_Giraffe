@@ -2,12 +2,10 @@
 @icon("../Icons/character.png")
 class_name Player
 
-
 var name: String
 var age: int = -1  # Default to -1 if not given
 var stars: int = 0  # Star currency
 var inventory: Array[Item]
-var interest
 
 # Constructor
 func _init(p_name: String, p_age: int = -1):

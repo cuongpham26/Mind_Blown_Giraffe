@@ -1,17 +1,1 @@
-res://Scenes/email.tscn
-res://Scripts/player.gd
-res://Scenes/yapping.tscn
 res://Scenes/title_screen.tscn
-res://Scenes/store.tscn
-res://Scenes/mbg.gd
-res://Scripts/button_sidebar.gd
-res://Scripts/email_client.gd
-res://Scripts/free_collage_label_effect.gd
-res://Scripts/image.gd
-res://Scripts/label_effect.gd
-res://Scripts/level_select_screen.gd
-res://Scripts/mouse_label_effect.gd
-res://Scripts/music_player.gd
-res://README.md
-res://Scenes/collage_editor.tscn
-res://Scripts/mbg.gd

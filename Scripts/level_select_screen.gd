@@ -1,13 +1,10 @@
 extends Control
 
-@onready var mouse_clicked = $MouseButton/AudioStreamPlayer
-@onready var keys = $KeysButton/AudioStreamPlayer
+@onready var mouse_clicked = $MouseButton/AudioStreamPlayer2D
+@onready var keys = $KeysButton/AudioStreamPlayer2D
 @onready var paper = $FreeCollageButton/AudioStreamPlayer
-@onready var button = $BackButton/AudioStreamPlayer
 
 func _on_back_button_pressed() -> void:
-	button.play()
-	await button.finished
 	get_tree().change_scene_to_file("res://Scenes/title_screen.tscn")
 
 
