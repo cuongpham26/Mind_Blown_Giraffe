@@ -15,3 +15,6 @@ res://Scripts/music_player.gd
 res://README.md
 res://Scenes/collage_editor.tscn
 res://Scripts/mbg.gd
+res://Scripts/item.gd
+res://Scripts/mission.gd
+res://Scripts/asset.gd
