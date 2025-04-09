@@ -238,31 +238,31 @@ texture_normal = ExtResource("13_rixfc")
 
 [node name="SenderLabel" type="Label" parent="."]
 layout_mode = 0
-offset_left = 492.0
-offset_top = 221.0
-offset_right = 542.0
-offset_bottom = 267.0
+offset_left = 441.0
+offset_top = 223.0
+offset_right = 491.0
+offset_bottom = 269.0
 theme_override_colors/font_color = Color(0.00351917, 0.00351917, 0.00351917, 1)
 theme_override_fonts/font = ExtResource("4_tt3ch")
-theme_override_font_sizes/font_size = 40
+theme_override_font_sizes/font_size = 35
 text = "Mom"
 
 [node name="SubjectLabel" type="Label" parent="."]
 layout_mode = 0
-offset_left = 620.0
-offset_top = 221.0
-offset_right = 746.0
-offset_bottom = 267.0
+offset_left = 616.0
+offset_top = 222.0
+offset_right = 742.0
+offset_bottom = 268.0
 theme_override_colors/font_color = Color(0.00566115, 0.00566115, 0.00566115, 1)
 theme_override_fonts/font = ExtResource("4_tt3ch")
-theme_override_font_sizes/font_size = 40
+theme_override_font_sizes/font_size = 35
 text = "Collage!!! -"
 
 [node name="MessageLabel" type="Label" parent="."]
 layout_mode = 0
-offset_left = 751.0
+offset_left = 728.0
 offset_top = 234.0
-offset_right = 919.0
+offset_right = 906.0
 offset_bottom = 257.0
 theme_override_colors/font_color = Color(0.0159718, 0.0159718, 0.0159718, 1)
 theme_override_fonts/font = ExtResource("4_tt3ch")

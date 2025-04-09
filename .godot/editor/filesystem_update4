@@ -1,5 +1,5 @@
-res://Scenes/yapping.tscn
-res://yapping.tscn
-res://Scenes/title_screen.tscn
-res://Scripts/yapping.gd
 res://Scenes/email.tscn
+res://Scripts/player.gd
+res://Scenes/yapping.tscn
+res://Scenes/title_screen.tscn
+res://Scenes/store.tscn
