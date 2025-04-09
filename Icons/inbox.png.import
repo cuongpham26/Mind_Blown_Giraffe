@@ -3,11 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://oc8ybg10qds0"
-valid=false
+path="res://.godot/imported/inbox.png-f94d289743b8a1b45822e382137a9ca1.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://Icons/inbox.png"
+dest_files=["res://.godot/imported/inbox.png-f94d289743b8a1b45822e382137a9ca1.ctex"]
 
 [params]
 

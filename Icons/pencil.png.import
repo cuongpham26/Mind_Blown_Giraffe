@@ -3,11 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://mrv3gotrkkkg"
-valid=false
+path="res://.godot/imported/pencil.png-4e8d23d39e39df18dfb02131a38995ad.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://Icons/pencil.png"
+dest_files=["res://.godot/imported/pencil.png-4e8d23d39e39df18dfb02131a38995ad.ctex"]
 
 [params]
 

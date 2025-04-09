@@ -3,11 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cnhdvlo0vmbnj"
-valid=false
+path="res://.godot/imported/spam.png-02a16391d265cbe69fa33e0045648f31.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
 source_file="res://Icons/spam.png"
+dest_files=["res://.godot/imported/spam.png-02a16391d265cbe69fa33e0045648f31.ctex"]
 
 [params]
 
