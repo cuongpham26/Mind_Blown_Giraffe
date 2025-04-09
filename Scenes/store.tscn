@@ -1,14 +1,45 @@
-[gd_scene load_steps=2 format=3 uid="uid://60vspecm5ji"]
+[gd_scene load_steps=5 format=3 uid="uid://60vspecm5ji"]
 
 [ext_resource type="Texture2D" uid="uid://bpenb88366m05" path="res://Art/Pixel Shape Tiles/Pixel background/64x64/3. Color/Picture/color_background_83.png" id="1_myanm"]
+[ext_resource type="FontFile" uid="uid://cn25gdhs56fp8" path="res://Art/Fonts/advanced_pixel-7.ttf" id="2_21cys"]
+[ext_resource type="AudioStream" uid="uid://b8b3smjykojer" path="res://Sounds/button.wav" id="3_j105s"]
+
+[sub_resource type="GDScript" id="GDScript_kyo8m"]
+script/source = "extends Control
+
+@onready var button = $AudioStreamPlayer
+
+
+
+
+func _on_back_button_pressed() -> void:
+	button.play()
+	await button.finished
+	get_tree().change_scene_to_file(\"res://Scenes/main_select_screen.tscn\")
+"
 
 [node name="Control" type="Control"]
 layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
+script = SubResource("GDScript_kyo8m")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(629, 342.5)
 scale = Vector2(20.6562, 11.7031)
 texture = ExtResource("1_myanm")
+
+[node name="BackButton" type="Button" parent="."]
+layout_mode = 0
+offset_right = 103.0
+offset_bottom = 59.0
+theme_override_fonts/font = ExtResource("2_21cys")
+theme_override_font_sizes/font_size = 50
+text = "Back
+"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_j105s")
+
+[connection signal="pressed" from="BackButton" to="." method="_on_back_button_pressed"]

@@ -3,6 +3,7 @@ extends Control
 
 @onready var sidebar: Panel = $Sidebar
 @onready var button: Button = $Button
+@onready var button_sound = $BackButton/AudioStreamPlayer
 
 var sidebar_visible = false
 
@@ -19,4 +20,6 @@ func _toggle_sidebar():
 
 
 func _on_back_button_pressed() -> void:
+	button_sound.play()
+	await button_sound.finished
 	get_tree().change_scene_to_file("res://Scenes/title_screen.tscn")

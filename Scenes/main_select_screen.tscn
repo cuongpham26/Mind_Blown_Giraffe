@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=3 uid="uid://dvaopj5kysy54"]
+[gd_scene load_steps=21 format=3 uid="uid://dvaopj5kysy54"]
 
 [ext_resource type="Script" path="res://Scripts/level_select_screen.gd" id="1_h2iwv"]
 [ext_resource type="Texture2D" uid="uid://be2c6ipkeavsi" path="res://Art/Pixel Shape Tiles/Pixel background/32x32/3. Color/Picture/color_background_83.png" id="2_7xe5g"]
@@ -10,6 +10,7 @@
 [ext_resource type="AudioStream" uid="uid://bd7vmpg61hro1" path="res://Sounds/click.wav" id="5_21imw"]
 [ext_resource type="Texture2D" uid="uid://mebmp7ojhhgw" path="res://Icons/paper.png" id="7_a1nre"]
 [ext_resource type="Script" path="res://Scripts/free_collage_label_effect.gd" id="8_auecd"]
+[ext_resource type="AudioStream" uid="uid://b8b3smjykojer" path="res://Sounds/button.wav" id="8_x7sud"]
 [ext_resource type="AudioStream" uid="uid://bu401djfhomsq" path="res://Sounds/store.wav" id="9_ep0an"]
 [ext_resource type="Texture2D" uid="uid://cpnuw5asxv7ca" path="res://Icons/ruler.png" id="9_rwg8q"]
 [ext_resource type="Texture2D" uid="uid://cr18y08gy426e" path="res://Icons/keys_light.png" id="9_yrsbw"]
@@ -91,6 +92,9 @@ theme = SubResource("Theme_75chc")
 theme_override_fonts/font = ExtResource("4_wj382")
 theme_override_font_sizes/font_size = 50
 text = "Back To Title"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="BackButton"]
+stream = ExtResource("8_x7sud")
 
 [node name="KeysButton" type="TextureButton" parent="."]
 layout_mode = 0

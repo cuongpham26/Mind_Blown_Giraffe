@@ -1,0 +1,53 @@
+[gd_scene load_steps=5 format=3 uid="uid://oj26uqscuakr"]
+
+[ext_resource type="FontFile" uid="uid://cn25gdhs56fp8" path="res://Art/Fonts/advanced_pixel-7.ttf" id="1_gpdtc"]
+[ext_resource type="Script" path="res://Scenes/yapping.gd" id="1_miltv"]
+[ext_resource type="AudioStream" uid="uid://bd7vmpg61hro1" path="res://Sounds/click.wav" id="3_tur1u"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8v70n"]
+bg_color = Color(0.95158, 0.95158, 0.95158, 1)
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_miltv")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 0
+offset_left = 1.0
+offset_right = 1278.0
+offset_bottom = 720.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_8v70n")
+
+[node name="Message" type="Label" parent="."]
+layout_mode = 0
+offset_left = 11.0
+offset_top = -1.0
+offset_right = 1274.0
+offset_bottom = 524.0
+theme_override_colors/font_color = Color(0.0430392, 0.0430392, 0.0430392, 1)
+theme_override_fonts/font = ExtResource("1_gpdtc")
+theme_override_font_sizes/font_size = 69
+text = "Hi honey! 
+I saw you opened a shop! I have to be your first customer. 
+
+I want a happy collage. Be safe! 
+
+Love, Mom"
+
+[node name="GoToCanvas" type="Button" parent="."]
+layout_mode = 0
+offset_left = 1086.0
+offset_top = 665.0
+offset_right = 1279.0
+offset_bottom = 724.0
+theme_override_fonts/font = ExtResource("1_gpdtc")
+theme_override_font_sizes/font_size = 50
+text = "Get to Work"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_tur1u")
+
+[connection signal="pressed" from="GoToCanvas" to="." method="_on_go_to_canvas_pressed"]

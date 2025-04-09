@@ -1,7 +1,7 @@
 extends Control
 
 @onready var volume_slider = $VolumeSlider
-
+@onready var button = $AudioStreamPlayer
 
 func _ready() -> void:
 	volume_slider = 1.0
@@ -15,4 +15,6 @@ func _on_volume_slider_value_changed(value: float) -> void:
 
 
 func _on_back_button_pressed() -> void:
+	button.play()
+	await button.finished
 	get_tree().change_scene_to_file("res://Scenes/title_screen.tscn")

@@ -1,19 +1,23 @@
-[gd_scene load_steps=7 format=3 uid="uid://6jlafq26gg7g"]
+[gd_scene load_steps=8 format=3 uid="uid://6jlafq26gg7g"]
 
 [ext_resource type="Texture2D" uid="uid://bpenb88366m05" path="res://Art/Pixel Shape Tiles/Pixel background/64x64/3. Color/Picture/color_background_83.png" id="1_a4uy1"]
 [ext_resource type="Script" path="res://Scripts/volume_slider.gd" id="1_u7c5x"]
 [ext_resource type="FontFile" uid="uid://cn25gdhs56fp8" path="res://Art/Fonts/advanced_pixel-7.ttf" id="2_mqgxe"]
 [ext_resource type="Script" path="res://Scripts/settings_label_effect.gd" id="4_5wvdm"]
 [ext_resource type="Texture2D" uid="uid://c8h0nbyd7eiad" path="res://Art/Pixel Shape Tiles/Pixel background/64x64/3. Color/Picture/color_background_91.png" id="4_krm4l"]
+[ext_resource type="AudioStream" uid="uid://b8b3smjykojer" path="res://Sounds/button.wav" id="6_wiq0b"]
 
 [sub_resource type="Theme" id="Theme_6ekmk"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
+anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 offset_right = 2.0
 offset_bottom = 4.0
+grow_horizontal = 2
+grow_vertical = 2
 script = ExtResource("1_u7c5x")
 
 [node name="Background" type="Sprite2D" parent="."]
@@ -67,6 +71,9 @@ theme_override_fonts/font = ExtResource("2_mqgxe")
 theme_override_font_sizes/font_size = 50
 text = "Back to Title
 "
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_wiq0b")
 
 [connection signal="value_changed" from="VolumeSlider" to="." method="_on_volume_slider_value_changed"]
 [connection signal="pressed" from="BackButton" to="." method="_on_back_button_pressed"]
