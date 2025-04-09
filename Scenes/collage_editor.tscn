@@ -1,7 +1,8 @@
-[gd_scene load_steps=13 format=3 uid="uid://bl0rwrutydt33"]
+[gd_scene load_steps=17 format=3 uid="uid://d0bs5lobl2xpy"]
 
 [ext_resource type="Script" path="res://Scripts/button_sidebar.gd" id="1_qwjiq"]
 [ext_resource type="Texture2D" uid="uid://mvdeu6ekqdrj" path="res://Icons/character.png" id="2_ba6nw"]
+[ext_resource type="Script" path="res://Scenes/item_panel.gd" id="2_x6s1a"]
 [ext_resource type="Script" path="res://Scripts/image.gd" id="3_j0w6o"]
 [ext_resource type="Texture2D" uid="uid://de1lfgblxpnkf" path="res://Icons/explosion.png" id="4_s85d4"]
 [ext_resource type="FontFile" uid="uid://cn25gdhs56fp8" path="res://Art/Fonts/advanced_pixel-7.ttf" id="5_hyoc1"]
@@ -9,70 +10,144 @@
 [ext_resource type="Texture2D" uid="uid://c8fj8vc4tgq6g" path="res://Art/Pixel Food/80_pancakes_dish.png" id="6_lv5nj"]
 [ext_resource type="Texture2D" uid="uid://da7lfs1hawhsu" path="res://Art/Tileable Cloth/Cloth_13-256x256.png" id="7_3jsic"]
 [ext_resource type="Texture2D" uid="uid://d23v7xg3420qb" path="res://Icons/trashcan.png" id="8_8fnwg"]
-[ext_resource type="AudioStream" uid="uid://bhwivj3sq68lj" path="res://Sounds/button.wav" id="10_kyxl5"]
+[ext_resource type="Script" path="res://Scenes/texture_panel.gd" id="8_yo4vw"]
+[ext_resource type="Script" path="res://Scenes/texture_items.gd" id="10_ncr0i"]
+[ext_resource type="Script" path="res://Scenes/popup_menu.gd" id="12_5ruke"]
+[ext_resource type="Texture2D" uid="uid://bm2g7d51baoj7" path="res://Art/Watercolor Textures/Art Texture 01.jpg" id="12_rlmj3"]
 
 [sub_resource type="Theme" id="Theme_1eej3"]
 
 [sub_resource type="Theme" id="Theme_pujwx"]
 
-[node name="Control2" type="Control"]
+[node name="Control" type="Control"]
 layout_mode = 3
 anchors_preset = 0
+scale = Vector2(0.422952, 0.37107)
 script = ExtResource("1_qwjiq")
 
 [node name="Canvas" type="ColorRect" parent="."]
 layout_mode = 0
 offset_left = 1.0
 offset_top = -8.0
-offset_right = 1282.0
-offset_bottom = 717.0
+offset_right = 3020.0
+offset_bottom = 1939.0
+
+[node name="Background" type="ColorRect" parent="Canvas"]
+layout_mode = 0
 
 [node name="Sidebar" type="Panel" parent="."]
 layout_mode = 0
-offset_right = 225.0
-offset_bottom = 720.0
+offset_left = 2.0
+offset_top = -4.0
+offset_right = 221.0
+offset_bottom = 1968.0
 
-[node name="Giraffe" type="Sprite2D" parent="Sidebar"]
-position = Vector2(110, 166)
-scale = Vector2(0.176758, 0.203125)
+[node name="ItemPanel" type="Panel" parent="Sidebar"]
+layout_mode = 0
+offset_left = -61.0
+offset_top = -47.0
+offset_right = -21.0
+offset_bottom = -7.0
+script = ExtResource("2_x6s1a")
+
+[node name="TextureButton" type="Button" parent="Sidebar/ItemPanel"]
+layout_mode = 0
+offset_left = 71.0
+offset_top = 173.0
+offset_right = 266.0
+offset_bottom = 260.0
+text = "Textures"
+
+[node name="Giraffe" type="Sprite2D" parent="Sidebar/ItemPanel"]
+position = Vector2(168, 369)
+scale = Vector2(0.283203, 0.308594)
 texture = ExtResource("2_ba6nw")
 script = ExtResource("3_j0w6o")
 
-[node name="MindBlown" type="Sprite2D" parent="Sidebar"]
-position = Vector2(101, 264)
-scale = Vector2(0.137695, 0.148438)
+[node name="MindBlown" type="Sprite2D" parent="Sidebar/ItemPanel"]
+position = Vector2(167, 602)
+scale = Vector2(0.292969, 0.261719)
 texture = ExtResource("4_s85d4")
 script = ExtResource("3_j0w6o")
 
-[node name="Cloth1" type="Sprite2D" parent="Sidebar"]
-position = Vector2(99, 345)
-scale = Vector2(0.259766, 0.222168)
-texture = ExtResource("5_q7gwf")
-script = ExtResource("3_j0w6o")
-
-[node name="pancake" type="Sprite2D" parent="Sidebar"]
-position = Vector2(99, 438)
-scale = Vector2(2.82812, 2.82813)
+[node name="pancake" type="Sprite2D" parent="Sidebar/ItemPanel"]
+position = Vector2(179, 817)
+scale = Vector2(5.5, 4.75)
 texture = ExtResource("6_lv5nj")
 script = ExtResource("3_j0w6o")
 
-[node name="Cloth2" type="Sprite2D" parent="Sidebar"]
-position = Vector2(102, 540)
-scale = Vector2(0.279297, 0.272461)
-texture = ExtResource("7_3jsic")
-script = ExtResource("3_j0w6o")
-
-[node name="Trash Can" type="Sprite2D" parent="Sidebar"]
-position = Vector2(100, 642)
-scale = Vector2(0.188867, 0.209375)
+[node name="Trash Can" type="Sprite2D" parent="Sidebar/ItemPanel"]
+position = Vector2(168, 1489)
+scale = Vector2(0.4, 0.4)
 texture = ExtResource("8_8fnwg")
-script = ExtResource("3_j0w6o")
+
+[node name="TexturePanel" type="Panel" parent="Sidebar"]
+layout_mode = 0
+offset_left = -62.0
+offset_top = -46.0
+offset_right = -22.0
+offset_bottom = -6.0
+script = ExtResource("8_yo4vw")
+
+[node name="Cloth1" type="Sprite2D" parent="Sidebar/TexturePanel"]
+position = Vector2(164, 475)
+scale = Vector2(0.5625, 0.576172)
+texture = ExtResource("5_q7gwf")
+script = ExtResource("10_ncr0i")
+
+[node name="Cloth2" type="Sprite2D" parent="Sidebar/TexturePanel"]
+position = Vector2(169, 703)
+scale = Vector2(0.609375, 0.621094)
+texture = ExtResource("7_3jsic")
+script = ExtResource("10_ncr0i")
+
+[node name="ItemButton" type="Button" parent="Sidebar/TexturePanel"]
+layout_mode = 0
+offset_left = 73.0
+offset_top = 172.0
+offset_right = 267.0
+offset_bottom = 258.0
+text = "Items"
+
+[node name="image" type="Sprite2D" parent="Sidebar/TexturePanel"]
+position = Vector2(179.336, 929.215)
+scale = Vector2(0.029097, 0.0410997)
+texture = ExtResource("12_rlmj3")
+script = ExtResource("10_ncr0i")
+
+[node name="SettingsButton" type="Button" parent="Sidebar"]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 1713.0
+offset_right = 206.0
+offset_bottom = 1798.0
+text = "Controls"
+
+[node name="PopupMenu" type="PopupMenu" parent="Sidebar/SettingsButton"]
+position = Vector2i(500, 250)
+size = Vector2i(250, 250)
+unresizable = false
+content_scale_factor = 1.42
+item_count = 6
+item_0/text = "Decrease Size - ↓"
+item_1/text = "Increase Size - ↑"
+item_1/id = 1
+item_2/text = "Rotate Right - →"
+item_2/id = 2
+item_3/text = "Rotate Left - ←"
+item_3/id = 3
+item_4/text = "Flip - Tab"
+item_4/id = 4
+item_5/text = "Delete - Backspace"
+item_5/id = 5
+script = ExtResource("12_5ruke")
 
 [node name="Button" type="Button" parent="."]
 layout_mode = 0
-offset_top = -4.0
-offset_right = 225.0
-offset_bottom = 106.0
+offset_left = -3.0
+offset_top = -1.0
+offset_right = 222.0
+offset_bottom = 109.0
 theme = SubResource("Theme_1eej3")
 theme_override_fonts/font = ExtResource("5_hyoc1")
 theme_override_font_sizes/font_size = 50
@@ -80,17 +155,12 @@ text = "Press To
 Open Menu
 "
 
-[node name="Button2" type="Button" parent="."]
-layout_mode = 0
-offset_right = 8.0
-offset_bottom = 8.0
-
 [node name="BackButton" type="Button" parent="."]
 layout_mode = 0
-offset_left = 1057.0
-offset_top = -9.0
-offset_right = 1280.0
-offset_bottom = 50.0
+offset_left = 2694.0
+offset_top = -5.0
+offset_right = 3023.0
+offset_bottom = 131.0
 scale = Vector2(1, 1.28272)
 theme = SubResource("Theme_pujwx")
 theme_override_fonts/font = ExtResource("5_hyoc1")
@@ -98,7 +168,9 @@ theme_override_font_sizes/font_size = 50
 text = "Back To Title
 "
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="BackButton"]
-stream = ExtResource("10_kyxl5")
-
+[connection signal="pressed" from="Sidebar/ItemPanel/TextureButton" to="Sidebar/ItemPanel" method="_on_texture_button_pressed"]
+[connection signal="pressed" from="Sidebar/ItemPanel/TextureButton" to="Sidebar/TexturePanel" method="_on_texture_button_pressed"]
+[connection signal="pressed" from="Sidebar/TexturePanel/ItemButton" to="Sidebar/ItemPanel" method="_on_item_button_pressed"]
+[connection signal="pressed" from="Sidebar/TexturePanel/ItemButton" to="Sidebar/TexturePanel" method="_on_item_button_pressed"]
+[connection signal="pressed" from="Sidebar/SettingsButton" to="Sidebar/SettingsButton/PopupMenu" method="_on_settings_button_pressed"]
 [connection signal="pressed" from="BackButton" to="." method="_on_back_button_pressed"]
