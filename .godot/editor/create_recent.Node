@@ -1,6 +1,7 @@
+AnimationPlayer
+Sprite2D
 Label
 AudioStreamPlayer
-Sprite2D
 Control
 Timer
 AudioStreamPlayer2D
@@ -12,4 +13,3 @@ RichTextLabel
 VScrollBar
 ItemList
 TextureRect
-VBoxContainer
