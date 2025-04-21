@@ -1,3 +1,11 @@
 res://Scenes/title_screen.tscn
 res://Scenes/collage_editor.tscn
-res://Scripts/image.gd
+res://Scenes/store.tscn
+res://Scripts/level_select_screen.gd
+res://Scripts/music_player.gd
+res://Scripts/title_screen.gd
+res://Scenes/email.tscn
+res://Scenes/options_screen.tscn
+res://Scenes/main_select_screen.tscn
+res://Scenes/yapping.tscn
+res://Scripts/yapping.gd

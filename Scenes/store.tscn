@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://60vspecm5ji"]
+[gd_scene load_steps=7 format=3 uid="uid://60vspecm5ji"]
 
 [ext_resource type="Texture2D" uid="uid://bpenb88366m05" path="res://Art/Pixel Shape Tiles/Pixel background/64x64/3. Color/Picture/color_background_83.png" id="1_myanm"]
 [ext_resource type="FontFile" uid="uid://cn25gdhs56fp8" path="res://Art/Fonts/advanced_pixel-7.ttf" id="2_21cys"]
@@ -17,6 +17,26 @@ func _on_back_button_pressed() -> void:
 	await button.finished
 	get_tree().change_scene_to_file(\"res://Scenes/main_select_screen.tscn\")
 "
+
+[sub_resource type="Animation" id="Animation_td4cw"]
+resource_name = "talking"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Robby:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(),
+"transitions": PackedFloat32Array(),
+"update": 1,
+"values": []
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_41bwt"]
+_data = {
+"talking": SubResource("Animation_td4cw")
+}
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -52,5 +72,12 @@ theme_override_colors/font_color = Color(0.00453645, 0.00453645, 0.00453645, 1)
 theme_override_fonts/font = ExtResource("2_21cys")
 theme_override_font_sizes/font_size = 200
 text = "Come Back Later!!"
+
+[node name="AnimationTree" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_41bwt")
+}
+
+[node name="Robby" type="Sprite2D" parent="."]
 
 [connection signal="pressed" from="BackButton" to="." method="_on_back_button_pressed"]
