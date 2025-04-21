@@ -1,8 +1,4 @@
-<<<<<<< Updated upstream
 [gd_scene load_steps=12 format=3 uid="uid://bl0rwrutydt33"]
-=======
-[gd_scene load_steps=22 format=3 uid="uid://d0bs5lobl2xpy"]
->>>>>>> Stashed changes
 
 [ext_resource type="Script" uid="uid://cp7i5uxpm2uao" path="res://Scripts/button_sidebar.gd" id="1_qwjiq"]
 [ext_resource type="Texture2D" uid="uid://mvdeu6ekqdrj" path="res://Icons/character.png" id="2_ba6nw"]
@@ -11,22 +7,8 @@
 [ext_resource type="FontFile" uid="uid://cn25gdhs56fp8" path="res://Art/Fonts/advanced_pixel-7.ttf" id="5_hyoc1"]
 [ext_resource type="Texture2D" uid="uid://m21ivj8qdwh0" path="res://Art/Tileable Cloth/Cloth_01-256x256.png" id="5_q7gwf"]
 [ext_resource type="Texture2D" uid="uid://c8fj8vc4tgq6g" path="res://Art/Pixel Food/80_pancakes_dish.png" id="6_lv5nj"]
-<<<<<<< Updated upstream
 [ext_resource type="Texture2D" uid="uid://da7lfs1hawhsu" path="res://Art/Tileable Cloth/Cloth_13-256x256.png" id="7_3jsic"]
 [ext_resource type="Texture2D" uid="uid://d23v7xg3420qb" path="res://Icons/trashcan.png" id="8_8fnwg"]
-=======
-[ext_resource type="Texture2D" uid="uid://b8a6qtgl0jx6r" path="res://Art/Pixel Food/87_ramen.png" id="8_vrlv7"]
-[ext_resource type="Script" path="res://Scripts/texture_panel.gd" id="8_yo4vw"]
-[ext_resource type="Texture2D" uid="uid://b5g2j6h84aklu" path="res://Art/Pixel Food/85_roastedchicken.png" id="9_hkny0"]
-[ext_resource type="Script" path="res://Scripts/texture_items.gd" id="10_ncr0i"]
-[ext_resource type="Script" path="res://Scripts/popup_menu.gd" id="12_5ruke"]
-[ext_resource type="Texture2D" uid="uid://bm2g7d51baoj7" path="res://Art/Watercolor Textures/Art Texture 01.jpg" id="12_rlmj3"]
-[ext_resource type="Texture2D" uid="uid://cehgob8526qmg" path="res://Art/Watercolor Textures/Art Texture 012.jpg" id="13_773s4"]
-[ext_resource type="Texture2D" uid="uid://j6kmdq2ok1oh" path="res://Art/Watercolor Textures/Art Texture 047.JPG" id="14_fp6ea"]
-[ext_resource type="Texture2D" uid="uid://ubtdf3ago1x3" path="res://Art/Watercolor Textures/Art Texture 07.jpg" id="15_7jstp"]
-[ext_resource type="Texture2D" uid="uid://bxmob6pp4mobv" path="res://Art/Watercolor Textures/Art Texture 011.jpg" id="16_p0ii1"]
-[ext_resource type="AudioStream" uid="uid://bd7vmpg61hro1" path="res://Sounds/click.wav" id="19_tpl26"]
->>>>>>> Stashed changes
 
 [sub_resource type="Theme" id="Theme_1eej3"]
 
@@ -115,15 +97,4 @@ theme_override_font_sizes/font_size = 50
 text = "Back To Title
 "
 
-<<<<<<< Updated upstream
-=======
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("19_tpl26")
-
-[connection signal="pressed" from="Sidebar/ItemPanel/TextureButton" to="Sidebar/ItemPanel" method="_on_texture_button_pressed"]
-[connection signal="pressed" from="Sidebar/ItemPanel/TextureButton" to="Sidebar/TexturePanel" method="_on_texture_button_pressed"]
-[connection signal="pressed" from="Sidebar/TexturePanel/ItemButton" to="Sidebar/ItemPanel" method="_on_item_button_pressed"]
-[connection signal="pressed" from="Sidebar/TexturePanel/ItemButton" to="Sidebar/TexturePanel" method="_on_item_button_pressed"]
-[connection signal="pressed" from="Sidebar/SettingsButton" to="Sidebar/SettingsButton/PopupMenu" method="_on_settings_button_pressed"]
->>>>>>> Stashed changes
 [connection signal="pressed" from="BackButton" to="." method="_on_back_button_pressed"]
