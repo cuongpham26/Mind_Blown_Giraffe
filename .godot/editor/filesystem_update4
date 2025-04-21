@@ -1,10 +1,28 @@
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 res://Scenes/title_screen.tscn
 =======
+=======
+>>>>>>> Stashed changes
 res://Scenes/yapping.tscn
 res://Scripts/email_client.gd
 res://Scenes/collage_editor.tscn
 res://Scripts/button_sidebar.gd
 res://Scenes/main_select_screen.tscn
 res://Scenes/store.tscn
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+res://Scripts/asset.gd
+res://Scripts/free_collage_label_effect.gd
+res://Scripts/image.gd
+res://Scripts/label_effect.gd
+res://Scripts/level_select_screen.gd
+res://Scripts/mission.gd
+res://Scripts/music_player.gd
+res://Scripts/player.gd
+res://Scripts/settings_label_effect.gd
+res://Scripts/store.gd
+res://Scripts/title_screen.gd
+res://Scripts/volume_slider.gd
 >>>>>>> Stashed changes
