@@ -12,7 +12,7 @@ config_version=5
 
 config/name="mbg_game"
 run/main_scene="res://Scenes/title_screen.tscn"
-config/features=PackedStringArray("4.3", "Mobile")
+config/features=PackedStringArray("4.4", "Mobile")
 config/icon="res://Icons/icon.svg"
 
 [autoload]
@@ -55,4 +55,5 @@ ui_spacebar={
 
 [rendering]
 
+textures/canvas_textures/default_texture_filter=0
 renderer/rendering_method="mobile"
