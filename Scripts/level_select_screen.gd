@@ -1,7 +1,7 @@
 extends Control
 
-@onready var mouse_clicked = $MouseButton/AudioStreamPlayer2D
-@onready var keys = $KeysButton/AudioStreamPlayer2D
+@onready var mouse_clicked = $MouseButton/AudioStreamPlayer
+@onready var keys = $KeysButton/AudioStreamPlayer
 @onready var paper = $FreeCollageButton/AudioStreamPlayer
 
 func _on_back_button_pressed() -> void:
