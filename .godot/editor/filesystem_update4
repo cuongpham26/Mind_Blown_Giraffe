@@ -1,1 +1,10 @@
+<<<<<<< Updated upstream
 res://Scenes/title_screen.tscn
+=======
+res://Scenes/yapping.tscn
+res://Scripts/email_client.gd
+res://Scenes/collage_editor.tscn
+res://Scripts/button_sidebar.gd
+res://Scenes/main_select_screen.tscn
+res://Scenes/store.tscn
+>>>>>>> Stashed changes

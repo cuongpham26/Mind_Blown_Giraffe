@@ -13,4 +13,37 @@ position = Vector2(1619.5, 1011)
 scale = Vector2(51.6094, 32.5938)
 texture = ExtResource("1_me7aq")
 
+<<<<<<< Updated upstream
 [node name="Computer" type="Sprite2D" parent="."]
+=======
+[node name="Message" type="Label" parent="."]
+layout_mode = 0
+offset_left = 11.0
+offset_top = -1.0
+offset_right = 1274.0
+offset_bottom = 524.0
+theme_override_colors/font_color = Color(0.0430392, 0.0430392, 0.0430392, 1)
+theme_override_fonts/font = ExtResource("1_gpdtc")
+theme_override_font_sizes/font_size = 69
+text = "Hi honey! 
+I saw you opened a shop! I have to be your first customer. 
+
+I want a happy collage. Be safe! 
+
+Love, Mom"
+
+[node name="GoToCanvas" type="Button" parent="."]
+layout_mode = 0
+offset_left = 1086.0
+offset_top = 665.0
+offset_right = 1279.0
+offset_bottom = 724.0
+theme_override_fonts/font = ExtResource("1_gpdtc")
+theme_override_font_sizes/font_size = 50
+text = "Get to Work"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_tur1u")
+
+[connection signal="pressed" from="GoToCanvas" to="." method="_on_go_to_canvas_pressed"]
+>>>>>>> Stashed changes
