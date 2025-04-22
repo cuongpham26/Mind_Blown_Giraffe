@@ -6,8 +6,10 @@
 [sub_resource type="GDScript" id="GDScript_yog2f"]
 script/source = "extends Control
 
+
 @onready var click = $AudioStreamPlayer
-@onready var go_to_canvas_button = $GoToCanvas
+
+@onready var canvas_button = $GoToCanvas
 
 var is_playing = false
 
@@ -15,12 +17,12 @@ func _on_go_to_canvas_pressed() -> void:
 	if is_playing:
 		return
 	is_playing = true
-	go_to_canvas_button.disabled = true
+	canvas_button.disabled = true 
 	click.play()
 	await click.finished
 	get_tree().change_scene_to_file(\"res://Scenes/collage_editor.tscn\")
-	is_playing = false
-	go_to_canvas_button.disabled = false
+	is_playing = false 
+	canvas_button.disabled = false 
 "
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8v70n"]
@@ -68,6 +70,5 @@ text = "Get to Work"
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("3_tur1u")
-volume_db = -40.226
 
 [connection signal="pressed" from="GoToCanvas" to="." method="_on_go_to_canvas_pressed"]

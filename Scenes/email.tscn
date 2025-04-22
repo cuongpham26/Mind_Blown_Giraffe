@@ -1,10 +1,9 @@
-[gd_scene load_steps=20 format=3 uid="uid://b0ci678klg5us"]
+[gd_scene load_steps=20 format=3 uid="uid://blgoflaecdofn"]
 
 [ext_resource type="Script" path="res://Scripts/email_client.gd" id="1_iir0i"]
 [ext_resource type="Texture2D" uid="uid://bpenb88366m05" path="res://Art/Pixel Shape Tiles/Pixel background/64x64/3. Color/Picture/color_background_83.png" id="1_x0cem"]
 [ext_resource type="Texture2D" uid="uid://5wsfprv8bn24" path="res://Icons/computer.png" id="2_giriu"]
 [ext_resource type="FontFile" uid="uid://cn25gdhs56fp8" path="res://Art/Fonts/advanced_pixel-7.ttf" id="4_tt3ch"]
-[ext_resource type="AudioStream" uid="uid://bhwivj3sq68lj" path="res://Sounds/button.wav" id="5_e2dwx"]
 [ext_resource type="Texture2D" uid="uid://mvdeu6ekqdrj" path="res://Icons/character.png" id="6_d8x01"]
 [ext_resource type="Texture2D" uid="uid://wpb432scuqyb" path="res://Icons/search.png" id="7_ug4nc"]
 [ext_resource type="Texture2D" uid="uid://mrv3gotrkkkg" path="res://Icons/pencil.png" id="8_ip5jb"]
@@ -13,7 +12,8 @@
 [ext_resource type="Texture2D" uid="uid://yfdywumq3dl1" path="res://Icons/send.png" id="11_rf455"]
 [ext_resource type="Texture2D" uid="uid://cnhdvlo0vmbnj" path="res://Icons/spam.png" id="12_621th"]
 [ext_resource type="Texture2D" uid="uid://dmn6aqsw037" path="res://Icons/email_boxes.png" id="13_rixfc"]
-[ext_resource type="AudioStream" uid="uid://bd7vmpg61hro1" path="res://Sounds/click.wav" id="14_rdd1f"]
+[ext_resource type="AudioStream" uid="uid://bd7vmpg61hro1" path="res://Sounds/click.wav" id="14_o88le"]
+[ext_resource type="AudioStream" uid="uid://boer2xv51576g" path="res://Sounds/button.mp3" id="14_rdd1f"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jehl3"]
 bg_color = Color(0.955963, 0.955963, 0.955963, 1)
@@ -85,7 +85,7 @@ text = "Back
 "
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="BackButton"]
-stream = ExtResource("5_e2dwx")
+stream = ExtResource("14_rdd1f")
 
 [node name="Panel" type="Panel" parent="."]
 layout_mode = 0
@@ -269,7 +269,7 @@ theme_override_fonts/font = ExtResource("4_tt3ch")
 text = "Hi honey! I saw you opened a shop......"
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("14_rdd1f")
+stream = ExtResource("14_o88le")
 
 [connection signal="pressed" from="BackButton" to="." method="_on_back_button_pressed"]
 [connection signal="pressed" from="OrderButton" to="." method="_on_order_button_pressed"]

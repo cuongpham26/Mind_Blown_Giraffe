@@ -10,11 +10,11 @@
 [ext_resource type="AudioStream" uid="uid://bd7vmpg61hro1" path="res://Sounds/click.wav" id="5_21imw"]
 [ext_resource type="Texture2D" uid="uid://mebmp7ojhhgw" path="res://Icons/paper.png" id="7_a1nre"]
 [ext_resource type="Script" path="res://Scripts/free_collage_label_effect.gd" id="8_auecd"]
-[ext_resource type="AudioStream" uid="uid://bhwivj3sq68lj" path="res://Sounds/button.wav" id="8_x7sud"]
+[ext_resource type="AudioStream" uid="uid://boer2xv51576g" path="res://Sounds/button.mp3" id="8_x7sud"]
+[ext_resource type="AudioStream" uid="uid://btpr24272lj7s" path="res://Sounds/store.mp3" id="9_ep0an"]
 [ext_resource type="Texture2D" uid="uid://cpnuw5asxv7ca" path="res://Icons/ruler.png" id="9_rwg8q"]
 [ext_resource type="Texture2D" uid="uid://cr18y08gy426e" path="res://Icons/keys_light.png" id="9_yrsbw"]
 [ext_resource type="Texture2D" uid="uid://drcpgnurvx6yu" path="res://Icons/sissors.png" id="10_yldsg"]
-[ext_resource type="AudioStream" uid="uid://ddc0a5raeq8tm" path="res://Sounds/store.mp3" id="11_rlfrv"]
 [ext_resource type="AudioStream" uid="uid://xeufwhc5r7no" path="res://Sounds/paper.wav" id="13_bepyu"]
 
 [sub_resource type="Theme" id="Theme_xp1my"]
@@ -57,10 +57,10 @@ texture = ExtResource("2_7xe5g")
 
 [node name="MouseButton" type="TextureButton" parent="."]
 layout_mode = 0
-offset_left = 953.323
+offset_left = 953.0
 offset_top = -13.0
-offset_right = 1733.32
-offset_bottom = 1539.0
+offset_right = 1775.0
+offset_bottom = 1712.0
 scale = Vector2(0.4, 0.4)
 theme = SubResource("Theme_xp1my")
 texture_normal = ExtResource("3_4tchr")
@@ -69,7 +69,7 @@ texture_hover = ExtResource("4_5hoql")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="MouseButton"]
 stream = ExtResource("5_21imw")
-volume_db = 24.0
+volume_db = -24.0
 
 [node name="MouseLabel" type="Label" parent="MouseButton"]
 layout_mode = 0
@@ -98,10 +98,10 @@ stream = ExtResource("8_x7sud")
 
 [node name="KeysButton" type="TextureButton" parent="."]
 layout_mode = 0
-offset_left = 626.555
+offset_left = 627.0
 offset_top = 3.0
-offset_right = 2264.56
-offset_bottom = 1287.0
+offset_right = 2331.0
+offset_bottom = 1733.0
 scale = Vector2(0.2, 0.2)
 theme = SubResource("Theme_nm6vq")
 texture_normal = ExtResource("5_6cy4x")
@@ -122,7 +122,8 @@ text = "Go To Store
 script = SubResource("GDScript_pd01v")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="KeysButton"]
-stream = ExtResource("11_rlfrv")
+stream = ExtResource("9_ep0an")
+volume_db = -10.0
 
 [node name="Paper" type="Sprite2D" parent="."]
 position = Vector2(287.796, 464)

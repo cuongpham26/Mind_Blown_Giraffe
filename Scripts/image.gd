@@ -1,3 +1,4 @@
+@icon("../Icons/image.png")
 class_name image extends Sprite2D
 #random comment to see if it works in git	 
 # Drag and drop variables
