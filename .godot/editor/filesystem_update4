@@ -1,7 +1,10 @@
-res://Scenes/yapping.tscn
-res://Scenes/collage_editor.tscn
 res://Scenes/title_screen.tscn
-res://Scenes/store.tscn
 res://Scenes/options_screen.tscn
-res://Scenes/main_select_screen.tscn
 res://Scenes/email.tscn
+res://Scenes/store.tscn
+res://Scenes/yapping.tscn
+res://Scenes/main_select_screen.tscn
+res://Scenes/collage_editor.tscn
+res://Scripts/button_sidebar.gd
+res://Scripts/image.gd
+res://Scripts/texture_items.gd

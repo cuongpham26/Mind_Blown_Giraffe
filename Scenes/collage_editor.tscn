@@ -1,15 +1,13 @@
-[gd_scene load_steps=22 format=3 uid="uid://dnyx0guxftda3"]
+[gd_scene load_steps=19 format=3 uid="uid://5el4mdr1tys1"]
 
 [ext_resource type="Script" path="res://Scripts/button_sidebar.gd" id="1_qwjiq"]
 [ext_resource type="Texture2D" uid="uid://mvdeu6ekqdrj" path="res://Icons/character.png" id="2_ba6nw"]
-[ext_resource type="Script" path="res://Scripts/item_panel.gd" id="2_x6s1a"]
 [ext_resource type="Script" path="res://Scripts/image.gd" id="3_j0w6o"]
 [ext_resource type="Texture2D" uid="uid://bpe1q2aawewrb" path="res://Icons/control.png" id="5_gx3xw"]
 [ext_resource type="FontFile" uid="uid://cn25gdhs56fp8" path="res://Art/Fonts/advanced_pixel-7.ttf" id="5_hyoc1"]
 [ext_resource type="Texture2D" uid="uid://m21ivj8qdwh0" path="res://Art/Tileable Cloth/Cloth_01-256x256.png" id="5_q7gwf"]
 [ext_resource type="Texture2D" uid="uid://c8fj8vc4tgq6g" path="res://Art/Pixel Food/80_pancakes_dish.png" id="6_lv5nj"]
 [ext_resource type="Texture2D" uid="uid://b8a6qtgl0jx6r" path="res://Art/Pixel Food/87_ramen.png" id="8_vrlv7"]
-[ext_resource type="Script" path="res://Scripts/texture_panel.gd" id="8_yo4vw"]
 [ext_resource type="Texture2D" uid="uid://b5g2j6h84aklu" path="res://Art/Pixel Food/85_roastedchicken.png" id="9_hkny0"]
 [ext_resource type="Script" path="res://Scripts/texture_items.gd" id="10_ncr0i"]
 [ext_resource type="Script" path="res://Scripts/popup_menu.gd" id="12_5ruke"]
@@ -19,8 +17,6 @@
 [ext_resource type="Texture2D" uid="uid://ubtdf3ago1x3" path="res://Art/Watercolor Textures/Art Texture 07.jpg" id="15_7jstp"]
 [ext_resource type="Texture2D" uid="uid://bxmob6pp4mobv" path="res://Art/Watercolor Textures/Art Texture 011.jpg" id="16_p0ii1"]
 [ext_resource type="AudioStream" uid="uid://boer2xv51576g" path="res://Sounds/button.mp3" id="19_4o12f"]
-
-[sub_resource type="Theme" id="Theme_1eej3"]
 
 [sub_resource type="Theme" id="Theme_pujwx"]
 
@@ -32,128 +28,121 @@ script = ExtResource("1_qwjiq")
 
 [node name="Canvas" type="ColorRect" parent="."]
 layout_mode = 0
-offset_left = 1.0
-offset_top = -8.0
 offset_right = 3020.0
 offset_bottom = 1939.0
 
 [node name="Background" type="ColorRect" parent="Canvas"]
 layout_mode = 0
 
-[node name="Sidebar" type="Panel" parent="."]
+[node name="ItemPanel" type="Panel" parent="."]
 layout_mode = 0
-offset_left = 2.0
-offset_top = -4.0
-offset_right = 221.0
-offset_bottom = 1968.0
+offset_left = 245.891
+offset_top = 1692.4
+offset_right = 3047.89
+offset_bottom = 1942.4
 
-[node name="ItemPanel" type="Panel" parent="Sidebar"]
+[node name="TextureButton" type="Button" parent="ItemPanel"]
 layout_mode = 0
-offset_left = -61.0
-offset_top = -47.0
-offset_right = -21.0
-offset_bottom = -7.0
-script = ExtResource("2_x6s1a")
+offset_left = 30.3481
+offset_top = 57.0471
+offset_right = 125.348
+offset_bottom = 212.047
+theme_override_font_sizes/font_size = 100
+text = "<"
 
-[node name="TextureButton" type="Button" parent="Sidebar/ItemPanel"]
-layout_mode = 0
-offset_left = 71.0
-offset_top = 173.0
-offset_right = 266.0
-offset_bottom = 260.0
-text = "Textures"
-
-[node name="Giraffe" type="Sprite2D" parent="Sidebar/ItemPanel"]
-position = Vector2(168, 369)
-scale = Vector2(0.283203, 0.308594)
+[node name="Giraffe" type="Sprite2D" parent="ItemPanel"]
+position = Vector2(276.627, 121.271)
+scale = Vector2(0.346338, 0.386795)
 texture = ExtResource("2_ba6nw")
 script = ExtResource("3_j0w6o")
 
-[node name="MindBlown" type="Sprite2D" parent="Sidebar/ItemPanel"]
-position = Vector2(167, 602)
-scale = Vector2(0.292969, 0.261719)
+[node name="MindBlown" type="Sprite2D" parent="ItemPanel"]
+position = Vector2(1257.83, 115.881)
+scale = Vector2(0.358905, 0.336136)
 texture = ExtResource("5_gx3xw")
 script = ExtResource("3_j0w6o")
 
-[node name="pancake" type="Sprite2D" parent="Sidebar/ItemPanel"]
-position = Vector2(179, 817)
-scale = Vector2(5.5, 4.75)
+[node name="pancake" type="Sprite2D" parent="ItemPanel"]
+position = Vector2(993.02, 118.576)
+scale = Vector2(5.95191, 5.50545)
 texture = ExtResource("6_lv5nj")
 script = ExtResource("3_j0w6o")
 
-[node name="Cloth1" type="Sprite2D" parent="Sidebar/ItemPanel"]
-position = Vector2(174.852, 1037.34)
-scale = Vector2(0.5625, 0.576172)
+[node name="Cloth1" type="Sprite2D" parent="ItemPanel"]
+position = Vector2(1506.08, 118.576)
+scale = Vector2(0.586027, 0.624949)
 texture = ExtResource("5_q7gwf")
 script = ExtResource("3_j0w6o")
 
-[node name="Cloth2" type="Sprite2D" parent="Sidebar/ItemPanel"]
-position = Vector2(174.852, 1304.13)
-scale = Vector2(5.47667, 7.72155)
+[node name="Cloth2" type="Sprite2D" parent="ItemPanel"]
+position = Vector2(740.037, 115.881)
+scale = Vector2(5.32433, 6.72411)
 texture = ExtResource("8_vrlv7")
 script = ExtResource("3_j0w6o")
 
-[node name="Trash Can" type="Sprite2D" parent="Sidebar/ItemPanel"]
-position = Vector2(174.852, 1517.03)
+[node name="Trash Can" type="Sprite2D" parent="ItemPanel"]
+position = Vector2(515.425, 123.966)
 scale = Vector2(5.66, 6.04469)
 texture = ExtResource("9_hkny0")
 script = ExtResource("3_j0w6o")
 
-[node name="TexturePanel" type="Panel" parent="Sidebar"]
+[node name="TexturePanel" type="Panel" parent="."]
 layout_mode = 0
-offset_left = -62.0
-offset_top = -46.0
-offset_right = -22.0
-offset_bottom = -6.0
-script = ExtResource("8_yo4vw")
+offset_left = -2.0
+offset_top = -8.0
+offset_right = 248.0
+offset_bottom = 1942.0
 
-[node name="ItemButton" type="Button" parent="Sidebar/TexturePanel"]
+[node name="ItemButton" type="Button" parent="TexturePanel"]
 layout_mode = 0
-offset_left = 73.0
-offset_top = 172.0
-offset_right = 267.0
-offset_bottom = 258.0
-text = "Items"
+offset_left = 2872.3
+offset_top = 1748.91
+offset_right = 2967.3
+offset_bottom = 1904.91
+theme_override_font_sizes/font_size = 100
+text = ">"
 
-[node name="WaterColor1" type="Sprite2D" parent="Sidebar/TexturePanel"]
-position = Vector2(171.124, 467.711)
-scale = Vector2(0.029097, 0.0410997)
+[node name="WaterColor1" type="Sprite2D" parent="TexturePanel"]
+position = Vector2(125.568, 263.68)
+scale = Vector2(0.0393309, 0.0428282)
 texture = ExtResource("12_rlmj3")
 script = ExtResource("10_ncr0i")
 
-[node name="Water Color2" type="Sprite2D" parent="Sidebar/TexturePanel"]
-position = Vector2(171.124, 692.736)
-scale = Vector2(0.0482835, 0.0342116)
+[node name="Water Color2" type="Sprite2D" parent="TexturePanel"]
+position = Vector2(126.19, 441.207)
+scale = Vector2(0.0638588, 0.0334613)
 texture = ExtResource("13_773s4")
 script = ExtResource("10_ncr0i")
 
-[node name="WaterColor3" type="Sprite2D" parent="Sidebar/TexturePanel"]
-position = Vector2(174.049, 930.562)
-scale = Vector2(0.0544186, 0.0380809)
+[node name="WaterColor3" type="Sprite2D" parent="TexturePanel"]
+position = Vector2(126.19, 619.071)
+scale = Vector2(0.0700415, 0.0342728)
 texture = ExtResource("14_fp6ea")
 script = ExtResource("10_ncr0i")
 
-[node name="WaterColor4" type="Sprite2D" parent="Sidebar/TexturePanel"]
-position = Vector2(173.488, 1165.69)
-scale = Vector2(0.0528254, 0.0745424)
+[node name="WaterColor4" type="Sprite2D" parent="TexturePanel"]
+position = Vector2(126.191, 802.337)
+scale = Vector2(0.0656315, 0.0634464)
 texture = ExtResource("15_7jstp")
 script = ExtResource("10_ncr0i")
 
-[node name="WaterColor5" type="Sprite2D" parent="Sidebar/TexturePanel"]
-position = Vector2(175.852, 1410.93)
-scale = Vector2(0.0487346, 0.06702)
+[node name="WaterColor5" type="Sprite2D" parent="TexturePanel"]
+position = Vector2(126.191, 980.191)
+scale = Vector2(0.055665, 0.058854)
 texture = ExtResource("16_p0ii1")
 script = ExtResource("10_ncr0i")
 
-[node name="SettingsButton" type="Button" parent="Sidebar"]
+[node name="SettingsButton" type="Button" parent="TexturePanel"]
 layout_mode = 0
-offset_left = 10.0
-offset_top = 1713.0
-offset_right = 206.0
-offset_bottom = 1798.0
+offset_left = 16.0
+offset_top = 1843.0
+offset_right = 231.0
+offset_bottom = 1928.0
+theme_override_fonts/font = ExtResource("5_hyoc1")
+theme_override_font_sizes/font_size = 65
 text = "Controls"
 
-[node name="PopupMenu" type="PopupMenu" parent="Sidebar/SettingsButton"]
+[node name="PopupMenu" type="PopupMenu" parent="TexturePanel/SettingsButton"]
 position = Vector2i(500, 250)
 size = Vector2i(250, 250)
 unresizable = false
@@ -172,38 +161,25 @@ item_5/text = "Delete - Backspace"
 item_5/id = 5
 script = ExtResource("12_5ruke")
 
-[node name="Button" type="Button" parent="."]
-layout_mode = 0
-offset_left = -3.0
-offset_top = -1.0
-offset_right = 222.0
-offset_bottom = 109.0
-theme = SubResource("Theme_1eej3")
-theme_override_fonts/font = ExtResource("5_hyoc1")
-theme_override_font_sizes/font_size = 50
-text = "Press To
-Open Menu
-"
-
 [node name="BackButton" type="Button" parent="."]
 layout_mode = 0
-offset_left = 2694.0
-offset_top = -5.0
-offset_right = 3023.0
-offset_bottom = 131.0
+offset_left = 11.8217
+offset_top = 1732.83
+offset_right = 229.822
+offset_bottom = 1803.83
 scale = Vector2(1, 1.28272)
 theme = SubResource("Theme_pujwx")
 theme_override_fonts/font = ExtResource("5_hyoc1")
-theme_override_font_sizes/font_size = 50
-text = "Back To Title
+theme_override_font_sizes/font_size = 60
+text = "Main Menu
 "
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="BackButton"]
 stream = ExtResource("19_4o12f")
 
-[connection signal="pressed" from="Sidebar/ItemPanel/TextureButton" to="Sidebar/ItemPanel" method="_on_texture_button_pressed"]
-[connection signal="pressed" from="Sidebar/ItemPanel/TextureButton" to="Sidebar/TexturePanel" method="_on_texture_button_pressed"]
-[connection signal="pressed" from="Sidebar/TexturePanel/ItemButton" to="Sidebar/ItemPanel" method="_on_item_button_pressed"]
-[connection signal="pressed" from="Sidebar/TexturePanel/ItemButton" to="Sidebar/TexturePanel" method="_on_item_button_pressed"]
-[connection signal="pressed" from="Sidebar/SettingsButton" to="Sidebar/SettingsButton/PopupMenu" method="_on_settings_button_pressed"]
+[connection signal="pressed" from="ItemPanel/TextureButton" to="ItemPanel" method="_on_texture_button_pressed"]
+[connection signal="pressed" from="ItemPanel/TextureButton" to="TexturePanel" method="_on_texture_button_pressed"]
+[connection signal="pressed" from="TexturePanel/ItemButton" to="ItemPanel" method="_on_item_button_pressed"]
+[connection signal="pressed" from="TexturePanel/ItemButton" to="TexturePanel" method="_on_item_button_pressed"]
+[connection signal="pressed" from="TexturePanel/SettingsButton" to="TexturePanel/SettingsButton/PopupMenu" method="_on_settings_button_pressed"]
 [connection signal="pressed" from="BackButton" to="." method="_on_back_button_pressed"]
