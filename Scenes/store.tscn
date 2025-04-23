@@ -1,134 +1,14 @@
-[gd_scene load_steps=10 format=3 uid="uid://60vspecm5ji"]
+[gd_scene load_steps=2 format=3 uid="uid://60vspecm5ji"]
 
 [ext_resource type="Texture2D" uid="uid://bpenb88366m05" path="res://Art/Pixel Shape Tiles/Pixel background/64x64/3. Color/Picture/color_background_83.png" id="1_myanm"]
-[ext_resource type="FontFile" uid="uid://cn25gdhs56fp8" path="res://Art/Fonts/advanced_pixel-7.ttf" id="2_21cys"]
-[ext_resource type="AudioStream" uid="uid://boer2xv51576g" path="res://Sounds/button.mp3" id="3_j105s"]
-[ext_resource type="Texture2D" uid="uid://3eisfumbttts" path="res://Icons/Robby 2/Robby-Talk-1.png" id="4_32xlu"]
-[ext_resource type="Texture2D" uid="uid://b3xjdk2kvr1qj" path="res://Icons/Robby 2/Robby-Talk-2.png" id="5_cb1sj"]
 
-[sub_resource type="GDScript" id="GDScript_kyo8m"]
-script/source = "extends Control
-
-@onready var animation = $AnimationPlayer
-@onready var sprite = $Robby
-
-@onready var button = $AudioStreamPlayer
-
-@onready var back_button  = $BackButton
-
-@onready var label = $Label2
-
-var is_playing = false 
-
-
-
-func _on_back_button_pressed() -> void:
-	if is_playing:
-		return
-	is_playing = true
-	back_button.disabled = true 
-	button.play()
-	await button.finished
-	get_tree().change_scene_to_file(\"res://Scenes/main_select_screen.tscn\")
-	is_playing = false
-	back_button.disabled = false 
-
-func _ready() -> void:
-	animation.play(\"talking\")
-	label.text = \"Robby:
-	Hello, how can I help you today?\"
-	$Timer.start(3.0)
-
-func _on_timer_timeout() -> void:
-	animation.stop()
-	sprite.texture = preload(\"res://Icons/Robby 2/Robby-Idle.png\")
-	label.text = \"\"
-"
-
-[sub_resource type="Animation" id="Animation_qwvhl"]
-resource_name = "talking"
-length = 0.7
-loop_mode = 1
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Robby:texture")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0.1, 0.3, 0.466667, 0.633333),
-"transitions": PackedFloat32Array(1, 1, 1, 1),
-"update": 1,
-"values": [ExtResource("4_32xlu"), ExtResource("5_cb1sj"), ExtResource("4_32xlu"), ExtResource("5_cb1sj")]
-}
-
-[sub_resource type="Animation" id="Animation_bglii"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Robby:texture")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [ExtResource("4_32xlu")]
-}
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_3hujf"]
-_data = {
-"RESET": SubResource("Animation_bglii"),
-"talking": SubResource("Animation_qwvhl")
-}
-
-[node name="Control2" type="Control"]
+[node name="Control" type="Control"]
 layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
-script = SubResource("GDScript_kyo8m")
 
-[node name="Background" type="Sprite2D" parent="."]
+[node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(629, 342.5)
 scale = Vector2(20.6562, 11.7031)
 texture = ExtResource("1_myanm")
-
-[node name="BackButton" type="Button" parent="."]
-layout_mode = 0
-offset_right = 103.0
-offset_bottom = 59.0
-theme_override_fonts/font = ExtResource("2_21cys")
-theme_override_font_sizes/font_size = 50
-text = "Back
-"
-
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("3_j105s")
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-libraries = {
-"": SubResource("AnimationLibrary_3hujf")
-}
-
-[node name="Robby" type="Sprite2D" parent="."]
-position = Vector2(203, 346)
-scale = Vector2(25.6094, 25.0469)
-texture = ExtResource("4_32xlu")
-
-[node name="Label2" type="Label" parent="."]
-offset_left = 2.0
-offset_top = 565.0
-offset_right = 432.0
-offset_bottom = 670.0
-theme_override_colors/font_color = Color(0.0274091, 0.0274092, 0.0274092, 1)
-theme_override_fonts/font = ExtResource("2_21cys")
-theme_override_font_sizes/font_size = 50
-text = "Robby:
-How can I help you today? "
-
-[node name="Timer" type="Timer" parent="."]
-
-[connection signal="pressed" from="BackButton" to="." method="_on_back_button_pressed"]
-[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
