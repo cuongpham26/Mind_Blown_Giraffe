@@ -1,25 +1,275 @@
-[gd_scene load_steps=3 format=3 uid="uid://b0ci678klg5us"]
+[gd_scene load_steps=20 format=3 uid="uid://blgoflaecdofn"]
 
+[ext_resource type="Script" path="res://Scripts/email_client.gd" id="1_iir0i"]
 [ext_resource type="Texture2D" uid="uid://bpenb88366m05" path="res://Art/Pixel Shape Tiles/Pixel background/64x64/3. Color/Picture/color_background_83.png" id="1_x0cem"]
 [ext_resource type="Texture2D" uid="uid://5wsfprv8bn24" path="res://Icons/computer.png" id="2_giriu"]
+[ext_resource type="FontFile" uid="uid://cn25gdhs56fp8" path="res://Art/Fonts/advanced_pixel-7.ttf" id="4_tt3ch"]
+[ext_resource type="Texture2D" uid="uid://mvdeu6ekqdrj" path="res://Icons/character.png" id="6_d8x01"]
+[ext_resource type="Texture2D" uid="uid://wpb432scuqyb" path="res://Icons/search.png" id="7_ug4nc"]
+[ext_resource type="Texture2D" uid="uid://mrv3gotrkkkg" path="res://Icons/pencil.png" id="8_ip5jb"]
+[ext_resource type="Texture2D" uid="uid://oc8ybg10qds0" path="res://Icons/inbox.png" id="9_7tpam"]
+[ext_resource type="Texture2D" uid="uid://d1tou1rpqgsnv" path="res://Icons/star.png" id="10_xecwq"]
+[ext_resource type="Texture2D" uid="uid://yfdywumq3dl1" path="res://Icons/send.png" id="11_rf455"]
+[ext_resource type="Texture2D" uid="uid://cnhdvlo0vmbnj" path="res://Icons/spam.png" id="12_621th"]
+[ext_resource type="Texture2D" uid="uid://dmn6aqsw037" path="res://Icons/email_boxes.png" id="13_rixfc"]
+[ext_resource type="AudioStream" uid="uid://bd7vmpg61hro1" path="res://Sounds/click.wav" id="14_o88le"]
+[ext_resource type="AudioStream" uid="uid://boer2xv51576g" path="res://Sounds/button.mp3" id="14_rdd1f"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jehl3"]
+bg_color = Color(0.955963, 0.955963, 0.955963, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pj71a"]
+bg_color = Color(0.851769, 0.851769, 0.851769, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_r3ya5"]
+bg_color = Color(0.853917, 0.853917, 0.853917, 1)
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1k6p1"]
+bg_color = Color(0.683688, 0.76949, 0.820977, 1)
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_l2efd"]
+bg_color = Color(0.536158, 0.644393, 0.707596, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
 
 [node name="Control" type="Control"]
 layout_mode = 3
 anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
+offset_right = 1280.0
+offset_bottom = 724.0
+script = ExtResource("1_iir0i")
 
 [node name="Background" type="Sprite2D" parent="."]
-position = Vector2(1777, 1092)
-scale = Vector2(56.3594, 35.5313)
+position = Vector2(624.25, 337.999)
+scale = Vector2(20.336, 11.9688)
 texture = ExtResource("1_x0cem")
 
 [node name="Computer" type="Sprite2D" parent="."]
-position = Vector2(1398, 818)
-scale = Vector2(6.25143, 5.41)
+position = Vector2(573, 345)
+scale = Vector2(2.69286, 1.94357)
 texture = ExtResource("2_giriu")
 
 [node name="EmailPanel" type="Panel" parent="."]
 layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
+offset_left = 192.0
+offset_top = 130.0
+offset_right = 1099.0
+offset_bottom = 491.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_jehl3")
+
+[node name="SidebarPanel" type="Panel" parent="."]
+layout_mode = 0
+offset_left = 186.0
+offset_top = 129.0
+offset_right = 323.0
+offset_bottom = 492.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_pj71a")
+
+[node name="BackButton" type="Button" parent="."]
+layout_mode = 0
+offset_right = 112.0
+offset_bottom = 47.0
+theme_override_fonts/font = ExtResource("4_tt3ch")
+theme_override_font_sizes/font_size = 50
+text = "Back
+"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="BackButton"]
+stream = ExtResource("14_rdd1f")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 0
+offset_left = 342.0
+offset_top = 142.0
+offset_right = 821.0
+offset_bottom = 181.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_r3ya5")
+
+[node name="EmailLabel" type="Label" parent="."]
+layout_mode = 0
+offset_left = 227.0
+offset_top = 142.0
+offset_right = 311.0
+offset_bottom = 182.0
+theme_override_colors/font_color = Color(0.00453645, 0.00453645, 0.00453645, 1)
+theme_override_fonts/font = ExtResource("4_tt3ch")
+theme_override_font_sizes/font_size = 40
+text = "mbgMail"
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(212, 159)
+scale = Vector2(0.0664063, 0.0703125)
+texture = ExtResource("6_d8x01")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 377.0
+offset_top = 145.0
+offset_right = 434.0
+offset_bottom = 176.0
+theme_override_colors/font_color = Color(0.138638, 0.138637, 0.138637, 1)
+theme_override_fonts/font = ExtResource("4_tt3ch")
+theme_override_font_sizes/font_size = 30
+text = "Search mail
+"
+
+[node name="SearchIcon" type="Sprite2D" parent="."]
+position = Vector2(363, 161)
+scale = Vector2(0.0214844, 0.0244141)
+texture = ExtResource("7_ug4nc")
+
+[node name="InboxPanel" type="Panel" parent="."]
+layout_mode = 0
+offset_left = 198.0
+offset_top = 249.0
+offset_right = 307.0
+offset_bottom = 267.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_1k6p1")
+
+[node name="ComposePanel" type="Panel" parent="."]
+layout_mode = 0
+offset_left = 198.0
+offset_top = 195.0
+offset_right = 288.0
+offset_bottom = 240.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_l2efd")
+
+[node name="ComposeIcon" type="Sprite2D" parent="."]
+position = Vector2(211, 217)
+scale = Vector2(0.0224609, 0.0244141)
+texture = ExtResource("8_ip5jb")
+
+[node name="ComposeLabel" type="Label" parent="."]
+layout_mode = 0
+offset_left = 229.0
+offset_top = 206.0
+offset_right = 275.0
+offset_bottom = 226.0
+theme_override_colors/font_color = Color(0.0214346, 0.0214346, 0.0214346, 1)
+theme_override_fonts/font = ExtResource("4_tt3ch")
+theme_override_font_sizes/font_size = 20
+text = "Compose
+"
+
+[node name="InboxLabel" type="Label" parent="."]
+layout_mode = 0
+offset_left = 227.0
+offset_top = 247.0
+offset_right = 257.0
+offset_bottom = 270.0
+theme_override_colors/font_color = Color(0.0253638, 0.0253638, 0.0253638, 1)
+theme_override_fonts/font = ExtResource("4_tt3ch")
+theme_override_font_sizes/font_size = 20
+text = "Inbox
+"
+
+[node name="InboxIcon" type="Sprite2D" parent="."]
+position = Vector2(207, 252)
+scale = Vector2(0.0195313, 0.0214844)
+texture = ExtResource("9_7tpam")
+centered = false
+
+[node name="StarredLabel" type="Label" parent="."]
+layout_mode = 0
+offset_left = 224.0
+offset_top = 281.0
+offset_right = 268.0
+offset_bottom = 304.0
+theme_override_colors/font_color = Color(0.00960463, 0.00960463, 0.00960463, 1)
+theme_override_fonts/font = ExtResource("4_tt3ch")
+theme_override_font_sizes/font_size = 20
+text = "Starred"
+
+[node name="StarredIcon" type="Sprite2D" parent="."]
+position = Vector2(212, 290)
+scale = Vector2(0.0253906, 0.0244141)
+texture = ExtResource("10_xecwq")
+
+[node name="SentLabel" type="Label" parent="."]
+layout_mode = 0
+offset_left = 224.0
+offset_top = 307.0
+offset_right = 251.0
+offset_bottom = 328.0
+theme_override_colors/font_color = Color(0.0316549, 0.0316549, 0.0316549, 1)
+theme_override_fonts/font = ExtResource("4_tt3ch")
+theme_override_font_sizes/font_size = 20
+text = "Sent"
+
+[node name="SentIcon" type="Sprite2D" parent="."]
+position = Vector2(212, 318)
+scale = Vector2(0.0229492, 0.0239258)
+texture = ExtResource("11_rf455")
+
+[node name="SpamLabel" type="Label" parent="."]
+layout_mode = 0
+offset_left = 224.0
+offset_top = 331.0
+offset_right = 252.0
+offset_bottom = 351.0
+theme_override_colors/font_color = Color(0.0338533, 0.0338533, 0.0338533, 1)
+theme_override_fonts/font = ExtResource("4_tt3ch")
+theme_override_font_sizes/font_size = 20
+text = "Spam"
+
+[node name="SpamIcon" type="Sprite2D" parent="."]
+position = Vector2(211, 341)
+scale = Vector2(0.0249024, 0.0214844)
+texture = ExtResource("12_621th")
+
+[node name="OrderButton" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 337.0
+offset_top = 215.0
+offset_right = 2989.0
+offset_bottom = 433.0
+scale = Vector2(0.25, 0.25)
+texture_normal = ExtResource("13_rixfc")
+
+[node name="SenderLabel" type="Label" parent="."]
+layout_mode = 0
+offset_left = 441.0
+offset_top = 223.0
+offset_right = 491.0
+offset_bottom = 269.0
+theme_override_colors/font_color = Color(0.00351917, 0.00351917, 0.00351917, 1)
+theme_override_fonts/font = ExtResource("4_tt3ch")
+theme_override_font_sizes/font_size = 35
+text = "Mom"
+
+[node name="SubjectLabel" type="Label" parent="."]
+layout_mode = 0
+offset_left = 616.0
+offset_top = 222.0
+offset_right = 742.0
+offset_bottom = 268.0
+theme_override_colors/font_color = Color(0.00566115, 0.00566115, 0.00566115, 1)
+theme_override_fonts/font = ExtResource("4_tt3ch")
+theme_override_font_sizes/font_size = 35
+text = "Collage!!! -"
+
+[node name="MessageLabel" type="Label" parent="."]
+layout_mode = 0
+offset_left = 728.0
+offset_top = 234.0
+offset_right = 906.0
+offset_bottom = 257.0
+theme_override_colors/font_color = Color(0.0159718, 0.0159718, 0.0159718, 1)
+theme_override_fonts/font = ExtResource("4_tt3ch")
+text = "Hi honey! I saw you opened a shop......"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("14_o88le")
+
+[connection signal="pressed" from="BackButton" to="." method="_on_back_button_pressed"]
+[connection signal="pressed" from="OrderButton" to="." method="_on_order_button_pressed"]
