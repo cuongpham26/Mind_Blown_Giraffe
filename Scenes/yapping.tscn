@@ -1,16 +1,74 @@
-[gd_scene load_steps=2 format=3 uid="uid://did0yr2at6fek"]
+[gd_scene load_steps=5 format=3 uid="uid://did0yr2at6fek"]
 
-[ext_resource type="Texture2D" uid="uid://bpenb88366m05" path="res://Art/Pixel Shape Tiles/Pixel background/64x64/3. Color/Picture/color_background_83.png" id="1_me7aq"]
+[ext_resource type="FontFile" uid="uid://cn25gdhs56fp8" path="res://Art/Fonts/advanced_pixel-7.ttf" id="1_gpdtc"]
+[ext_resource type="AudioStream" uid="uid://bd7vmpg61hro1" path="res://Sounds/click.wav" id="3_tur1u"]
 
-[node name="Control3" type="Control"]
+[sub_resource type="GDScript" id="GDScript_yog2f"]
+script/source = "extends Control
+
+
+@onready var click = $AudioStreamPlayer
+
+@onready var canvas_button = $GoToCanvas
+
+var is_playing = false
+
+func _on_go_to_canvas_pressed() -> void:
+	if is_playing:
+		return
+	is_playing = true
+	canvas_button.disabled = true 
+	click.play()
+	await click.finished
+	get_tree().change_scene_to_file(\"res://Scenes/collage_editor.tscn\")
+	is_playing = false 
+	canvas_button.disabled = false 
+"
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8v70n"]
+bg_color = Color(0.95158, 0.95158, 0.95158, 1)
+
+[node name="Control" type="Control"]
 layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
+script = SubResource("GDScript_yog2f")
 
-[node name="Background" type="Sprite2D" parent="."]
-position = Vector2(1619.5, 1011)
-scale = Vector2(51.6094, 32.5938)
-texture = ExtResource("1_me7aq")
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 0
+offset_left = 1.0
+offset_right = 1278.0
+offset_bottom = 720.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_8v70n")
 
-[node name="Computer" type="Sprite2D" parent="."]
+[node name="Message" type="Label" parent="."]
+layout_mode = 0
+offset_left = 11.0
+offset_top = -1.0
+offset_right = 1274.0
+offset_bottom = 524.0
+theme_override_colors/font_color = Color(0.0430392, 0.0430392, 0.0430392, 1)
+theme_override_fonts/font = ExtResource("1_gpdtc")
+theme_override_font_sizes/font_size = 69
+text = "Hi honey! 
+I saw you opened a shop! I have to be your first customer. 
+
+I want a happy collage. Be safe! 
+
+Love, Mom"
+
+[node name="GoToCanvas" type="Button" parent="."]
+layout_mode = 0
+offset_left = 1086.0
+offset_top = 665.0
+offset_right = 1279.0
+offset_bottom = 724.0
+theme_override_fonts/font = ExtResource("1_gpdtc")
+theme_override_font_sizes/font_size = 50
+text = "Get to Work"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_tur1u")
+
+[connection signal="pressed" from="GoToCanvas" to="." method="_on_go_to_canvas_pressed"]

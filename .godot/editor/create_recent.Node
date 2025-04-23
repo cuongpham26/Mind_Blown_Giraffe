@@ -1,14 +1,4 @@
-AudioStreamPlayer
-Sprite2D
-Control
+Label
 Timer
-AudioStreamPlayer2D
-ColorRect
-Panel
-Button
-HBoxContainer
-RichTextLabel
-VScrollBar
-ItemList
-TextureRect
-VBoxContainer
+Sprite2D
+AnimationPlayer
