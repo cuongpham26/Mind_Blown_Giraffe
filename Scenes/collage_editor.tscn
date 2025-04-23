@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://5el4mdr1tys1"]
+[gd_scene load_steps=20 format=3 uid="uid://5el4mdr1tys1"]
 
 [ext_resource type="Script" path="res://Scripts/button_sidebar.gd" id="1_qwjiq"]
 [ext_resource type="Texture2D" uid="uid://mvdeu6ekqdrj" path="res://Icons/character.png" id="2_ba6nw"]
@@ -8,6 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://m21ivj8qdwh0" path="res://Art/Tileable Cloth/Cloth_01-256x256.png" id="5_q7gwf"]
 [ext_resource type="Texture2D" uid="uid://c8fj8vc4tgq6g" path="res://Art/Pixel Food/80_pancakes_dish.png" id="6_lv5nj"]
 [ext_resource type="Texture2D" uid="uid://b8a6qtgl0jx6r" path="res://Art/Pixel Food/87_ramen.png" id="8_vrlv7"]
+[ext_resource type="Texture2D" uid="uid://cys41d7dgqsh" path="res://Art/Collage Items/sargent_relish_large.png" id="9_cfxko"]
 [ext_resource type="Texture2D" uid="uid://b5g2j6h84aklu" path="res://Art/Pixel Food/85_roastedchicken.png" id="9_hkny0"]
 [ext_resource type="Script" path="res://Scripts/texture_items.gd" id="10_ncr0i"]
 [ext_resource type="Script" path="res://Scripts/popup_menu.gd" id="12_5ruke"]
@@ -85,6 +86,11 @@ position = Vector2(515.425, 123.966)
 scale = Vector2(5.66, 6.04469)
 texture = ExtResource("9_hkny0")
 script = ExtResource("3_j0w6o")
+
+[node name="SargRelish" type="Sprite2D" parent="ItemPanel"]
+position = Vector2(1709.41, 118.579)
+scale = Vector2(0.312802, 0.35527)
+texture = ExtResource("9_cfxko")
 
 [node name="TexturePanel" type="Panel" parent="."]
 layout_mode = 0
