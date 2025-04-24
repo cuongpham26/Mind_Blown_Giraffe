@@ -1,17 +1,20 @@
-[gd_scene load_steps=20 format=3 uid="uid://5el4mdr1tys1"]
+[gd_scene load_steps=23 format=3 uid="uid://5el4mdr1tys1"]
 
 [ext_resource type="Script" path="res://Scripts/button_sidebar.gd" id="1_qwjiq"]
 [ext_resource type="Texture2D" uid="uid://mvdeu6ekqdrj" path="res://Icons/character.png" id="2_ba6nw"]
 [ext_resource type="Script" path="res://Scripts/image.gd" id="3_j0w6o"]
 [ext_resource type="Texture2D" uid="uid://bpe1q2aawewrb" path="res://Icons/control.png" id="5_gx3xw"]
 [ext_resource type="FontFile" uid="uid://cn25gdhs56fp8" path="res://Art/Fonts/advanced_pixel-7.ttf" id="5_hyoc1"]
-[ext_resource type="Texture2D" uid="uid://m21ivj8qdwh0" path="res://Art/Tileable Cloth/Cloth_01-256x256.png" id="5_q7gwf"]
 [ext_resource type="Texture2D" uid="uid://c8fj8vc4tgq6g" path="res://Art/Pixel Food/80_pancakes_dish.png" id="6_lv5nj"]
 [ext_resource type="Texture2D" uid="uid://b8a6qtgl0jx6r" path="res://Art/Pixel Food/87_ramen.png" id="8_vrlv7"]
+[ext_resource type="Texture2D" uid="uid://sica47utxkmg" path="res://Art/Collage Items/girl.png" id="9_beghk"]
 [ext_resource type="Texture2D" uid="uid://cys41d7dgqsh" path="res://Art/Collage Items/sargent_relish_large.png" id="9_cfxko"]
 [ext_resource type="Texture2D" uid="uid://b5g2j6h84aklu" path="res://Art/Pixel Food/85_roastedchicken.png" id="9_hkny0"]
 [ext_resource type="Script" path="res://Scripts/texture_items.gd" id="10_ncr0i"]
+[ext_resource type="Texture2D" uid="uid://cj1r8wjrn4uhx" path="res://Art/Collage Items/PlaceholderGlinko_scaled_16x_pngcrushed.png" id="10_s4mgy"]
+[ext_resource type="Texture2D" uid="uid://dwbo1nfajnjfg" path="res://Art/Collage Items/unnamed.png" id="11_7atnw"]
 [ext_resource type="Script" path="res://Scripts/popup_menu.gd" id="12_5ruke"]
+[ext_resource type="Texture2D" uid="uid://eqsn8uij31iv" path="res://Art/Collage Items/shirt1.png" id="12_b7rdl"]
 [ext_resource type="Texture2D" uid="uid://bm2g7d51baoj7" path="res://Art/Watercolor Textures/Art Texture 01.jpg" id="12_rlmj3"]
 [ext_resource type="Texture2D" uid="uid://cehgob8526qmg" path="res://Art/Watercolor Textures/Art Texture 012.jpg" id="13_773s4"]
 [ext_resource type="Texture2D" uid="uid://j6kmdq2ok1oh" path="res://Art/Watercolor Textures/Art Texture 047.JPG" id="14_fp6ea"]
@@ -69,28 +72,47 @@ scale = Vector2(5.95191, 5.50545)
 texture = ExtResource("6_lv5nj")
 script = ExtResource("3_j0w6o")
 
-[node name="Cloth1" type="Sprite2D" parent="ItemPanel"]
-position = Vector2(1506.08, 118.576)
-scale = Vector2(0.586027, 0.624949)
-texture = ExtResource("5_q7gwf")
-script = ExtResource("3_j0w6o")
-
-[node name="Cloth2" type="Sprite2D" parent="ItemPanel"]
+[node name="Ramen" type="Sprite2D" parent="ItemPanel"]
 position = Vector2(740.037, 115.881)
 scale = Vector2(5.32433, 6.72411)
 texture = ExtResource("8_vrlv7")
 script = ExtResource("3_j0w6o")
 
-[node name="Trash Can" type="Sprite2D" parent="ItemPanel"]
+[node name="Chicken" type="Sprite2D" parent="ItemPanel"]
 position = Vector2(515.425, 123.966)
 scale = Vector2(5.66, 6.04469)
 texture = ExtResource("9_hkny0")
 script = ExtResource("3_j0w6o")
 
 [node name="SargRelish" type="Sprite2D" parent="ItemPanel"]
-position = Vector2(1709.41, 118.579)
+position = Vector2(1496.62, 115.884)
 scale = Vector2(0.312802, 0.35527)
 texture = ExtResource("9_cfxko")
+script = ExtResource("3_j0w6o")
+
+[node name="HintGirl" type="Sprite2D" parent="ItemPanel"]
+position = Vector2(1714.14, 118.579)
+scale = Vector2(0.327581, 0.353165)
+texture = ExtResource("9_beghk")
+script = ExtResource("3_j0w6o")
+
+[node name="Glinko" type="Sprite2D" parent="ItemPanel"]
+position = Vector2(1936.39, 102.41)
+scale = Vector2(0.430733, 0.457892)
+texture = ExtResource("10_s4mgy")
+script = ExtResource("3_j0w6o")
+
+[node name="MrLumen" type="Sprite2D" parent="ItemPanel"]
+position = Vector2(2177.55, 121.274)
+scale = Vector2(0.610829, 0.685275)
+texture = ExtResource("11_7atnw")
+script = ExtResource("3_j0w6o")
+
+[node name="Mweep" type="Sprite2D" parent="ItemPanel"]
+position = Vector2(2413.99, 137.443)
+scale = Vector2(0.10814, 0.105552)
+texture = ExtResource("12_b7rdl")
+script = ExtResource("3_j0w6o")
 
 [node name="TexturePanel" type="Panel" parent="."]
 layout_mode = 0
