@@ -8,12 +8,12 @@ var delay: float = .2
 var is_original: bool = true  # Only original Sidebar images can duplicate
 var tween: Tween = null  # Store the tween instance
 var highlighted: bool = false
-@onready var canvas: ColorRect = $"../../Canvas"
+@onready var canvas: ColorRect = $"../../../Canvas"
 
 func _input(event: InputEvent) -> void:
 	# Allow duplication only if the sprite is inside the Sidebar and is an original
 	if event is InputEventMouseButton and event.pressed and get_rect().has_point(to_local(event.position)): 
-		if is_original and get_parent() and get_parent().get_parent().name == "Control" and get_parent().is_visible():
+		if is_original and get_parent() and get_parent().get_parent().name == "ItemPanel" and get_parent().is_visible():
 			var new_sprite: image = duplicate()
 			canvas.add_child(new_sprite)
 			new_sprite.global_position += Vector2(100,200)

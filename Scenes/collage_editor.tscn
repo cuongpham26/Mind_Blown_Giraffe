@@ -1,26 +1,35 @@
-[gd_scene load_steps=23 format=3 uid="uid://5el4mdr1tys1"]
+[gd_scene load_steps=32 format=3 uid="uid://5el4mdr1tys1"]
 
 [ext_resource type="Script" path="res://Scripts/button_sidebar.gd" id="1_qwjiq"]
 [ext_resource type="Texture2D" uid="uid://mvdeu6ekqdrj" path="res://Icons/character.png" id="2_ba6nw"]
+[ext_resource type="Texture2D" uid="uid://d30e1j4washyh" path="res://Art/Pixel Food/02_dish_2.png" id="2_dha8p"]
 [ext_resource type="Script" path="res://Scripts/image.gd" id="3_j0w6o"]
-[ext_resource type="Texture2D" uid="uid://bpe1q2aawewrb" path="res://Icons/control.png" id="5_gx3xw"]
+[ext_resource type="Texture2D" uid="uid://d3af3mkyuc544" path="res://Art/Pixel Food/15_burger.png" id="4_wcrbe"]
+[ext_resource type="Texture2D" uid="uid://ckr0mesji3wo0" path="res://Art/Pixel Food/38_friedegg.png" id="5_gylnl"]
 [ext_resource type="FontFile" uid="uid://cn25gdhs56fp8" path="res://Art/Fonts/advanced_pixel-7.ttf" id="5_hyoc1"]
-[ext_resource type="Texture2D" uid="uid://c8fj8vc4tgq6g" path="res://Art/Pixel Food/80_pancakes_dish.png" id="6_lv5nj"]
-[ext_resource type="Texture2D" uid="uid://b8a6qtgl0jx6r" path="res://Art/Pixel Food/87_ramen.png" id="8_vrlv7"]
+[ext_resource type="Texture2D" uid="uid://b1acd11jkvy6o" path="res://Art/Pixel Food/54_hotdog.png" id="6_81q8l"]
+[ext_resource type="Texture2D" uid="uid://dfdjqwqplc3m5" path="res://Art/Pixel Food/81_pizza.png" id="7_ob0tc"]
 [ext_resource type="Texture2D" uid="uid://sica47utxkmg" path="res://Art/Collage Items/girl.png" id="9_beghk"]
 [ext_resource type="Texture2D" uid="uid://cys41d7dgqsh" path="res://Art/Collage Items/sargent_relish_large.png" id="9_cfxko"]
-[ext_resource type="Texture2D" uid="uid://b5g2j6h84aklu" path="res://Art/Pixel Food/85_roastedchicken.png" id="9_hkny0"]
 [ext_resource type="Script" path="res://Scripts/texture_items.gd" id="10_ncr0i"]
 [ext_resource type="Texture2D" uid="uid://cj1r8wjrn4uhx" path="res://Art/Collage Items/PlaceholderGlinko_scaled_16x_pngcrushed.png" id="10_s4mgy"]
 [ext_resource type="Texture2D" uid="uid://dwbo1nfajnjfg" path="res://Art/Collage Items/unnamed.png" id="11_7atnw"]
 [ext_resource type="Script" path="res://Scripts/popup_menu.gd" id="12_5ruke"]
 [ext_resource type="Texture2D" uid="uid://eqsn8uij31iv" path="res://Art/Collage Items/shirt1.png" id="12_b7rdl"]
-[ext_resource type="Texture2D" uid="uid://bm2g7d51baoj7" path="res://Art/Watercolor Textures/Art Texture 01.jpg" id="12_rlmj3"]
-[ext_resource type="Texture2D" uid="uid://cehgob8526qmg" path="res://Art/Watercolor Textures/Art Texture 012.jpg" id="13_773s4"]
-[ext_resource type="Texture2D" uid="uid://j6kmdq2ok1oh" path="res://Art/Watercolor Textures/Art Texture 047.JPG" id="14_fp6ea"]
-[ext_resource type="Texture2D" uid="uid://ubtdf3ago1x3" path="res://Art/Watercolor Textures/Art Texture 07.jpg" id="15_7jstp"]
-[ext_resource type="Texture2D" uid="uid://bxmob6pp4mobv" path="res://Art/Watercolor Textures/Art Texture 011.jpg" id="16_p0ii1"]
+[ext_resource type="Script" path="res://Scenes/texture_panel.gd" id="14_d6k4h"]
+[ext_resource type="Texture2D" uid="uid://cabdjdpdp5eoe" path="res://Art/Pixel Shape Tiles/Pixel background/32x32/3. Color/Picture/color_background_65.png" id="14_om1dn"]
+[ext_resource type="Texture2D" uid="uid://rd5q1my1skqk" path="res://Art/Pixel Shape Tiles/Pixel background/32x32/3. Color/Picture/color_background_58.png" id="16_bdir1"]
+[ext_resource type="Texture2D" uid="uid://bvmsxncc1vcku" path="res://Art/Pixel Shape Tiles/Pixel background/32x32/3. Color/Picture/color_background_48.png" id="17_6wf4v"]
+[ext_resource type="Texture2D" uid="uid://ljputhwdfm11" path="res://Art/Pixel Shape Tiles/Pixel background/32x32/3. Color/Picture/color_background_34.png" id="18_b88w1"]
 [ext_resource type="AudioStream" uid="uid://boer2xv51576g" path="res://Sounds/button.mp3" id="19_4o12f"]
+[ext_resource type="Texture2D" uid="uid://c6ghv8ij6buls" path="res://Art/Pixel Shape Tiles/Pixel background/32x32/3. Color/Picture/color_background_47.png" id="19_cit5k"]
+[ext_resource type="Texture2D" uid="uid://6weky3mca8cf" path="res://Art/Pixel Shape Tiles/Pixel background/32x32/3. Color/Picture/color_background_54.png" id="20_2dhs4"]
+[ext_resource type="Texture2D" uid="uid://csaexiq8xhdkl" path="res://Art/Pixel Shape Tiles/Pixel background/32x32/3. Color/Picture/color_background_66.png" id="21_6xiop"]
+[ext_resource type="Texture2D" uid="uid://crjusabp7xfhe" path="res://Art/Pixel Shape Tiles/Pixel background/32x32/3. Color/Picture/color_background_71.png" id="22_v4m2m"]
+[ext_resource type="Texture2D" uid="uid://bebnsnpo50htr" path="res://Art/Pixel Shape Tiles/Pixel background/32x32/3. Color/Picture/color_background_76.png" id="23_yrfty"]
+[ext_resource type="Texture2D" uid="uid://cv52rpovb5oul" path="res://Art/Pixel Shape Tiles/Pixel background/32x32/3. Color/Picture/color_background_77.png" id="24_hjbw5"]
+[ext_resource type="Texture2D" uid="uid://o51lh1i85rb4" path="res://Art/Pixel Shape Tiles/Pixel background/32x32/3. Color/Picture/color_background_79.png" id="25_2ws3o"]
+[ext_resource type="Texture2D" uid="uid://chrbfv1kxfjk0" path="res://Art/Pixel Shape Tiles/Pixel background/32x32/3. Color/Picture/color_background_86.png" id="26_fo5ki"]
 
 [sub_resource type="Theme" id="Theme_pujwx"]
 
@@ -40,12 +49,21 @@ layout_mode = 0
 
 [node name="ItemPanel" type="Panel" parent="."]
 layout_mode = 0
-offset_left = 245.891
-offset_top = 1692.4
-offset_right = 3047.89
-offset_bottom = 1942.4
+offset_left = 414.0
+offset_top = 1687.0
+offset_right = 3043.0
+offset_bottom = 1942.0
 
-[node name="TextureButton" type="Button" parent="ItemPanel"]
+[node name="NextButton" type="Button" parent="ItemPanel"]
+layout_mode = 0
+offset_left = 2505.95
+offset_top = 48.5216
+offset_right = 2600.95
+offset_bottom = 204.522
+theme_override_font_sizes/font_size = 100
+text = ">"
+
+[node name="PrevButton" type="Button" parent="ItemPanel"]
 layout_mode = 0
 offset_left = 30.3481
 offset_top = 57.0471
@@ -54,61 +72,77 @@ offset_bottom = 212.047
 theme_override_font_sizes/font_size = 100
 text = "<"
 
-[node name="Giraffe" type="Sprite2D" parent="ItemPanel"]
-position = Vector2(276.627, 121.271)
-scale = Vector2(0.346338, 0.386795)
-texture = ExtResource("2_ba6nw")
-script = ExtResource("3_j0w6o")
+[node name="Food" type="Control" parent="ItemPanel"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
 
-[node name="MindBlown" type="Sprite2D" parent="ItemPanel"]
-position = Vector2(1257.83, 115.881)
-scale = Vector2(0.358905, 0.336136)
-texture = ExtResource("5_gx3xw")
-script = ExtResource("3_j0w6o")
-
-[node name="pancake" type="Sprite2D" parent="ItemPanel"]
-position = Vector2(993.02, 118.576)
-scale = Vector2(5.95191, 5.50545)
-texture = ExtResource("6_lv5nj")
-script = ExtResource("3_j0w6o")
-
-[node name="Ramen" type="Sprite2D" parent="ItemPanel"]
-position = Vector2(740.037, 115.881)
+[node name="Dish" type="Sprite2D" parent="ItemPanel/Food"]
+position = Vector2(678.323, 118.589)
 scale = Vector2(5.32433, 6.72411)
-texture = ExtResource("8_vrlv7")
+texture = ExtResource("2_dha8p")
 script = ExtResource("3_j0w6o")
 
-[node name="Chicken" type="Sprite2D" parent="ItemPanel"]
-position = Vector2(515.425, 123.966)
+[node name="Burger" type="Sprite2D" parent="ItemPanel/Food"]
+position = Vector2(467.897, 118.589)
 scale = Vector2(5.66, 6.04469)
-texture = ExtResource("9_hkny0")
+texture = ExtResource("4_wcrbe")
 script = ExtResource("3_j0w6o")
 
-[node name="SargRelish" type="Sprite2D" parent="ItemPanel"]
-position = Vector2(1496.62, 115.884)
+[node name="Egg" type="Sprite2D" parent="ItemPanel/Food"]
+position = Vector2(910.027, 118.589)
+scale = Vector2(5.95191, 5.50545)
+texture = ExtResource("5_gylnl")
+script = ExtResource("3_j0w6o")
+
+[node name="Hotdog" type="Sprite2D" parent="ItemPanel/Food"]
+position = Vector2(1099.17, 118.589)
+scale = Vector2(6.68125, 6.73681)
+texture = ExtResource("6_81q8l")
+script = ExtResource("3_j0w6o")
+
+[node name="Pizza" type="Sprite2D" parent="ItemPanel/Food"]
+position = Vector2(271.445, 124.686)
+scale = Vector2(8.15574, 8.03993)
+texture = ExtResource("7_ob0tc")
+script = ExtResource("3_j0w6o")
+
+[node name="GameCharacters" type="Control" parent="ItemPanel"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="SargRelish" type="Sprite2D" parent="ItemPanel/GameCharacters"]
+position = Vector2(1557.85, 110.505)
 scale = Vector2(0.312802, 0.35527)
 texture = ExtResource("9_cfxko")
 script = ExtResource("3_j0w6o")
 
-[node name="HintGirl" type="Sprite2D" parent="ItemPanel"]
-position = Vector2(1714.14, 118.579)
+[node name="HintGirl" type="Sprite2D" parent="ItemPanel/GameCharacters"]
+position = Vector2(1765.92, 123.979)
 scale = Vector2(0.327581, 0.353165)
 texture = ExtResource("9_beghk")
 script = ExtResource("3_j0w6o")
 
-[node name="Glinko" type="Sprite2D" parent="ItemPanel"]
-position = Vector2(1936.39, 102.41)
+[node name="Glinko" type="Sprite2D" parent="ItemPanel/GameCharacters"]
+position = Vector2(1978.71, 102.42)
 scale = Vector2(0.430733, 0.457892)
 texture = ExtResource("10_s4mgy")
 script = ExtResource("3_j0w6o")
 
-[node name="MrLumen" type="Sprite2D" parent="ItemPanel"]
-position = Vector2(2177.55, 121.274)
+[node name="Giraffe" type="Sprite2D" parent="ItemPanel/GameCharacters"]
+position = Vector2(1321.42, 118.589)
+scale = Vector2(0.346338, 0.386795)
+texture = ExtResource("2_ba6nw")
+script = ExtResource("3_j0w6o")
+
+[node name="MrLumen" type="Sprite2D" parent="ItemPanel/GameCharacters"]
+position = Vector2(2212.78, 118.589)
 scale = Vector2(0.610829, 0.685275)
 texture = ExtResource("11_7atnw")
 script = ExtResource("3_j0w6o")
 
-[node name="Mweep" type="Sprite2D" parent="ItemPanel"]
+[node name="Mweep" type="Sprite2D" parent="ItemPanel/GameCharacters"]
 position = Vector2(2413.99, 137.443)
 scale = Vector2(0.10814, 0.105552)
 texture = ExtResource("12_b7rdl")
@@ -117,54 +151,98 @@ script = ExtResource("3_j0w6o")
 [node name="TexturePanel" type="Panel" parent="."]
 layout_mode = 0
 offset_left = -2.0
-offset_top = -8.0
-offset_right = 248.0
-offset_bottom = 1942.0
+offset_top = -3.0
+offset_right = 414.0
+offset_bottom = 1940.0
+script = ExtResource("14_d6k4h")
 
-[node name="ItemButton" type="Button" parent="TexturePanel"]
-layout_mode = 0
-offset_left = 2872.3
-offset_top = 1748.91
-offset_right = 2967.3
-offset_bottom = 1904.91
-theme_override_font_sizes/font_size = 100
-text = ">"
+[node name="Set1" type="Control" parent="TexturePanel"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
 
-[node name="WaterColor1" type="Sprite2D" parent="TexturePanel"]
-position = Vector2(125.568, 263.68)
-scale = Vector2(0.0393309, 0.0428282)
-texture = ExtResource("12_rlmj3")
+[node name="Background65" type="Sprite2D" parent="TexturePanel/Set1"]
+position = Vector2(207.697, 1555.27)
+scale = Vector2(11.0459, 6.74763)
+texture = ExtResource("14_om1dn")
 script = ExtResource("10_ncr0i")
 
-[node name="Water Color2" type="Sprite2D" parent="TexturePanel"]
-position = Vector2(126.19, 441.207)
-scale = Vector2(0.0638588, 0.0334613)
-texture = ExtResource("13_773s4")
+[node name="Background58" type="Sprite2D" parent="TexturePanel/Set1"]
+position = Vector2(202.968, 310.22)
+scale = Vector2(10.935, 6.71622)
+texture = ExtResource("16_bdir1")
 script = ExtResource("10_ncr0i")
 
-[node name="WaterColor3" type="Sprite2D" parent="TexturePanel"]
-position = Vector2(126.19, 619.071)
-scale = Vector2(0.0700415, 0.0342728)
-texture = ExtResource("14_fp6ea")
+[node name="Background48" type="Sprite2D" parent="TexturePanel/Set1"]
+position = Vector2(205.333, 1307.34)
+scale = Vector2(10.9216, 6.69517)
+texture = ExtResource("17_6wf4v")
 script = ExtResource("10_ncr0i")
 
-[node name="WaterColor4" type="Sprite2D" parent="TexturePanel"]
-position = Vector2(126.191, 802.337)
-scale = Vector2(0.0656315, 0.0634464)
-texture = ExtResource("15_7jstp")
+[node name="Background34" type="Sprite2D" parent="TexturePanel/Set1"]
+position = Vector2(207.697, 1062.1)
+scale = Vector2(10.8427, 6.94175)
+texture = ExtResource("18_b88w1")
 script = ExtResource("10_ncr0i")
 
-[node name="WaterColor5" type="Sprite2D" parent="TexturePanel"]
-position = Vector2(126.191, 980.191)
-scale = Vector2(0.055665, 0.058854)
-texture = ExtResource("16_p0ii1")
+[node name="Background47" type="Sprite2D" parent="TexturePanel/Set1"]
+position = Vector2(202.968, 811.473)
+scale = Vector2(10.8242, 6.94782)
+texture = ExtResource("19_cit5k")
+script = ExtResource("10_ncr0i")
+
+[node name="Background54" type="Sprite2D" parent="TexturePanel/Set1"]
+position = Vector2(205.333, 558.151)
+scale = Vector2(10.9166, 6.8636)
+texture = ExtResource("20_2dhs4")
+script = ExtResource("10_ncr0i")
+
+[node name="Set2" type="Control" parent="TexturePanel"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Background66" type="Sprite2D" parent="TexturePanel/Set2"]
+position = Vector2(205.333, 558.151)
+scale = Vector2(10.9492, 6.85274)
+texture = ExtResource("21_6xiop")
+script = ExtResource("10_ncr0i")
+
+[node name="Background71" type="Sprite2D" parent="TexturePanel/Set2"]
+position = Vector2(202.968, 310.22)
+scale = Vector2(10.9648, 6.73834)
+texture = ExtResource("22_v4m2m")
+script = ExtResource("10_ncr0i")
+
+[node name="Background76" type="Sprite2D" parent="TexturePanel/Set2"]
+position = Vector2(202.968, 811.473)
+scale = Vector2(10.8895, 6.94517)
+texture = ExtResource("23_yrfty")
+script = ExtResource("10_ncr0i")
+
+[node name="Background77" type="Sprite2D" parent="TexturePanel/Set2"]
+position = Vector2(207.697, 1555.27)
+scale = Vector2(11.0742, 6.69252)
+texture = ExtResource("24_hjbw5")
+script = ExtResource("10_ncr0i")
+
+[node name="Background79" type="Sprite2D" parent="TexturePanel/Set2"]
+position = Vector2(205.333, 1062.1)
+scale = Vector2(10.9677, 6.92544)
+texture = ExtResource("25_2ws3o")
+script = ExtResource("10_ncr0i")
+
+[node name="Background86" type="Sprite2D" parent="TexturePanel/Set2"]
+position = Vector2(207.697, 1310.03)
+scale = Vector2(11.1481, 6.86096)
+texture = ExtResource("26_fo5ki")
 script = ExtResource("10_ncr0i")
 
 [node name="SettingsButton" type="Button" parent="TexturePanel"]
 layout_mode = 0
 offset_left = 16.0
-offset_top = 1843.0
-offset_right = 231.0
+offset_top = 1825.0
+offset_right = 409.0
 offset_bottom = 1928.0
 theme_override_fonts/font = ExtResource("5_hyoc1")
 theme_override_font_sizes/font_size = 65
@@ -189,12 +267,30 @@ item_5/text = "Delete - Backspace"
 item_5/id = 5
 script = ExtResource("12_5ruke")
 
+[node name="PrevSet" type="Button" parent="TexturePanel"]
+layout_mode = 0
+offset_left = 42.1937
+offset_top = 21.8644
+offset_right = 167.194
+offset_bottom = 172.864
+theme_override_font_sizes/font_size = 90
+text = "<"
+
+[node name="NextSet" type="Button" parent="TexturePanel"]
+layout_mode = 0
+offset_left = 247.891
+offset_top = 21.8644
+offset_right = 372.891
+offset_bottom = 172.864
+theme_override_font_sizes/font_size = 90
+text = ">"
+
 [node name="BackButton" type="Button" parent="."]
 layout_mode = 0
 offset_left = 11.8217
-offset_top = 1732.83
-offset_right = 229.822
-offset_bottom = 1803.83
+offset_top = 1681.62
+offset_right = 401.822
+offset_bottom = 1777.62
 scale = Vector2(1, 1.28272)
 theme = SubResource("Theme_pujwx")
 theme_override_fonts/font = ExtResource("5_hyoc1")
@@ -205,9 +301,11 @@ text = "Main Menu
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="BackButton"]
 stream = ExtResource("19_4o12f")
 
-[connection signal="pressed" from="ItemPanel/TextureButton" to="ItemPanel" method="_on_texture_button_pressed"]
-[connection signal="pressed" from="ItemPanel/TextureButton" to="TexturePanel" method="_on_texture_button_pressed"]
-[connection signal="pressed" from="TexturePanel/ItemButton" to="ItemPanel" method="_on_item_button_pressed"]
-[connection signal="pressed" from="TexturePanel/ItemButton" to="TexturePanel" method="_on_item_button_pressed"]
+[connection signal="pressed" from="ItemPanel/NextButton" to="ItemPanel" method="_on_item_button_pressed"]
+[connection signal="pressed" from="ItemPanel/NextButton" to="TexturePanel" method="_on_item_button_pressed"]
+[connection signal="pressed" from="ItemPanel/PrevButton" to="ItemPanel" method="_on_texture_button_pressed"]
+[connection signal="pressed" from="ItemPanel/PrevButton" to="TexturePanel" method="_on_texture_button_pressed"]
 [connection signal="pressed" from="TexturePanel/SettingsButton" to="TexturePanel/SettingsButton/PopupMenu" method="_on_settings_button_pressed"]
+[connection signal="pressed" from="TexturePanel/PrevSet" to="TexturePanel" method="_on_prev_set_pressed"]
+[connection signal="pressed" from="TexturePanel/NextSet" to="TexturePanel" method="_on_next_set_pressed"]
 [connection signal="pressed" from="BackButton" to="." method="_on_back_button_pressed"]

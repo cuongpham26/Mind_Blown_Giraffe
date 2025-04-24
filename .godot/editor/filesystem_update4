@@ -6,3 +6,5 @@ res://Scenes/store.tscn
 res://Scenes/yapping.tscn
 res://Scenes/main_select_screen.tscn
 res://Scripts/image.gd
+res://Scripts/texture_items.gd
+res://Scenes/texture_panel.gd
