@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c6hynsgcxpev0"
-path="res://.godot/imported/48x48 trees 3.png-079292cdb4eefcae8967f9107695cae4.ctex"
+uid="uid://y0jdx3k6l32v"
+path="res://.godot/imported/BirdFly.png-9a56a621c7ad55a7fa8db337308fe8a0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art/Stickers(1)/48x48 trees 3.png"
-dest_files=["res://.godot/imported/48x48 trees 3.png-079292cdb4eefcae8967f9107695cae4.ctex"]
+source_file="res://Art/Stickers/BirdFly.png"
+dest_files=["res://.godot/imported/BirdFly.png-9a56a621c7ad55a7fa8db337308fe8a0.ctex"]
 
 [params]
 

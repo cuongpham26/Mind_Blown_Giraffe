@@ -1,7 +1,8 @@
-[gd_scene load_steps=58 format=3 uid="uid://5el4mdr1tys1"]
+[gd_scene load_steps=59 format=3 uid="uid://5el4mdr1tys1"]
 
 [ext_resource type="Script" uid="uid://cp7i5uxpm2uao" path="res://Scripts/Collage/back_button.gd" id="1_0o4s1"]
 [ext_resource type="Script" uid="uid://cnj20m55m02y4" path="res://Scripts/Collage/item_panel.gd" id="2_785bu"]
+[ext_resource type="Texture2D" uid="uid://d23s2n4ngpuw4" path="res://Art/Pixel Shape Tiles/Pixel background/32x32/3. Color/Picture/color_background_88.png" id="2_vc403"]
 [ext_resource type="Texture2D" uid="uid://cys41d7dgqsh" path="res://Art/Collage Items/sargent_relish_large.png" id="3_vc403"]
 [ext_resource type="Script" uid="uid://b3vedihjqeir1" path="res://Scripts/Collage/image.gd" id="4_fbery"]
 [ext_resource type="Texture2D" uid="uid://sica47utxkmg" path="res://Art/Collage Items/girl.png" id="5_bndh5"]
@@ -9,22 +10,22 @@
 [ext_resource type="Texture2D" uid="uid://dwbo1nfajnjfg" path="res://Art/Collage Items/unnamed.png" id="7_vmgup"]
 [ext_resource type="Texture2D" uid="uid://eqsn8uij31iv" path="res://Art/Collage Items/shirt1.png" id="8_1abed"]
 [ext_resource type="Texture2D" uid="uid://mvdeu6ekqdrj" path="res://Icons/character.png" id="9_rr75x"]
-[ext_resource type="Texture2D" uid="uid://br3btclrjq4e8" path="res://Art/Stickers(1)/FrogIdle.png" id="10_vphub"]
-[ext_resource type="Texture2D" uid="uid://dds0hijgcgunc" path="res://Art/Stickers(1)/Pig.png" id="11_x2qox"]
-[ext_resource type="Texture2D" uid="uid://dykceqvit0qg" path="res://Art/Stickers(1)/Bunny.png" id="12_hwpc2"]
-[ext_resource type="Texture2D" uid="uid://y0jdx3k6l32v" path="res://Art/Stickers(1)/BirdFly.png" id="13_yhfgt"]
-[ext_resource type="Texture2D" uid="uid://dtkd816ocdnyp" path="res://Art/Stickers(1)/Cattt.png" id="14_uvycf"]
-[ext_resource type="Texture2D" uid="uid://b0hssl7tll26i" path="res://Art/Stickers(1)/Golden.png" id="15_mnsn8"]
+[ext_resource type="Texture2D" uid="uid://br3btclrjq4e8" path="res://Art/Stickers/FrogIdle.png" id="10_vphub"]
+[ext_resource type="Texture2D" uid="uid://dds0hijgcgunc" path="res://Art/Stickers/Pig.png" id="11_x2qox"]
+[ext_resource type="Texture2D" uid="uid://dykceqvit0qg" path="res://Art/Stickers/Bunny.png" id="12_hwpc2"]
+[ext_resource type="Texture2D" uid="uid://y0jdx3k6l32v" path="res://Art/Stickers/BirdFly.png" id="13_yhfgt"]
+[ext_resource type="Texture2D" uid="uid://dtkd816ocdnyp" path="res://Art/Stickers/Cattt.png" id="14_uvycf"]
+[ext_resource type="Texture2D" uid="uid://b0hssl7tll26i" path="res://Art/Stickers/Golden.png" id="15_mnsn8"]
 [ext_resource type="Texture2D" uid="uid://d30e1j4washyh" path="res://Art/Pixel Food/02_dish_2.png" id="16_tl204"]
 [ext_resource type="Texture2D" uid="uid://d3af3mkyuc544" path="res://Art/Pixel Food/15_burger.png" id="17_hwqb8"]
 [ext_resource type="Texture2D" uid="uid://ckr0mesji3wo0" path="res://Art/Pixel Food/38_friedegg.png" id="18_ym3w7"]
 [ext_resource type="Texture2D" uid="uid://b1acd11jkvy6o" path="res://Art/Pixel Food/54_hotdog.png" id="19_of8wk"]
 [ext_resource type="Texture2D" uid="uid://dfdjqwqplc3m5" path="res://Art/Pixel Food/81_pizza.png" id="20_71quc"]
-[ext_resource type="Texture2D" uid="uid://c1skctge7130j" path="res://Art/Stickers(1)/16x32 trees 3.png" id="21_1mnv2"]
-[ext_resource type="Texture2D" uid="uid://d3n7obfiu4fk6" path="res://Art/Stickers(1)/16x32 trees 2.png" id="22_shvgs"]
-[ext_resource type="Texture2D" uid="uid://c67b754i6yxoc" path="res://Art/Stickers(1)/16x32 trees 4.png" id="23_5b0hw"]
-[ext_resource type="Texture2D" uid="uid://c6hynsgcxpev0" path="res://Art/Stickers(1)/48x48 trees 3.png" id="24_tt8r3"]
-[ext_resource type="Texture2D" uid="uid://mf1ojy1flxba" path="res://Art/Stickers(1)/48x48 trees 2.png" id="25_t4phn"]
+[ext_resource type="Texture2D" uid="uid://c1skctge7130j" path="res://Art/Stickers/16x32 trees 3.png" id="21_1mnv2"]
+[ext_resource type="Texture2D" uid="uid://d3n7obfiu4fk6" path="res://Art/Stickers/16x32 trees 2.png" id="22_shvgs"]
+[ext_resource type="Texture2D" uid="uid://c67b754i6yxoc" path="res://Art/Stickers/16x32 trees 4.png" id="23_5b0hw"]
+[ext_resource type="Texture2D" uid="uid://c6hynsgcxpev0" path="res://Art/Stickers/48x48 trees 3.png" id="24_tt8r3"]
+[ext_resource type="Texture2D" uid="uid://mf1ojy1flxba" path="res://Art/Stickers/48x48 trees 2.png" id="25_t4phn"]
 [ext_resource type="Texture2D" uid="uid://ds5voa8eovhkn" path="res://Art/Tileable Cloth/Cloth_19-256x256.png" id="26_hdgri"]
 [ext_resource type="Texture2D" uid="uid://kv7tr01heukm" path="res://Art/Tileable Cloth/Cloth_24-256x256.png" id="27_x306t"]
 [ext_resource type="Texture2D" uid="uid://8tnao7tppiae" path="res://Art/Tileable Cloth/Cloth_10-256x256.png" id="28_cicww"]
@@ -65,10 +66,10 @@ anchors_preset = 0
 scale = Vector2(0.422952, 0.37107)
 script = ExtResource("1_0o4s1")
 
-[node name="Background" type="ColorRect" parent="."]
-layout_mode = 0
-offset_right = 3020.0
-offset_bottom = 1939.0
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(1511.99, 972.862)
+scale = Vector2(94.4, 60.416)
+texture = ExtResource("2_vc403")
 
 [node name="ItemPanel" type="Panel" parent="."]
 layout_mode = 0

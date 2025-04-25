@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c1skctge7130j"
-path="res://.godot/imported/16x32 trees 3.png-76374eb37921db0eae57493487fa0f04.ctex"
+uid="uid://br3btclrjq4e8"
+path="res://.godot/imported/FrogIdle.png-2471207f405722fe85af472c55d16b64.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art/Stickers(1)/16x32 trees 3.png"
-dest_files=["res://.godot/imported/16x32 trees 3.png-76374eb37921db0eae57493487fa0f04.ctex"]
+source_file="res://Art/Stickers/FrogIdle.png"
+dest_files=["res://.godot/imported/FrogIdle.png-2471207f405722fe85af472c55d16b64.ctex"]
 
 [params]
 

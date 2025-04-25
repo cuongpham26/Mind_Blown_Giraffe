@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dykceqvit0qg"
-path="res://.godot/imported/Bunny.png-ff55246e969bfb2f5bec4b658fcbe25d.ctex"
+uid="uid://c6hynsgcxpev0"
+path="res://.godot/imported/48x48 trees 3.png-4e8f0174ebfb8815179a1cc0c1597a4a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art/Stickers(1)/Bunny.png"
-dest_files=["res://.godot/imported/Bunny.png-ff55246e969bfb2f5bec4b658fcbe25d.ctex"]
+source_file="res://Art/Stickers/48x48 trees 3.png"
+dest_files=["res://.godot/imported/48x48 trees 3.png-4e8f0174ebfb8815179a1cc0c1597a4a.ctex"]
 
 [params]
 

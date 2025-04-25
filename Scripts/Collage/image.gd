@@ -1,4 +1,4 @@
-class_name image extends Sprite2D
+extends Sprite2D
  
 # Drag and drop variables
 var draggable: bool = false
@@ -9,17 +9,19 @@ var tween: Tween = null  # Store the tween instance
 var highlighted: bool = false
 var mission = Mission.new()
 var file_path: String
-@onready var canvas = $"../../../Background"
+@onready var background: Sprite2D = get_node("../../../Background")
 
 func _input(event: InputEvent) -> void:
 	# Allow duplication only if the sprite is inside the Sidebar and is an original
 	if event is InputEventMouseButton and event.pressed and get_rect().has_point(to_local(event.position)): 
 		if is_original and get_parent() and get_parent().get_parent().name == "ItemPanel" and get_parent().is_visible():
-			var new_sprite: image = duplicate()
-			canvas.add_child(new_sprite)
-			new_sprite.global_position += Vector2(100, 200)
+			var new_sprite: Sprite2D = duplicate()
+			new_sprite.global_position += Vector2(250, 200)
 			new_sprite.is_original = false  # Mark duplicate as non-original
 			
+			background.get_parent().add_child(new_sprite)
+			
+
 			file_path = new_sprite.get_texture().load_path.get_file().get_slice("-", 0)
 			mission.add_asset(file_path)
 			

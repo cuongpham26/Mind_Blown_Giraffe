@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dds0hijgcgunc"
-path="res://.godot/imported/Pig.png-24d1cfd6037b16341377d6ea6f2a4d61.ctex"
+uid="uid://dtkd816ocdnyp"
+path="res://.godot/imported/Cattt.png-6c13728c3d4981443c5eaab305e63bb2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art/Stickers(1)/Pig.png"
-dest_files=["res://.godot/imported/Pig.png-24d1cfd6037b16341377d6ea6f2a4d61.ctex"]
+source_file="res://Art/Stickers/Cattt.png"
+dest_files=["res://.godot/imported/Cattt.png-6c13728c3d4981443c5eaab305e63bb2.ctex"]
 
 [params]
 

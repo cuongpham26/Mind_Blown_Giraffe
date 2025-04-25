@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://y0jdx3k6l32v"
-path="res://.godot/imported/BirdFly.png-34445664727c0e82b5a80ea312ec3252.ctex"
+uid="uid://dykceqvit0qg"
+path="res://.godot/imported/Bunny.png-d5c8076a2fae751b942d0e3f2da33643.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art/Stickers(1)/BirdFly.png"
-dest_files=["res://.godot/imported/BirdFly.png-34445664727c0e82b5a80ea312ec3252.ctex"]
+source_file="res://Art/Stickers/Bunny.png"
+dest_files=["res://.godot/imported/Bunny.png-d5c8076a2fae751b942d0e3f2da33643.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d3n7obfiu4fk6"
-path="res://.godot/imported/16x32 trees 2.png-5279255b5314cfac44a926bc799355e4.ctex"
+uid="uid://mf1ojy1flxba"
+path="res://.godot/imported/48x48 trees 2.png-3b9bc26306b1ea7d3e5818cd9c5e1705.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art/Stickers(1)/16x32 trees 2.png"
-dest_files=["res://.godot/imported/16x32 trees 2.png-5279255b5314cfac44a926bc799355e4.ctex"]
+source_file="res://Art/Stickers/48x48 trees 2.png"
+dest_files=["res://.godot/imported/48x48 trees 2.png-3b9bc26306b1ea7d3e5818cd9c5e1705.ctex"]
 
 [params]
 

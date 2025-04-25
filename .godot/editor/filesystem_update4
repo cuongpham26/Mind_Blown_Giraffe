@@ -9,3 +9,5 @@ res://Scripts/Collage/mission.gd
 res://Scripts/Collage/asset.gd
 res://Scripts/Collage/image.gd
 res://Scenes/select.tscn
+res://Scripts/Collage/texture_items.gd
+res://Scripts/Collage/texture_panel.gd
