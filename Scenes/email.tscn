@@ -1,6 +1,6 @@
 [gd_scene load_steps=20 format=3 uid="uid://b0ci678klg5us"]
 
-[ext_resource type="Script" path="res://Scripts/email_client.gd" id="1_iir0i"]
+[ext_resource type="Script" uid="uid://m30jvmh6sx0n" path="res://Scripts/Email/email_client.gd" id="1_iir0i"]
 [ext_resource type="Texture2D" uid="uid://bpenb88366m05" path="res://Art/Pixel Shape Tiles/Pixel background/64x64/3. Color/Picture/color_background_83.png" id="1_x0cem"]
 [ext_resource type="Texture2D" uid="uid://5wsfprv8bn24" path="res://Icons/computer.png" id="2_giriu"]
 [ext_resource type="FontFile" uid="uid://cn25gdhs56fp8" path="res://Art/Fonts/advanced_pixel-7.ttf" id="4_tt3ch"]
@@ -42,7 +42,7 @@ corner_radius_top_right = 10
 corner_radius_bottom_right = 10
 corner_radius_bottom_left = 10
 
-[node name="Control2" type="Control"]
+[node name="Control" type="Control"]
 layout_mode = 3
 anchors_preset = 0
 offset_right = 1280.0
@@ -50,8 +50,8 @@ offset_bottom = 724.0
 script = ExtResource("1_iir0i")
 
 [node name="Background" type="Sprite2D" parent="."]
-position = Vector2(636.501, 359.5)
-scale = Vector2(19.9532, 11.2969)
+position = Vector2(640, 360)
+scale = Vector2(20, 11.319)
 texture = ExtResource("1_x0cem")
 
 [node name="Computer" type="Sprite2D" parent="."]
@@ -106,12 +106,12 @@ theme_override_fonts/font = ExtResource("4_tt3ch")
 theme_override_font_sizes/font_size = 40
 text = "mbgMail"
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="Giraffe" type="Sprite2D" parent="."]
 position = Vector2(212, 159)
 scale = Vector2(0.0664063, 0.0703125)
 texture = ExtResource("6_d8x01")
 
-[node name="Label" type="Label" parent="."]
+[node name="SearchLabel" type="Label" parent="."]
 layout_mode = 0
 offset_left = 377.0
 offset_top = 145.0
@@ -236,6 +236,9 @@ offset_bottom = 433.0
 scale = Vector2(0.25, 0.25)
 texture_normal = ExtResource("13_rixfc")
 
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="OrderButton"]
+stream = ExtResource("14_o88le")
+
 [node name="SenderLabel" type="Label" parent="."]
 layout_mode = 0
 offset_left = 441.0
@@ -267,9 +270,6 @@ offset_bottom = 257.0
 theme_override_colors/font_color = Color(0.0159718, 0.0159718, 0.0159718, 1)
 theme_override_fonts/font = ExtResource("4_tt3ch")
 text = "Hi honey! I saw you opened a shop......"
-
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("14_o88le")
 
 [connection signal="pressed" from="BackButton" to="." method="_on_back_button_pressed"]
 [connection signal="pressed" from="OrderButton" to="." method="_on_order_button_pressed"]

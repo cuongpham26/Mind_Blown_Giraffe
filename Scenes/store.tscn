@@ -11,15 +11,13 @@ script/source = "extends Control
 
 @onready var animation = $AnimationPlayer
 @onready var sprite = $Robby
-
 @onready var button = $AudioStreamPlayer
 
 @onready var back_button  = $BackButton
 
-@onready var label = $Label2
+@onready var label = $Label
 
 var is_playing = false 
-
 
 
 func _on_back_button_pressed() -> void:
@@ -29,7 +27,7 @@ func _on_back_button_pressed() -> void:
 	back_button.disabled = true 
 	button.play()
 	await button.finished
-	get_tree().change_scene_to_file(\"res://Scenes/main_select_screen.tscn\")
+	get_tree().change_scene_to_file(\"res://Scenes/select.tscn\")
 	is_playing = false
 	back_button.disabled = false 
 
@@ -79,11 +77,11 @@ tracks/0/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_3hujf"]
 _data = {
-"RESET": SubResource("Animation_bglii"),
-"talking": SubResource("Animation_qwvhl")
+&"RESET": SubResource("Animation_bglii"),
+&"talking": SubResource("Animation_qwvhl")
 }
 
-[node name="Control2" type="Control"]
+[node name="Control" type="Control"]
 layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
@@ -91,8 +89,8 @@ offset_bottom = 40.0
 script = SubResource("GDScript_kyo8m")
 
 [node name="Background" type="Sprite2D" parent="."]
-position = Vector2(629, 342.5)
-scale = Vector2(20.6562, 11.7031)
+position = Vector2(640, 360)
+scale = Vector2(20, 11.331)
 texture = ExtResource("1_myanm")
 
 [node name="BackButton" type="Button" parent="."]
@@ -109,7 +107,7 @@ stream = ExtResource("3_j105s")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
-"": SubResource("AnimationLibrary_3hujf")
+&"": SubResource("AnimationLibrary_3hujf")
 }
 
 [node name="Robby" type="Sprite2D" parent="."]
@@ -117,7 +115,7 @@ position = Vector2(604, 260)
 scale = Vector2(35.8672, 33.7734)
 texture = ExtResource("4_32xlu")
 
-[node name="Label2" type="Label" parent="."]
+[node name="Label" type="Label" parent="."]
 layout_mode = 0
 offset_left = 394.0
 offset_top = 533.0

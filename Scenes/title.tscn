@@ -1,0 +1,125 @@
+[gd_scene load_steps=14 format=3 uid="uid://d0b44yhwb3r7h"]
+
+[ext_resource type="Script" uid="uid://12dykyi3vd3x" path="res://Scripts/Title/title_screen.gd" id="1_6aagf"]
+[ext_resource type="Texture2D" uid="uid://be2c6ipkeavsi" path="res://Art/Pixel Shape Tiles/Pixel background/32x32/3. Color/Picture/color_background_83.png" id="2_kyk5u"]
+[ext_resource type="FontFile" uid="uid://cn25gdhs56fp8" path="res://Art/Fonts/advanced_pixel-7.ttf" id="3_cwqts"]
+[ext_resource type="Script" uid="uid://bktit25op6cjm" path="res://Scripts/Title/title_label_effect.gd" id="4_th2ad"]
+[ext_resource type="AudioStream" uid="uid://boer2xv51576g" path="res://Sounds/button.mp3" id="5_qh4d7"]
+[ext_resource type="Texture2D" uid="uid://mvdeu6ekqdrj" path="res://Icons/character.png" id="6_lv7gn"]
+[ext_resource type="Script" uid="uid://dqqs73706cre7" path="res://Scripts/Title/mbg.gd" id="7_5vuho"]
+[ext_resource type="Texture2D" uid="uid://de1lfgblxpnkf" path="res://Icons/explosion.png" id="8_ohkfa"]
+[ext_resource type="Texture2D" uid="uid://b42ten8lbm0wk" path="res://Icons/giraffe_hover.png" id="9_ps378"]
+
+[sub_resource type="Theme" id="Theme_v303f"]
+
+[sub_resource type="Theme" id="Theme_sgcfn"]
+default_font = ExtResource("3_cwqts")
+default_font_size = 200
+
+[sub_resource type="Theme" id="Theme_sr01b"]
+default_base_scale = 2.0
+default_font = ExtResource("3_cwqts")
+
+[sub_resource type="GDScript" id="GDScript_66w1k"]
+script/source = "extends Sprite2D
+
+var angle_amount = 20 # max degrees to rotate (you can make this smaller)
+var speed = 2 # how fast it rotates back and forth
+var time_passed = 0.0
+
+func _process(delta):
+	time_passed += delta
+	rotation_degrees = sin(time_passed * speed) * angle_amount
+"
+
+[node name="TitleScreen" type="Control"]
+layout_mode = 3
+anchor_right = 1.054
+anchor_bottom = 1.07
+offset_right = -51.12
+offset_bottom = -38.4
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_v303f")
+script = ExtResource("1_6aagf")
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(645.5, 354.5)
+scale = Vector2(40.3438, 23.4063)
+texture = ExtResource("2_kyk5u")
+
+[node name="TitleLabel1" type="Label" parent="."]
+layout_mode = 0
+offset_left = 132.0
+offset_top = 34.0
+offset_right = 1152.0
+offset_bottom = 285.0
+theme = SubResource("Theme_sgcfn")
+theme_override_colors/font_color = Color(0.537308, 0.324746, 0.882955, 1)
+theme_override_font_sizes/font_size = 250
+text = "Paper Trail"
+horizontal_alignment = 1
+script = ExtResource("4_th2ad")
+
+[node name="StartButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 441.0
+offset_top = 293.0
+offset_right = 829.0
+offset_bottom = 401.0
+theme = SubResource("Theme_sr01b")
+theme_override_colors/font_pressed_color = Color(0.927533, 0.927533, 0.927533, 1)
+theme_override_font_sizes/font_size = 100
+text = "Start"
+
+[node name="QuitButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 441.0
+offset_top = 551.0
+offset_right = 832.0
+offset_bottom = 659.0
+theme = SubResource("Theme_sr01b")
+theme_override_font_sizes/font_size = 100
+text = "Quit
+"
+
+[node name="OptionsButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 443.0
+offset_top = 425.0
+offset_right = 830.0
+offset_bottom = 533.0
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("3_cwqts")
+theme_override_font_sizes/font_size = 100
+text = "Options
+"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_qh4d7")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(220, 503)
+scale = Vector2(0.544922, 0.539062)
+texture = ExtResource("6_lv7gn")
+script = ExtResource("7_5vuho")
+
+[node name="Sprite2D" type="Sprite2D" parent="Sprite2D"]
+position = Vector2(93.5914, -324.638)
+scale = Vector2(0.428315, 0.391304)
+texture = ExtResource("8_ohkfa")
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+position = Vector2(1038, 501)
+scale = Vector2(0.545, 0.602)
+texture = ExtResource("9_ps378")
+script = SubResource("GDScript_66w1k")
+
+[node name="Sprite2D" type="Sprite2D" parent="Sprite2D2"]
+position = Vector2(91.7431, -302.326)
+scale = Vector2(0.371846, 0.342465)
+texture = ExtResource("8_ohkfa")
+
+[connection signal="pressed" from="StartButton" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="QuitButton" to="." method="_on_quit_button_pressed"]
+[connection signal="pressed" from="OptionsButton" to="." method="_on_options_button_pressed"]

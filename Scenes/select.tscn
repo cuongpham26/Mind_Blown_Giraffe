@@ -1,0 +1,176 @@
+[gd_scene load_steps=21 format=3 uid="uid://dvaopj5kysy54"]
+
+[ext_resource type="Script" uid="uid://fryghld3ya6c" path="res://Scripts/Select/level_select_screen.gd" id="1_gal4i"]
+[ext_resource type="Texture2D" uid="uid://be2c6ipkeavsi" path="res://Art/Pixel Shape Tiles/Pixel background/32x32/3. Color/Picture/color_background_83.png" id="2_sj01t"]
+[ext_resource type="Texture2D" uid="uid://dpbl0ghyanb23" path="res://Icons/mouse.png" id="3_cg5vl"]
+[ext_resource type="Texture2D" uid="uid://b3p3m5pcx7fw5" path="res://Icons/mouse_lighter.png" id="4_8vh4o"]
+[ext_resource type="AudioStream" uid="uid://bd7vmpg61hro1" path="res://Sounds/click.wav" id="5_xsa4s"]
+[ext_resource type="FontFile" uid="uid://cn25gdhs56fp8" path="res://Art/Fonts/advanced_pixel-7.ttf" id="6_ulww2"]
+[ext_resource type="Script" uid="uid://chm08jy666gn1" path="res://Scripts/Select/mouse_label_effect.gd" id="7_lc6pq"]
+[ext_resource type="AudioStream" uid="uid://boer2xv51576g" path="res://Sounds/button.mp3" id="8_7qflk"]
+[ext_resource type="Texture2D" uid="uid://b7y377w8puv7x" path="res://Icons/keys.png" id="9_88440"]
+[ext_resource type="Texture2D" uid="uid://cr18y08gy426e" path="res://Icons/keys_light.png" id="10_0b87j"]
+[ext_resource type="AudioStream" uid="uid://btpr24272lj7s" path="res://Sounds/store.mp3" id="11_uc76u"]
+[ext_resource type="Texture2D" uid="uid://mebmp7ojhhgw" path="res://Icons/paper.png" id="12_lo4j1"]
+[ext_resource type="Script" uid="uid://ctxaa551oo0q3" path="res://Scripts/Select/free_collage_label_effect.gd" id="13_3avfl"]
+[ext_resource type="AudioStream" uid="uid://xeufwhc5r7no" path="res://Sounds/paper.wav" id="14_pbtad"]
+[ext_resource type="Texture2D" uid="uid://cpnuw5asxv7ca" path="res://Icons/ruler.png" id="15_vcven"]
+[ext_resource type="Texture2D" uid="uid://drcpgnurvx6yu" path="res://Icons/sissors.png" id="16_rymru"]
+
+[sub_resource type="Theme" id="Theme_xp1my"]
+
+[sub_resource type="Theme" id="Theme_75chc"]
+
+[sub_resource type="Theme" id="Theme_nm6vq"]
+
+[sub_resource type="GDScript" id="GDScript_pd01v"]
+script/source = "extends Label
+
+@export var speed: float = 2.0  # Speed of pulsation
+@export var scale_amount: float = 0.05  # Subtle pulsing
+
+var time: float = 0.0
+
+func _ready() -> void:
+	# Set the pivot offset to the center of the Label
+	pivot_offset = size / 2
+
+func _process(delta: float) -> void:
+	time += delta * speed
+	var scale_factor = 1.0 + sin(time) * scale_amount  # Smooth pulsation
+	scale = Vector2(scale_factor, scale_factor)  # Apply scaling
+"
+
+[node name="LevelSelectScreen" type="Control"]
+layout_mode = 3
+anchor_right = 2.387
+anchor_bottom = 2.159
+offset_right = -2.36011
+offset_bottom = -0.100098
+scale = Vector2(1.00071, 1)
+script = ExtResource("1_gal4i")
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(640, 360)
+scale = Vector2(40, 22.566)
+texture = ExtResource("2_sj01t")
+
+[node name="MouseButton" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 946.328
+offset_top = 15.0
+offset_right = 1768.33
+offset_bottom = 1740.0
+scale = Vector2(0.4, 0.4)
+theme = SubResource("Theme_xp1my")
+texture_normal = ExtResource("3_cg5vl")
+texture_pressed = ExtResource("4_8vh4o")
+texture_hover = ExtResource("4_8vh4o")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="MouseButton"]
+stream = ExtResource("5_xsa4s")
+volume_db = -24.0
+
+[node name="MouseLabel" type="Label" parent="MouseButton"]
+layout_mode = 0
+offset_left = -2.0
+offset_top = 1525.0
+offset_right = 792.0
+offset_bottom = 1928.0
+theme_override_colors/font_color = Color(0.537255, 0.32549, 0.882353, 1)
+theme_override_fonts/font = ExtResource("6_ulww2")
+theme_override_font_sizes/font_size = 200
+text = "Go To Email
+"
+script = ExtResource("7_lc6pq")
+
+[node name="BackButton" type="Button" parent="."]
+layout_mode = 0
+offset_right = 218.0
+offset_bottom = 59.0
+theme = SubResource("Theme_75chc")
+theme_override_fonts/font = ExtResource("6_ulww2")
+theme_override_font_sizes/font_size = 50
+text = "Back To Title"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="BackButton"]
+stream = ExtResource("8_7qflk")
+
+[node name="KeysButton" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 627.0
+offset_top = 3.0
+offset_right = 2331.0
+offset_bottom = 1733.0
+scale = Vector2(0.2, 0.2)
+theme = SubResource("Theme_nm6vq")
+texture_normal = ExtResource("9_88440")
+texture_pressed = ExtResource("10_0b87j")
+texture_hover = ExtResource("10_0b87j")
+
+[node name="StoreLabel" type="Label" parent="KeysButton"]
+layout_mode = 0
+offset_left = 114.919
+offset_top = 1300.0
+offset_right = 1634.92
+offset_bottom = 1700.0
+theme_override_colors/font_color = Color(0.537255, 0.32549, 0.882353, 1)
+theme_override_fonts/font = ExtResource("6_ulww2")
+theme_override_font_sizes/font_size = 400
+text = "Go To Store
+"
+script = SubResource("GDScript_pd01v")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="KeysButton"]
+stream = ExtResource("11_uc76u")
+volume_db = -10.0
+
+[node name="Paper" type="Sprite2D" parent="."]
+position = Vector2(287.796, 464)
+rotation = -0.179769
+scale = Vector2(0.15, 0.134)
+texture = ExtResource("12_lo4j1")
+
+[node name="FreeCollageButton" type="TextureButton" parent="."]
+custom_minimum_size = Vector2(5, 5)
+layout_mode = 0
+offset_left = 33.9759
+offset_top = 223.0
+offset_right = 5034.98
+offset_bottom = 5223.0
+scale = Vector2(0.1, 0.1)
+texture_normal = ExtResource("12_lo4j1")
+
+[node name="Label" type="Label" parent="FreeCollageButton"]
+layout_mode = 0
+offset_left = 909.354
+offset_top = 2150.0
+offset_right = 3499.36
+offset_bottom = 2850.0
+rotation = -0.270526
+theme_override_colors/font_color = Color(0.537255, 0.32549, 0.882353, 1)
+theme_override_fonts/font = ExtResource("6_ulww2")
+theme_override_font_sizes/font_size = 700
+text = "Free Collage
+"
+script = ExtResource("13_3avfl")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="FreeCollageButton"]
+stream = ExtResource("14_pbtad")
+
+[node name="Ruler" type="Sprite2D" parent="."]
+position = Vector2(296.789, 302)
+rotation = 0.942478
+scale = Vector2(0.111, 0.1)
+texture = ExtResource("15_vcven")
+
+[node name="Sissors" type="Sprite2D" parent="."]
+position = Vector2(510.637, 542)
+rotation = -2.08392
+scale = Vector2(0.06, 0.054)
+texture = ExtResource("16_rymru")
+
+[connection signal="pressed" from="MouseButton" to="." method="_on_mouse_button_pressed"]
+[connection signal="pressed" from="BackButton" to="." method="_on_back_button_pressed"]
+[connection signal="pressed" from="KeysButton" to="." method="_on_keys_button_pressed"]
+[connection signal="pressed" from="FreeCollageButton" to="." method="_on_free_collage_button_pressed"]

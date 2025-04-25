@@ -25,7 +25,7 @@ func _on_go_to_canvas_pressed() -> void:
 	canvas_button.disabled = true 
 	click.play()
 	await click.finished
-	get_tree().change_scene_to_file(\"res://Scenes/collage_editor.tscn\")
+	get_tree().change_scene_to_file(\"res://Scenes/collage.tscn\")
 	is_playing = false 
 	canvas_button.disabled = false 
 	
@@ -41,6 +41,21 @@ func _on_timer_timeout() -> void:
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8v70n"]
 bg_color = Color(0.95158, 0.95158, 0.95158, 1)
+
+[sub_resource type="Animation" id="Animation_k6uy1"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Mom:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("3_uj30f")]
+}
 
 [sub_resource type="Animation" id="Animation_4334y"]
 resource_name = "talking_mom"
@@ -59,25 +74,10 @@ tracks/0/keys = {
 "values": [ExtResource("4_2c42v"), ExtResource("3_uj30f"), ExtResource("4_2c42v"), ExtResource("3_uj30f")]
 }
 
-[sub_resource type="Animation" id="Animation_k6uy1"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Mom:texture")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [ExtResource("3_uj30f")]
-}
-
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_3l4v2"]
 _data = {
-"RESET": SubResource("Animation_k6uy1"),
-"talking_mom": SubResource("Animation_4334y")
+&"RESET": SubResource("Animation_k6uy1"),
+&"talking_mom": SubResource("Animation_4334y")
 }
 
 [node name="Control" type="Control"]
@@ -130,7 +130,7 @@ texture = ExtResource("3_uj30f")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
-"": SubResource("AnimationLibrary_3l4v2")
+&"": SubResource("AnimationLibrary_3l4v2")
 }
 
 [node name="Timer" type="Timer" parent="."]
