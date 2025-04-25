@@ -13,10 +13,10 @@ var highlighted: bool = false
 func _input(event: InputEvent) -> void:
 	# Allow duplication only if the sprite is inside the Sidebar and is an original
 	if event is InputEventMouseButton and event.pressed and get_rect().has_point(to_local(event.position)): 
-		if is_original and get_parent() and get_parent().get_parent().name == "Sidebar" and get_parent().is_visible():
+		if is_original and get_parent() and get_parent().get_parent().name == "ItemPanel" and get_parent().is_visible():
 			var new_sprite: image = duplicate()
 			canvas.add_child(new_sprite)
-			new_sprite.global_position += Vector2(600,0)
+			new_sprite.global_position += Vector2(100,200)
 			new_sprite.is_original = false  # Mark duplicate as non-original
 	
 	#highlighting logic		

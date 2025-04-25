@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=3 uid="uid://blgoflaecdofn"]
+[gd_scene load_steps=20 format=3 uid="uid://b0ci678klg5us"]
 
 [ext_resource type="Script" path="res://Scripts/email_client.gd" id="1_iir0i"]
 [ext_resource type="Texture2D" uid="uid://bpenb88366m05" path="res://Art/Pixel Shape Tiles/Pixel background/64x64/3. Color/Picture/color_background_83.png" id="1_x0cem"]
@@ -42,7 +42,7 @@ corner_radius_top_right = 10
 corner_radius_bottom_right = 10
 corner_radius_bottom_left = 10
 
-[node name="Control" type="Control"]
+[node name="Control2" type="Control"]
 layout_mode = 3
 anchors_preset = 0
 offset_right = 1280.0
