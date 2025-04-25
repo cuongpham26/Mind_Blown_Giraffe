@@ -43,7 +43,7 @@ func _input(event: InputEvent) -> void:
 			else:
 				draggable = false
 
-func _process(delta: float):
+func _process(_delta: float) -> void:
 	# Item mutators
 	if highlighted:
 		set_self_modulate(Color(1,1,1,.5))

@@ -9,10 +9,10 @@ script = ExtResource("1_m2k5w")
 
 [node name="BackButton" type="Button" parent="."]
 layout_mode = 0
-offset_left = 452.0
-offset_top = 504.0
-offset_right = 460.0
-offset_bottom = 512.0
+offset_left = 1168.0
+offset_top = 34.0
+offset_right = 1213.0
+offset_bottom = 65.0
 text = "Back"
 
 [node name="Label" type="Label" parent="."]
