@@ -1,0 +1,24 @@
+[gd_scene load_steps=2 format=3 uid="uid://dtskpckyoa3om"]
+
+[ext_resource type="Script" uid="uid://bt5yjym3dnsoj" path="res://Scripts/result.gd" id="1_m2k5w"]
+
+[node name="Result" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_m2k5w")
+
+[node name="BackButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 452.0
+offset_top = 504.0
+offset_right = 460.0
+offset_bottom = 512.0
+text = "Back"
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_right = 108.0
+offset_bottom = 23.0
+text = "Your score is: "
+
+[connection signal="pressed" from="BackButton" to="." method="_on_back_button_pressed"]

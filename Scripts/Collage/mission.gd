@@ -2,13 +2,15 @@ extends Node
 
 class_name Mission
 
-var asset_class = Asset.new()
+var assets = Asset.new()
+
+var assets_used: Array[String]
 
 # Contains the desired ratio for attributes
-var dark_light: int = 2
-var comforting_inspiring: int = 2
-var sad_happy: int = 2
-var cool_warm: int = 2
+@export var dark_light: int = 2
+@export var comforting_inspiring: int = 2
+@export var sad_happy: int = 2
+@export var cool_warm: int = 2
 
 # Contain the actual ratio
 var dark: int = 0
@@ -20,52 +22,60 @@ var happy: int = 0
 var cool: int = 0
 var warm: int = 0
 
+func add_asset(path: String) -> void:
+	assets_used.append(path)
+	
+func remove_asset(path: String) -> void:
+	assets_used.erase(path)
+
 # Evaluate performance (Confidant always passes, Client can fail)
-func evaluate_performance(assets_used: Array[String]) -> int:
-	var score: int = 0
-	for asset in assets_used:
-		var info = asset_class.get_asset_info(asset)
-		if info["Dark/Light"] < 0:
-			dark -= info["Dark/Light"]
+func evaluate_performance() -> int:
+	for path in assets_used:
+		var data = assets.get_asset_info(path)
+		if data[0] < 0:
+			dark -= data[0]
 		else:
-			light += info["Dark/Light"]
+			light += data[0]
 			
-		if info["Comforting/Inspiring"] < 0:
-			comforting -= info["Comforting/Inspiring"]
+		if data[1] < 0:
+			comforting -= data[1]
 		else:
-			inspiring += info["Comforting/Inspiring"]
+			inspiring += data[1]
 			
-		if info["Sad/Happy"] < 0:
-			sad -= info["Sad/Happy"]
+		if data[2] < 0:
+			sad -= data[2]
 		else:
-			happy += info["Sad/Happy"]
+			happy += data[2]
 		
-		if info["Cool/Warm"] < 0:
-			cool -= info["Cool/Warm"]
+		if data[3] < 0:
+			cool -= data[3]
 		else:
-			warm += info["Cool/Warm"]
+			warm += data[3]
 			
 			
 	# Calculate the actual ratios (avoid divide by zero)
 	var ratios = []
+	if light == 0 and dark == 0:
+		ratios.append({"ratio": 0, "desired": dark_light})
 	if light != 0:
 		ratios.append({"ratio": dark / light, "desired": dark_light})
+	if comforting == 0 and inspiring == 0:
+		ratios.append({"ratio": 0, "desired": comforting_inspiring})
 	if inspiring != 0:
 		ratios.append({"ratio": comforting / inspiring, "desired": comforting_inspiring})
+	if sad == 0 and happy == 0:
+		ratios.append({"ratio": 0, "desired": sad_happy})
 	if happy != 0:
 		ratios.append({"ratio": sad / happy, "desired": sad_happy})
+	if cool == 0 and warm == 0:
+		ratios.append({"ratio": 0, "desired": cool_warm})
 	if warm != 0:
 		ratios.append({"ratio": cool / warm, "desired": cool_warm})
 	
-		# Check for 1 star: all ratios meet or exceed their desired ratios
-	var all_meet_required = true
+	# Check for 1 star: all ratios meet or exceed their desired ratios
 	for item in ratios:
 		if item["ratio"] < item["desired"]:
-			all_meet_required = false
-			break
-
-	if not all_meet_required:
-		return 0  # Failed the mission
+			return 0  # Failed the mission
 	
 	# If all ratios passed, then check how well top 3 ratios exceeded the requirement
 	# Sort by how much they exceed desired values (descending)

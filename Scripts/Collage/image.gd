@@ -7,6 +7,8 @@ var delay: float = .2
 var is_original: bool = true  # Only original Sidebar images can duplicate
 var tween: Tween = null  # Store the tween instance
 var highlighted: bool = false
+var mission = Mission.new()
+var file_path: String
 @onready var canvas = $"../../../Background"
 
 func _input(event: InputEvent) -> void:
@@ -15,10 +17,14 @@ func _input(event: InputEvent) -> void:
 		if is_original and get_parent() and get_parent().get_parent().name == "ItemPanel" and get_parent().is_visible():
 			var new_sprite: image = duplicate()
 			canvas.add_child(new_sprite)
-			new_sprite.global_position += Vector2(100,200)
+			new_sprite.global_position += Vector2(100, 200)
 			new_sprite.is_original = false  # Mark duplicate as non-original
+			
+			file_path = new_sprite.get_texture().load_path.get_file().get_slice("-", 0)
+			mission.add_asset(file_path)
+			
 	
-	# highlighting logic
+	# Highlighting logic
 	if event is InputEventMouseButton:
 		if event.button_index == MOUSE_BUTTON_LEFT and event.pressed and not is_original:
 			if is_pixel_opaque(get_local_mouse_position()) and visible:
@@ -53,7 +59,8 @@ func _process(delta: float):
 		if Input.is_action_just_pressed("ui_down"):
 			scale *= .5
 		if Input.is_action_just_pressed("ui_text_backspace"):
-			visible = false
+			mission.remove_asset(file_path)
+			queue_free()
 	if not highlighted:
 		set_self_modulate(Color(1,1,1,1))
 	if draggable:

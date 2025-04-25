@@ -488,9 +488,18 @@ text = "Main Menu
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="TexturePanel/BackButton"]
 stream = ExtResource("56_touqt")
 
+[node name="SubmitButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 2785.0
+offset_top = 8.0
+offset_right = 3014.0
+offset_bottom = 194.0
+text = "Submit"
+
 [connection signal="pressed" from="ItemPanel/NextButton" to="ItemPanel" method="_on_next_button_pressed"]
 [connection signal="pressed" from="ItemPanel/PrevButton" to="ItemPanel" method="_on_prev_button_pressed"]
 [connection signal="pressed" from="TexturePanel/SettingsButton" to="TexturePanel/SettingsButton/PopupMenu" method="_on_settings_button_pressed"]
 [connection signal="pressed" from="TexturePanel/PrevSet" to="TexturePanel" method="_on_prev_set_pressed"]
 [connection signal="pressed" from="TexturePanel/NextSet" to="TexturePanel" method="_on_next_set_pressed"]
 [connection signal="pressed" from="TexturePanel/BackButton" to="." method="_on_back_button_pressed"]
+[connection signal="pressed" from="SubmitButton" to="." method="_on_submit_button_pressed"]

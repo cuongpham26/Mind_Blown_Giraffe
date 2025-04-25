@@ -5,7 +5,7 @@ extends Node
 class_name Asset
 # Store all the assets along with the gradable attributes
 # When a player obtains an asset, that asset will be added to their inventory
-var asset = {
+var data = {
 	"02_dish_2.png": [4, -2, 0, -1],
 	"15_burger.png": [1, 3, 2, -4],
 	"38_friedegg.png": [4, 1, 3, -3],
@@ -60,12 +60,17 @@ var asset = {
 	"Golden.png": [1, 1, 3, 0],
 	"Cattt.png": [1, 0, 3, -3],
 	"Bunny.png": [1, 1, 3, 0],
-	"Pig.png": [2, 2, 0, -2]
+	"Pig.png": [2, 2, 0, -2],
+	
+	"sargent_relish_large.png" : [99, 99, 99, 99],
+	"girl.png" : [99, 99, 99, 99],
+	"PlaceholderGlinko_scaled_16x_pngcrushed.png": [99, 99, 99, 99]
+
 }
 
 func get_asset_info(asset_path: String) -> Array:
-	if asset.has(asset_path):
-		return asset[asset_path]
+	if data.has(asset_path):
+		return data[asset_path]
 	else:
 		print("Asset not found: ", asset_path)
-		return []
+		return [0, 0, 0, 0]

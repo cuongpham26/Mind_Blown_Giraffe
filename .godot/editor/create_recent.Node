@@ -1,7 +1,7 @@
-Sprite2D
-Control
 Button
-Panel
 Label
+Control
+Sprite2D
+Panel
 Timer
 AnimationPlayer
