@@ -1,7 +1,7 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1745524544
+::res://::1745541006
 README.md::TextFile::-1::1741966094::0::1::::<><>::
-::res://Art/::1745525497
+::res://Art/::1745540939
 ::res://Art/Collage Items/::1745449383
 girl.png::CompressedTexture2D::1280037215048504366::1745449028::1745449379::1::::<><>::
 PlaceholderGlinko_scaled_16x_pngcrushed.png::CompressedTexture2D::5459307072017819885::1745448917::1745449379::1::::<><>::
@@ -121,7 +121,7 @@ unnamed.png::CompressedTexture2D::3663405796484160626::1745449338::1745449339::1
 100_taco_dish.png::CompressedTexture2D::5562548488809569998::1741966094::1745449134::1::::<><>::
 101_waffle.png::CompressedTexture2D::1637418483110234088::1741966094::1745449134::1::::<><>::
 102_waffle_dish.png::CompressedTexture2D::7071384501972071215::1741966094::1745449135::1::::<><>::
-::res://Art/Pixel Shape Tiles/::1742176766
+::res://Art/Pixel Shape Tiles/::1745541006
 ::res://Art/Pixel Shape Tiles/Pixel background/::1741966563
 ::res://Art/Pixel Shape Tiles/Pixel background/32x32/::1741966563
 ::res://Art/Pixel Shape Tiles/Pixel background/32x32/1. Grey/::1741966554
@@ -701,11 +701,11 @@ color_background_91.png::CompressedTexture2D::7105065081637506083::1741966094::1
 ::res://Art/Pixel Shape Tiles/Pixel background/64x64/3. Color/Sprite/::1745449134
 Color_backgrounds_a (64x64).png::CompressedTexture2D::1758175420409008139::1741966094::1745449134::1::::<><>::
 Color_backgrounds_b (64x64).png::CompressedTexture2D::6471856995303731215::1741966094::1745449134::1::::<><>::
-::res://Art/Stickers(1)/::1745525497
+::res://Art/Stickers(1)/::1745541006
 16x32 trees 2.png::CompressedTexture2D::9153354589268910703::1745525497::1745525497::1::::<><>::
 16x32 trees 3.png::CompressedTexture2D::6635521850501633307::1745525497::1745525497::1::::<><>::
 16x32 trees 4.png::CompressedTexture2D::7014875091598554538::1745525497::1745525497::1::::<><>::
-48x48 trees 2.png::CompressedTexture2D::854192166327203046::1745525497::1745525497::1::::<><>::
+48x48 trees 2.png::CompressedTexture2D::854192166327203046::1745525497::1745541006::1::::<><>::
 48x48 trees 3.png::CompressedTexture2D::6964627542402113819::1745525497::1745525497::1::::<><>::
 BirdFly.png::CompressedTexture2D::1736694753268707747::1745525497::1745525497::1::::<><>::
 Bunny.png::CompressedTexture2D::260722574302888258::1745525497::1745525497::1::::<><>::
@@ -827,20 +827,21 @@ Robby-Talk-1.png::CompressedTexture2D::1974063307173735564::1745445496::17454491
 Robby-Talk-2.png::CompressedTexture2D::4399741371644332265::1745445496::1745449134::1::::<><>::
 ::res://Music/::1745449075
 mbg main theme demo.mp3::AudioStreamMP3::282885326515714954::1743727332::1745449075::1::::<><>::
-::res://Scenes/::1745452403
-collage_editor.tscn::PackedScene::2114643130823420790::1745452396::0::1::::<><>::res://Scripts/button_sidebar.gd<>uid://mvdeu6ekqdrj::::res://Icons/character.png<>res://Scripts/image.gd<>uid://bpe1q2aawewrb::::res://Icons/control.png<>uid://cn25gdhs56fp8::::res://Art/Fonts/advanced_pixel-7.ttf<>uid://c8fj8vc4tgq6g::::res://Art/Pixel Food/80_pancakes_dish.png<>uid://b8a6qtgl0jx6r::::res://Art/Pixel Food/87_ramen.png<>uid://sica47utxkmg::::res://Art/Collage Items/girl.png<>uid://cys41d7dgqsh::::res://Art/Collage Items/sargent_relish_large.png<>uid://b5g2j6h84aklu::::res://Art/Pixel Food/85_roastedchicken.png<>res://Scripts/texture_items.gd<>uid://cj1r8wjrn4uhx::::res://Art/Collage Items/PlaceholderGlinko_scaled_16x_pngcrushed.png<>uid://dwbo1nfajnjfg::::res://Art/Collage Items/unnamed.png<>res://Scripts/popup_menu.gd<>uid://eqsn8uij31iv::::res://Art/Collage Items/shirt1.png<>uid://bm2g7d51baoj7::::res://Art/Watercolor Textures/Art Texture 01.jpg<>uid://cehgob8526qmg::::res://Art/Watercolor Textures/Art Texture 012.jpg<>uid://j6kmdq2ok1oh::::res://Art/Watercolor Textures/Art Texture 047.JPG<>uid://ubtdf3ago1x3::::res://Art/Watercolor Textures/Art Texture 07.jpg<>uid://bxmob6pp4mobv::::res://Art/Watercolor Textures/Art Texture 011.jpg<>uid://boer2xv51576g::::res://Sounds/button.mp3
-email.tscn::PackedScene::4145813357900289170::1745452396::0::1::::<><>::res://Scripts/email_client.gd<>uid://bpenb88366m05::::res://Art/Pixel Shape Tiles/Pixel background/64x64/3. Color/Picture/color_background_83.png<>uid://5wsfprv8bn24::::res://Icons/computer.png<>uid://cn25gdhs56fp8::::res://Art/Fonts/advanced_pixel-7.ttf<>uid://mvdeu6ekqdrj::::res://Icons/character.png<>uid://wpb432scuqyb::::res://Icons/search.png<>uid://mrv3gotrkkkg::::res://Icons/pencil.png<>uid://oc8ybg10qds0::::res://Icons/inbox.png<>uid://d1tou1rpqgsnv::::res://Icons/star.png<>uid://yfdywumq3dl1::::res://Icons/send.png<>uid://cnhdvlo0vmbnj::::res://Icons/spam.png<>uid://dmn6aqsw037::::res://Icons/email_boxes.png<>uid://bd7vmpg61hro1::::res://Sounds/click.wav<>uid://boer2xv51576g::::res://Sounds/button.mp3
-main_select_screen.tscn::PackedScene::8634105111826733513::1745452396::0::1::::<><>::res://Scripts/level_select_screen.gd<>uid://be2c6ipkeavsi::::res://Art/Pixel Shape Tiles/Pixel background/32x32/3. Color/Picture/color_background_83.png<>uid://dpbl0ghyanb23::::res://Icons/mouse.png<>uid://b3p3m5pcx7fw5::::res://Icons/mouse_lighter.png<>uid://cn25gdhs56fp8::::res://Art/Fonts/advanced_pixel-7.ttf<>res://Scripts/mouse_label_effect.gd<>uid://b7y377w8puv7x::::res://Icons/keys.png<>uid://bd7vmpg61hro1::::res://Sounds/click.wav<>uid://mebmp7ojhhgw::::res://Icons/paper.png<>res://Scripts/free_collage_label_effect.gd<>uid://boer2xv51576g::::res://Sounds/button.mp3<>uid://btpr24272lj7s::::res://Sounds/store.mp3<>uid://cpnuw5asxv7ca::::res://Icons/ruler.png<>uid://cr18y08gy426e::::res://Icons/keys_light.png<>uid://drcpgnurvx6yu::::res://Icons/sissors.png<>uid://xeufwhc5r7no::::res://Sounds/paper.wav
-options_screen.tscn::PackedScene::2195101728088021086::1745452396::0::1::::<><>::uid://bpenb88366m05::::res://Art/Pixel Shape Tiles/Pixel background/64x64/3. Color/Picture/color_background_83.png<>res://Scripts/volume_slider.gd<>uid://cn25gdhs56fp8::::res://Art/Fonts/advanced_pixel-7.ttf<>res://Scripts/settings_label_effect.gd<>uid://c8h0nbyd7eiad::::res://Art/Pixel Shape Tiles/Pixel background/64x64/3. Color/Picture/color_background_91.png<>uid://boer2xv51576g::::res://Sounds/button.mp3
-store.tscn::PackedScene::65552105644307314::1745452396::0::1::::<><>::uid://bpenb88366m05::::res://Art/Pixel Shape Tiles/Pixel background/64x64/3. Color/Picture/color_background_83.png<>uid://cn25gdhs56fp8::::res://Art/Fonts/advanced_pixel-7.ttf<>uid://boer2xv51576g::::res://Sounds/button.mp3<>uid://3eisfumbttts::::res://Icons/Robby 2/Robby-Talk-1.png<>uid://b3xjdk2kvr1qj::::res://Icons/Robby 2/Robby-Talk-2.png
-title_screen.tscn::PackedScene::8917861372973713275::1745452396::0::1::::<><>::res://Scripts/title_screen.gd<>uid://be2c6ipkeavsi::::res://Art/Pixel Shape Tiles/Pixel background/32x32/3. Color/Picture/color_background_83.png<>uid://cn25gdhs56fp8::::res://Art/Fonts/advanced_pixel-7.ttf<>res://Scripts/title_label_effect.gd<>uid://boer2xv51576g::::res://Sounds/button.mp3<>uid://mvdeu6ekqdrj::::res://Icons/character.png<>res://Scripts/mbg.gd<>uid://de1lfgblxpnkf::::res://Icons/explosion.png<>uid://b42ten8lbm0wk::::res://Icons/giraffe_hover.png
-yapping.tscn::PackedScene::7728527651951907086::1745452396::0::1::::<><>::uid://cn25gdhs56fp8::::res://Art/Fonts/advanced_pixel-7.ttf<>uid://bd7vmpg61hro1::::res://Sounds/click.wav
-::res://Scripts/::1745449751
+::res://Scenes/::1745529508
+collage_editor.tscn::PackedScene::2114643130823420790::1745529503::0::1::::<><>::res://Scripts/button_sidebar.gd<>uid://mvdeu6ekqdrj::::res://Icons/character.png<>uid://d30e1j4washyh::::res://Art/Pixel Food/02_dish_2.png<>res://Scripts/image.gd<>uid://d3af3mkyuc544::::res://Art/Pixel Food/15_burger.png<>uid://ckr0mesji3wo0::::res://Art/Pixel Food/38_friedegg.png<>uid://cn25gdhs56fp8::::res://Art/Fonts/advanced_pixel-7.ttf<>uid://b1acd11jkvy6o::::res://Art/Pixel Food/54_hotdog.png<>uid://dfdjqwqplc3m5::::res://Art/Pixel Food/81_pizza.png<>uid://sica47utxkmg::::res://Art/Collage Items/girl.png<>uid://cys41d7dgqsh::::res://Art/Collage Items/sargent_relish_large.png<>res://Scripts/texture_items.gd<>uid://cj1r8wjrn4uhx::::res://Art/Collage Items/PlaceholderGlinko_scaled_16x_pngcrushed.png<>uid://dwbo1nfajnjfg::::res://Art/Collage Items/unnamed.png<>res://Scripts/popup_menu.gd<>uid://eqsn8uij31iv::::res://Art/Collage Items/shirt1.png<>res://Scenes/texture_panel.gd<>uid://cabdjdpdp5eoe::::res://Art/Pixel Shape Tiles/Pixel background/32x32/3. Color/Picture/color_background_65.png<>uid://rd5q1my1skqk::::res://Art/Pixel Shape Tiles/Pixel background/32x32/3. Color/Picture/color_background_58.png<>uid://bvmsxncc1vcku::::res://Art/Pixel Shape Tiles/Pixel background/32x32/3. Color/Picture/color_background_48.png<>uid://ljputhwdfm11::::res://Art/Pixel Shape Tiles/Pixel background/32x32/3. Color/Picture/color_background_34.png<>uid://boer2xv51576g::::res://Sounds/button.mp3<>uid://c6ghv8ij6buls::::res://Art/Pixel Shape Tiles/Pixel background/32x32/3. Color/Picture/color_background_47.png<>uid://6weky3mca8cf::::res://Art/Pixel Shape Tiles/Pixel background/32x32/3. Color/Picture/color_background_54.png<>uid://csaexiq8xhdkl::::res://Art/Pixel Shape Tiles/Pixel background/32x32/3. Color/Picture/color_background_66.png<>uid://crjusabp7xfhe::::res://Art/Pixel Shape Tiles/Pixel background/32x32/3. Color/Picture/color_background_71.png<>uid://bebnsnpo50htr::::res://Art/Pixel Shape Tiles/Pixel background/32x32/3. Color/Picture/color_background_76.png<>uid://cv52rpovb5oul::::res://Art/Pixel Shape Tiles/Pixel background/32x32/3. Color/Picture/color_background_77.png<>uid://o51lh1i85rb4::::res://Art/Pixel Shape Tiles/Pixel background/32x32/3. Color/Picture/color_background_79.png<>uid://chrbfv1kxfjk0::::res://Art/Pixel Shape Tiles/Pixel background/32x32/3. Color/Picture/color_background_86.png
+email.tscn::PackedScene::4145813357900289170::1745529433::0::1::::<><>::res://Scripts/email_client.gd<>uid://bpenb88366m05::::res://Art/Pixel Shape Tiles/Pixel background/64x64/3. Color/Picture/color_background_83.png<>uid://5wsfprv8bn24::::res://Icons/computer.png<>uid://cn25gdhs56fp8::::res://Art/Fonts/advanced_pixel-7.ttf<>uid://mvdeu6ekqdrj::::res://Icons/character.png<>uid://wpb432scuqyb::::res://Icons/search.png<>uid://mrv3gotrkkkg::::res://Icons/pencil.png<>uid://oc8ybg10qds0::::res://Icons/inbox.png<>uid://d1tou1rpqgsnv::::res://Icons/star.png<>uid://yfdywumq3dl1::::res://Icons/send.png<>uid://cnhdvlo0vmbnj::::res://Icons/spam.png<>uid://dmn6aqsw037::::res://Icons/email_boxes.png<>uid://bd7vmpg61hro1::::res://Sounds/click.wav<>uid://boer2xv51576g::::res://Sounds/button.mp3
+main_select_screen.tscn::PackedScene::8634105111826733513::1745529433::0::1::::<><>::res://Scripts/level_select_screen.gd<>uid://be2c6ipkeavsi::::res://Art/Pixel Shape Tiles/Pixel background/32x32/3. Color/Picture/color_background_83.png<>uid://dpbl0ghyanb23::::res://Icons/mouse.png<>uid://b3p3m5pcx7fw5::::res://Icons/mouse_lighter.png<>uid://cn25gdhs56fp8::::res://Art/Fonts/advanced_pixel-7.ttf<>res://Scripts/mouse_label_effect.gd<>uid://b7y377w8puv7x::::res://Icons/keys.png<>uid://bd7vmpg61hro1::::res://Sounds/click.wav<>uid://mebmp7ojhhgw::::res://Icons/paper.png<>res://Scripts/free_collage_label_effect.gd<>uid://boer2xv51576g::::res://Sounds/button.mp3<>uid://btpr24272lj7s::::res://Sounds/store.mp3<>uid://cpnuw5asxv7ca::::res://Icons/ruler.png<>uid://cr18y08gy426e::::res://Icons/keys_light.png<>uid://drcpgnurvx6yu::::res://Icons/sissors.png<>uid://xeufwhc5r7no::::res://Sounds/paper.wav
+options_screen.tscn::PackedScene::2195101728088021086::1745529433::0::1::::<><>::uid://bpenb88366m05::::res://Art/Pixel Shape Tiles/Pixel background/64x64/3. Color/Picture/color_background_83.png<>res://Scripts/volume_slider.gd<>uid://cn25gdhs56fp8::::res://Art/Fonts/advanced_pixel-7.ttf<>res://Scripts/settings_label_effect.gd<>uid://c8h0nbyd7eiad::::res://Art/Pixel Shape Tiles/Pixel background/64x64/3. Color/Picture/color_background_91.png<>uid://boer2xv51576g::::res://Sounds/button.mp3
+store.tscn::PackedScene::65552105644307314::1745529433::0::1::::<><>::uid://bpenb88366m05::::res://Art/Pixel Shape Tiles/Pixel background/64x64/3. Color/Picture/color_background_83.png<>uid://cn25gdhs56fp8::::res://Art/Fonts/advanced_pixel-7.ttf<>uid://boer2xv51576g::::res://Sounds/button.mp3<>uid://3eisfumbttts::::res://Icons/Robby 2/Robby-Talk-1.png<>uid://b3xjdk2kvr1qj::::res://Icons/Robby 2/Robby-Talk-2.png
+texture_panel.gd::GDScript::-1::1745529092::0::1::::<>Panel<>::
+title_screen.tscn::PackedScene::8917861372973713275::1745529433::0::1::::<><>::res://Scripts/title_screen.gd<>uid://be2c6ipkeavsi::::res://Art/Pixel Shape Tiles/Pixel background/32x32/3. Color/Picture/color_background_83.png<>uid://cn25gdhs56fp8::::res://Art/Fonts/advanced_pixel-7.ttf<>res://Scripts/title_label_effect.gd<>uid://boer2xv51576g::::res://Sounds/button.mp3<>uid://mvdeu6ekqdrj::::res://Icons/character.png<>res://Scripts/mbg.gd<>uid://de1lfgblxpnkf::::res://Icons/explosion.png<>uid://b42ten8lbm0wk::::res://Icons/giraffe_hover.png
+yapping.tscn::PackedScene::7728527651951907086::1745529433::0::1::::<><>::uid://cn25gdhs56fp8::::res://Art/Fonts/advanced_pixel-7.ttf<>uid://bd7vmpg61hro1::::res://Sounds/click.wav
+::res://Scripts/::1745529285
 asset.gd::GDScript::-1::1744820473::0::1::::Asset<>Node<>::
 button_sidebar.gd::GDScript::-1::1745446647::0::1::::<>Control<>res://Icons/control.png::
 email_client.gd::GDScript::-1::1745445496::0::1::::<>Control<>::
 free_collage_label_effect.gd::GDScript::-1::1743727332::0::1::::<>Label<>::
-image.gd::GDScript::-1::1745449746::0::1::::image<>Sprite2D<>res://Icons/image.png::
+image.gd::GDScript::-1::1745528309::0::1::::image<>Sprite2D<>res://Icons/image.png::
 item_panel.gd::GDScript::-1::1745445496::0::1::::<>Panel<>::
 label_effect.gd::GDScript::-1::1742177501::0::1::::<>Label<>::
 level_select_screen.gd::GDScript::-1::1745445496::0::1::::<>Control<>::
@@ -853,7 +854,7 @@ popup_menu.gd::GDScript::-1::1745445496::0::1::::<>PopupMenu<>::
 second.gd::GDScript::-1::1745445369::0::1::::<>Sprite2D<>::
 settings_label_effect.gd::GDScript::-1::1743727332::0::1::::<>Label<>::
 store.gd::GDScript::-1::1743727332::0::1::::<>Control<>::
-texture_items.gd::GDScript::-1::1745447326::0::1::::<>Sprite2D<>::
+texture_items.gd::GDScript::-1::1745529279::0::1::::<>Sprite2D<>::
 texture_panel.gd::GDScript::-1::1745445496::0::1::::<>Panel<>::
 title_label_effect.gd::GDScript::-1::1742176766::0::1::::<>Label<>::
 title_screen.gd::GDScript::-1::1745445496::0::1::::<>Control<>::
