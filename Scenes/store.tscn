@@ -3,8 +3,8 @@
 [ext_resource type="Texture2D" uid="uid://bpenb88366m05" path="res://Art/Pixel Shape Tiles/Pixel background/64x64/3. Color/Picture/color_background_83.png" id="1_myanm"]
 [ext_resource type="FontFile" uid="uid://cn25gdhs56fp8" path="res://Art/Fonts/advanced_pixel-7.ttf" id="2_21cys"]
 [ext_resource type="AudioStream" uid="uid://boer2xv51576g" path="res://Sounds/button.mp3" id="3_j105s"]
-[ext_resource type="Texture2D" uid="uid://sx3jhn07usl8" path="res://Robby/Robby-Talk-1.png" id="4_32xlu"]
-[ext_resource type="Texture2D" uid="uid://h0fjiy4m0hjc" path="res://Robby/Robby-Talk-2.png" id="5_cb1sj"]
+[ext_resource type="Texture2D" uid="uid://sx3jhn07usl8" path="res://Characters/Robby/Robby-Talk-1.png" id="4_32xlu"]
+[ext_resource type="Texture2D" uid="uid://h0fjiy4m0hjc" path="res://Characters/Robby/Robby-Talk-2.png" id="5_cb1sj"]
 
 [sub_resource type="GDScript" id="GDScript_kyo8m"]
 script/source = "extends Control
@@ -36,12 +36,12 @@ func _on_back_button_pressed() -> void:
 func _ready() -> void:
 	animation.play(\"talking\")
 	label.text = \"Robby:
-	Hello, how can I help you today?\"
+	Come back later!!!\"
 	$Timer.start(3.0)
 
 func _on_timer_timeout() -> void:
 	animation.stop()
-	sprite.texture = preload(\"res://Robby/Robby-Idle.png\")
+	sprite.texture = preload(\"res://Characters/Robby/Robby-Idle.png\")
 	label.text = \"\"
 "
 
@@ -113,19 +113,19 @@ libraries = {
 }
 
 [node name="Robby" type="Sprite2D" parent="."]
-position = Vector2(203, 346)
-scale = Vector2(25.6094, 25.0469)
+position = Vector2(604, 260)
+scale = Vector2(35.8672, 33.7734)
 texture = ExtResource("4_32xlu")
 
 [node name="Label2" type="Label" parent="."]
 layout_mode = 0
-offset_left = 2.0
-offset_top = 565.0
-offset_right = 432.0
-offset_bottom = 670.0
+offset_left = 394.0
+offset_top = 533.0
+offset_right = 996.0
+offset_bottom = 678.0
 theme_override_colors/font_color = Color(0.0274091, 0.0274092, 0.0274092, 1)
 theme_override_fonts/font = ExtResource("2_21cys")
-theme_override_font_sizes/font_size = 50
+theme_override_font_sizes/font_size = 70
 text = "Robby:
 How can I help you today? "
 

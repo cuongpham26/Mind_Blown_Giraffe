@@ -50,8 +50,8 @@ offset_bottom = 724.0
 script = ExtResource("1_iir0i")
 
 [node name="Background" type="Sprite2D" parent="."]
-position = Vector2(624.25, 337.999)
-scale = Vector2(20.336, 11.9688)
+position = Vector2(636.501, 359.5)
+scale = Vector2(19.9532, 11.2969)
 texture = ExtResource("1_x0cem")
 
 [node name="Computer" type="Sprite2D" parent="."]

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://hkspdxvds5nr"
-path="res://.godot/imported/Robby-Idle.png-cc7e6846c7928fe5dd27c3853f1c5593.ctex"
+uid="uid://du8woe5gdx178"
+path="res://.godot/imported/Guario_2.png-a5a2dd717b6c6e69f9a19244b3df8346.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Robby/Robby-Idle.png"
-dest_files=["res://.godot/imported/Robby-Idle.png-cc7e6846c7928fe5dd27c3853f1c5593.ctex"]
+source_file="res://Characters/Guario/Guario_2.png"
+dest_files=["res://.godot/imported/Guario_2.png-a5a2dd717b6c6e69f9a19244b3df8346.ctex"]
 
 [params]
 

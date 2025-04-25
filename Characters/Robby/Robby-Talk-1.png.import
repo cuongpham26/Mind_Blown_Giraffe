@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://h0fjiy4m0hjc"
-path="res://.godot/imported/Robby-Talk-2.png-fb4766bb4a4097e61e629b6535f106bb.ctex"
+uid="uid://sx3jhn07usl8"
+path="res://.godot/imported/Robby-Talk-1.png-23f5aeda9712b356d62b0ed881f5aa5f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Robby/Robby-Talk-2.png"
-dest_files=["res://.godot/imported/Robby-Talk-2.png-fb4766bb4a4097e61e629b6535f106bb.ctex"]
+source_file="res://Characters/Robby/Robby-Talk-1.png"
+dest_files=["res://.godot/imported/Robby-Talk-1.png-23f5aeda9712b356d62b0ed881f5aa5f.ctex"]
 
 [params]
 
