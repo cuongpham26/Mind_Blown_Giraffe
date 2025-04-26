@@ -21,29 +21,19 @@ func _input(event: InputEvent) -> void:
 			
 			background.get_parent().add_child(new_sprite)
 			
-
 			file_path = new_sprite.get_texture().load_path.get_file().get_slice("-", 0)
 			mission.add_asset(file_path)
 			
-	
-	# Highlighting logic
-	if event is InputEventMouseButton:
-		if event.button_index == MOUSE_BUTTON_LEFT and event.pressed and not is_original:
-			if is_pixel_opaque(get_local_mouse_position()) and visible:
-				highlighted = true
-			if not is_pixel_opaque(get_local_mouse_position()):
-				highlighted = false
-
-
-	# Dragging logic
-	if highlighted:
-		if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT:
-			if event.pressed and event.button_index and not is_original:
-				if is_pixel_opaque(get_local_mouse_position()):
-					draggable = true
-					mouse_offset = get_global_mouse_position() - global_position
-			else:
-				draggable = false
+	# Drag and highlight
+	if event is InputEventMouseButton and get_rect().has_point(to_local(event.position)) \
+	and not is_original:
+		if event.pressed:
+			highlighted = true
+			draggable = true
+			mouse_offset = get_global_mouse_position() - global_position
+		else:
+			draggable = false
+			highlighted = false
 
 func _process(_delta: float) -> void:
 	# Item mutators
