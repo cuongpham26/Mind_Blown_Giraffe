@@ -227,7 +227,7 @@ position = Vector2(211, 341)
 scale = Vector2(0.0249024, 0.0214844)
 texture = ExtResource("12_621th")
 
-[node name="OrderButton" type="TextureButton" parent="."]
+[node name="OrderButton1" type="TextureButton" parent="."]
 layout_mode = 0
 offset_left = 337.0
 offset_top = 215.0
@@ -236,40 +236,54 @@ offset_bottom = 433.0
 scale = Vector2(0.25, 0.25)
 texture_normal = ExtResource("13_rixfc")
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="OrderButton"]
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="OrderButton1"]
 stream = ExtResource("14_o88le")
 
-[node name="SenderLabel" type="Label" parent="."]
+[node name="MessageLabel" type="Label" parent="OrderButton1"]
 layout_mode = 0
-offset_left = 441.0
-offset_top = 223.0
-offset_right = 491.0
-offset_bottom = 269.0
+offset_left = 1564.0
+offset_top = 76.0
+offset_right = 1742.0
+offset_bottom = 99.0
+theme_override_colors/font_color = Color(0.0159718, 0.0159718, 0.0159718, 1)
+theme_override_fonts/font = ExtResource("4_tt3ch")
+text = "Hi honey! I saw you opened a shop......"
+
+[node name="SenderLabel" type="Label" parent="OrderButton1"]
+layout_mode = 0
+offset_left = 416.0
+offset_top = 32.0
+offset_right = 466.0
+offset_bottom = 78.0
 theme_override_colors/font_color = Color(0.00351917, 0.00351917, 0.00351917, 1)
 theme_override_fonts/font = ExtResource("4_tt3ch")
 theme_override_font_sizes/font_size = 35
 text = "Mom"
 
-[node name="SubjectLabel" type="Label" parent="."]
+[node name="SubjectLabel" type="Label" parent="OrderButton1"]
 layout_mode = 0
-offset_left = 616.0
-offset_top = 222.0
-offset_right = 742.0
-offset_bottom = 268.0
+offset_left = 1116.0
+offset_top = 28.0
+offset_right = 1242.0
+offset_bottom = 74.0
 theme_override_colors/font_color = Color(0.00566115, 0.00566115, 0.00566115, 1)
 theme_override_fonts/font = ExtResource("4_tt3ch")
 theme_override_font_sizes/font_size = 35
 text = "Collage!!! -"
 
-[node name="MessageLabel" type="Label" parent="."]
+[node name="OrderButton2" type="TextureButton" parent="."]
 layout_mode = 0
-offset_left = 728.0
-offset_top = 234.0
-offset_right = 906.0
-offset_bottom = 257.0
-theme_override_colors/font_color = Color(0.0159718, 0.0159718, 0.0159718, 1)
-theme_override_fonts/font = ExtResource("4_tt3ch")
-text = "Hi honey! I saw you opened a shop......"
+offset_left = 337.0
+offset_top = 215.0
+offset_right = 2989.0
+offset_bottom = 433.0
+scale = Vector2(0.25, 0.25)
+texture_normal = ExtResource("13_rixfc")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="OrderButton2"]
+stream = ExtResource("14_o88le")
 
 [connection signal="pressed" from="BackButton" to="." method="_on_back_button_pressed"]
-[connection signal="pressed" from="OrderButton" to="." method="_on_order_button_pressed"]
+[connection signal="pressed" from="OrderButton1" to="." method="_on_order_button_pressed"]
+[connection signal="pressed" from="OrderButton2" to="." method="_on_order_button_2_pressed"]
+[connection signal="pressed" from="OrderButton2" to="." method="_on_order_button_1_pressed"]

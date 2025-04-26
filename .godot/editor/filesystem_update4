@@ -2,3 +2,9 @@ res://Scenes/result.tscn
 res://Scripts/Collage/back_button.gd
 res://Scenes/collage.tscn
 res://Scripts/Collage/image.gd
+res://Scenes/email.tscn
+res://Scripts/Select/level_select_screen.gd
+res://Scenes/yapping.tscn
+res://Scripts/Email/email_client.gd
+res://Scenes/yapping1.tscn
+res://Scenes/yapping2.tscn
