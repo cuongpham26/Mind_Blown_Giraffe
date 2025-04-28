@@ -1,82 +1,61 @@
-[gd_scene load_steps=10 format=3 uid="uid://chroq6l71c335"]
+[gd_scene load_steps=12 format=3 uid="uid://chroq6l71c335"]
 
+[ext_resource type="Script" path="res://Scripts/Email/yapping_2.gd" id="1_2a6et"]
 [ext_resource type="Texture2D" uid="uid://bktqokq8lff04" path="res://Art/Pixel Shape Tiles/Pixel background/32x32/3. Color/Picture/color_background_70.png" id="1_6y660"]
 [ext_resource type="FontFile" uid="uid://cn25gdhs56fp8" path="res://Art/Fonts/advanced_pixel-7.ttf" id="2_ershn"]
 [ext_resource type="AudioStream" uid="uid://bd7vmpg61hro1" path="res://Sounds/click.wav" id="3_d85y7"]
-[ext_resource type="Texture2D" uid="uid://dvdtrc85x7x86" path="res://Characters/Mom/Mom_1.png" id="4_hh4iv"]
-[ext_resource type="Texture2D" uid="uid://dsxk3s3wiy7m7" path="res://Characters/Mom/Mom_2.png" id="5_xk8ov"]
-
-[sub_resource type="GDScript" id="GDScript_yog2f"]
-script/source = "@tool
-
-extends Control
-
-@onready var animation = $AnimationPlayer
-
-@onready var sprite = $Mom
-
-@onready var click = $AudioStreamPlayer
-
-@onready var canvas_button = $GoToCanvas
-
-var is_playing = false
-
-func _on_go_to_canvas_pressed() -> void:
-	click.play()
-	await click.finished
-	get_tree().change_scene_to_file(\"res://Scenes/collage.tscn\")
-	
-func _ready() -> void:
-	animation.play(\"talking_mom\")
-	$Timer.start(3.0)
-
-func _on_timer_timeout() -> void:
-	animation.stop()
-	sprite.texture = preload(\"res://Characters/Mom/Mom_Idle.png\")
-"
+[ext_resource type="Texture2D" uid="uid://c8mitv4odt8tu" path="res://Characters/Wednesday_Provost/Wednesday_Idle.png" id="4_yqt67"]
+[ext_resource type="Texture2D" uid="uid://cyahlvewusrac" path="res://Characters/Wednesday_Provost/Wednesday_1.png" id="6_53wxg"]
+[ext_resource type="Texture2D" uid="uid://blqp0jl5j5d2n" path="res://Characters/Wednesday_Provost/Wednesday_2.png" id="7_4lwym"]
 
 [sub_resource type="Animation" id="Animation_k6uy1"]
 length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Mom:texture")
+tracks/0/path = NodePath("Provost:texture")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [ExtResource("4_hh4iv")]
+"values": [ExtResource("4_yqt67")]
 }
 
 [sub_resource type="Animation" id="Animation_4334y"]
 resource_name = "talking_mom"
 length = 0.5
 loop_mode = 1
+
+[sub_resource type="Animation" id="Animation_ikwrm"]
+resource_name = "talking_provost"
+length = 0.5
+loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Mom:texture")
+tracks/0/path = NodePath("Provost:texture")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.166667, 0.3, 0.433333),
+"times": PackedFloat32Array(0.0333333, 0.2, 0.366667, 0.533333),
 "transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 1,
-"values": [ExtResource("5_xk8ov"), ExtResource("4_hh4iv"), ExtResource("5_xk8ov"), ExtResource("4_hh4iv")]
+"values": [ExtResource("6_53wxg"), ExtResource("7_4lwym"), ExtResource("6_53wxg"), ExtResource("7_4lwym")]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_3l4v2"]
 _data = {
-&"RESET": SubResource("Animation_k6uy1"),
-&"talking_mom": SubResource("Animation_4334y")
+"RESET": SubResource("Animation_k6uy1"),
+"talking_mom": SubResource("Animation_4334y"),
+"talking_provost": SubResource("Animation_ikwrm")
 }
 
 [node name="Control" type="Control"]
 layout_mode = 3
 anchors_preset = 0
-script = SubResource("GDScript_yog2f")
+script = ExtResource("1_2a6et")
 
 [node name="Background" type="Sprite2D" parent="."]
 position = Vector2(640, 360)
@@ -92,7 +71,7 @@ offset_bottom = 1323.0
 scale = Vector2(0.5, 0.5)
 theme_override_colors/font_color = Color(0.0430392, 0.0430392, 0.0430392, 1)
 theme_override_fonts/font = ExtResource("2_ershn")
-theme_override_font_sizes/font_size = 69
+theme_override_font_sizes/font_size = 75
 text = "Hello Collage Entrepreneur, 
 
 I saw your advertisement in the paper for your collage business. I am in a bit of a tricky situation right now, and I need your help. A parent has just messaged me about her son unfairly failing a class called “Game Development,” and it seems like she has some valid points. According to the parent, the professor of the class, Guario, has been forcing his students to work 16 hour days without food or water in order to complete their game. 
@@ -117,18 +96,18 @@ text = "Get to Work"
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("3_d85y7")
 
-[node name="Mom" type="Sprite2D" parent="."]
-position = Vector2(1071, 216)
-scale = Vector2(25.25, 24)
-texture = ExtResource("4_hh4iv")
-
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
-&"": SubResource("AnimationLibrary_3l4v2")
+"": SubResource("AnimationLibrary_3l4v2")
 }
 
 [node name="Timer" type="Timer" parent="."]
 wait_time = 3.0
+
+[node name="Provost" type="Sprite2D" parent="."]
+position = Vector2(1081, 284)
+scale = Vector2(22.6875, 23.25)
+texture = ExtResource("4_yqt67")
 
 [connection signal="pressed" from="GoToCanvas" to="." method="_on_go_to_canvas_pressed"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

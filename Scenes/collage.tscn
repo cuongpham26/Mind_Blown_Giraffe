@@ -1,22 +1,22 @@
 [gd_scene load_steps=20 format=3 uid="uid://5el4mdr1tys1"]
 
-[ext_resource type="Script" uid="uid://cp7i5uxpm2uao" path="res://Scripts/Collage/back_button.gd" id="1_0o4s1"]
-[ext_resource type="Script" uid="uid://cnj20m55m02y4" path="res://Scripts/Collage/item_panel.gd" id="2_785bu"]
+[ext_resource type="Script" path="res://Scripts/Collage/back_button.gd" id="1_0o4s1"]
+[ext_resource type="Script" path="res://Scripts/Collage/item_panel.gd" id="2_785bu"]
 [ext_resource type="Texture2D" uid="uid://d23s2n4ngpuw4" path="res://Art/Pixel Shape Tiles/Pixel background/32x32/3. Color/Picture/color_background_88.png" id="2_vc403"]
 [ext_resource type="Texture2D" uid="uid://cys41d7dgqsh" path="res://Art/Collage Items/sargent_relish_large.png" id="3_vc403"]
-[ext_resource type="Script" uid="uid://b3vedihjqeir1" path="res://Scripts/Collage/image.gd" id="4_fbery"]
+[ext_resource type="Script" path="res://Scripts/Collage/image.gd" id="4_fbery"]
 [ext_resource type="Texture2D" uid="uid://sica47utxkmg" path="res://Art/Collage Items/girl.png" id="5_bndh5"]
 [ext_resource type="Texture2D" uid="uid://cj1r8wjrn4uhx" path="res://Art/Collage Items/PlaceholderGlinko_scaled_16x_pngcrushed.png" id="6_gnrqd"]
 [ext_resource type="Texture2D" uid="uid://dwbo1nfajnjfg" path="res://Art/Collage Items/unnamed.png" id="7_vmgup"]
 [ext_resource type="Texture2D" uid="uid://eqsn8uij31iv" path="res://Art/Collage Items/shirt1.png" id="8_1abed"]
-[ext_resource type="Script" uid="uid://chu0alfmn5j7m" path="res://Scripts/Collage/texture_panel.gd" id="40_085ow"]
-[ext_resource type="Script" uid="uid://dmbpnxdo4pb3" path="res://Scripts/Collage/texture_items.gd" id="42_34kir"]
+[ext_resource type="Script" path="res://Scripts/Collage/texture_panel.gd" id="40_085ow"]
+[ext_resource type="Script" path="res://Scripts/Collage/texture_items.gd" id="42_34kir"]
 [ext_resource type="Texture2D" uid="uid://csaexiq8xhdkl" path="res://Art/Pixel Shape Tiles/Pixel background/32x32/3. Color/Picture/color_background_66.png" id="48_u2uvv"]
 [ext_resource type="Texture2D" uid="uid://crjusabp7xfhe" path="res://Art/Pixel Shape Tiles/Pixel background/32x32/3. Color/Picture/color_background_71.png" id="49_waamj"]
 [ext_resource type="Texture2D" uid="uid://bebnsnpo50htr" path="res://Art/Pixel Shape Tiles/Pixel background/32x32/3. Color/Picture/color_background_76.png" id="50_nx4cl"]
 [ext_resource type="Texture2D" uid="uid://cv52rpovb5oul" path="res://Art/Pixel Shape Tiles/Pixel background/32x32/3. Color/Picture/color_background_77.png" id="51_jjsmx"]
 [ext_resource type="FontFile" uid="uid://cn25gdhs56fp8" path="res://Art/Fonts/advanced_pixel-7.ttf" id="54_2hmud"]
-[ext_resource type="Script" uid="uid://cayro4wetrhvg" path="res://Scripts/Collage/popup_menu.gd" id="55_uwl6b"]
+[ext_resource type="Script" path="res://Scripts/Collage/popup_menu.gd" id="55_uwl6b"]
 [ext_resource type="AudioStream" uid="uid://boer2xv51576g" path="res://Sounds/button.mp3" id="56_touqt"]
 
 [sub_resource type="Theme" id="Theme_pujwx"]
@@ -136,7 +136,6 @@ unfocusable = true
 content_scale_factor = 1.42
 item_count = 6
 item_0/text = "Decrease Size - ↓"
-item_0/id = 0
 item_1/text = "Increase Size - ↑"
 item_1/id = 1
 item_2/text = "Rotate Right - →"

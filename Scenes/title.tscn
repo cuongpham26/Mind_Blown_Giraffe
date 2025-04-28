@@ -1,12 +1,12 @@
 [gd_scene load_steps=13 format=3 uid="uid://d0b44yhwb3r7h"]
 
-[ext_resource type="Script" uid="uid://12dykyi3vd3x" path="res://Scripts/Title/title_screen.gd" id="1_6aagf"]
+[ext_resource type="Script" path="res://Scripts/Title/title_screen.gd" id="1_6aagf"]
 [ext_resource type="Texture2D" uid="uid://be2c6ipkeavsi" path="res://Art/Pixel Shape Tiles/Pixel background/32x32/3. Color/Picture/color_background_83.png" id="2_kyk5u"]
 [ext_resource type="FontFile" uid="uid://cn25gdhs56fp8" path="res://Art/Fonts/advanced_pixel-7.ttf" id="3_cwqts"]
-[ext_resource type="Script" uid="uid://bktit25op6cjm" path="res://Scripts/Title/title_label_effect.gd" id="4_th2ad"]
+[ext_resource type="Script" path="res://Scripts/Title/title_label_effect.gd" id="4_th2ad"]
 [ext_resource type="AudioStream" uid="uid://boer2xv51576g" path="res://Sounds/button.mp3" id="5_qh4d7"]
 [ext_resource type="Texture2D" uid="uid://mvdeu6ekqdrj" path="res://Icons/character.png" id="6_lv7gn"]
-[ext_resource type="Script" uid="uid://dqqs73706cre7" path="res://Scripts/Title/mbg.gd" id="7_5vuho"]
+[ext_resource type="Script" path="res://Scripts/Title/mbg.gd" id="7_5vuho"]
 [ext_resource type="Texture2D" uid="uid://de1lfgblxpnkf" path="res://Icons/explosion.png" id="8_ohkfa"]
 [ext_resource type="Texture2D" uid="uid://b42ten8lbm0wk" path="res://Icons/giraffe_hover.png" id="9_ps378"]
 
@@ -37,7 +37,7 @@ offset_left = 132.0
 offset_top = 34.0
 offset_right = 1152.0
 offset_bottom = 285.0
-scale = Vector2(1.00978, 1.00978)
+scale = Vector2(1.03451, 1.03451)
 pivot_offset = Vector2(510, 125.5)
 theme = SubResource("Theme_sgcfn")
 theme_override_colors/font_color = Color(0.537308, 0.324746, 0.882955, 1)
@@ -85,7 +85,7 @@ stream = ExtResource("5_qh4d7")
 
 [node name="Giraffe1" type="Sprite2D" parent="."]
 position = Vector2(220, 503)
-rotation = 0.0682573
+rotation = 0.24092
 scale = Vector2(0.544922, 0.539062)
 texture = ExtResource("6_lv7gn")
 script = ExtResource("7_5vuho")
@@ -97,7 +97,7 @@ texture = ExtResource("8_ohkfa")
 
 [node name="Giraffe2" type="Sprite2D" parent="."]
 position = Vector2(1038, 501)
-rotation = 0.0682573
+rotation = 0.24092
 scale = Vector2(0.545, 0.602)
 texture = ExtResource("9_ps378")
 script = ExtResource("7_5vuho")

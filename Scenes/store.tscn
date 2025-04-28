@@ -79,8 +79,8 @@ tracks/0/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_3hujf"]
 _data = {
-&"RESET": SubResource("Animation_bglii"),
-&"talking": SubResource("Animation_qwvhl")
+"RESET": SubResource("Animation_bglii"),
+"talking": SubResource("Animation_qwvhl")
 }
 
 [node name="Control" type="Control"]
@@ -109,7 +109,7 @@ stream = ExtResource("3_j105s")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
-&"": SubResource("AnimationLibrary_3hujf")
+"": SubResource("AnimationLibrary_3hujf")
 }
 
 [node name="Robby" type="Sprite2D" parent="."]
@@ -126,6 +126,8 @@ offset_bottom = 678.0
 theme_override_colors/font_color = Color(0.0274091, 0.0274092, 0.0274092, 1)
 theme_override_fonts/font = ExtResource("2_21cys")
 theme_override_font_sizes/font_size = 70
+text = "Robby:
+	Come back later!!!"
 
 [node name="Timer" type="Timer" parent="."]
 wait_time = 3.0

@@ -1,18 +1,18 @@
 [gd_scene load_steps=21 format=3 uid="uid://dvaopj5kysy54"]
 
-[ext_resource type="Script" uid="uid://fryghld3ya6c" path="res://Scripts/Select/level_select_screen.gd" id="1_gal4i"]
+[ext_resource type="Script" path="res://Scripts/Select/level_select_screen.gd" id="1_gal4i"]
 [ext_resource type="Texture2D" uid="uid://be2c6ipkeavsi" path="res://Art/Pixel Shape Tiles/Pixel background/32x32/3. Color/Picture/color_background_83.png" id="2_sj01t"]
 [ext_resource type="Texture2D" uid="uid://dpbl0ghyanb23" path="res://Icons/mouse.png" id="3_cg5vl"]
 [ext_resource type="Texture2D" uid="uid://b3p3m5pcx7fw5" path="res://Icons/mouse_lighter.png" id="4_8vh4o"]
 [ext_resource type="AudioStream" uid="uid://bd7vmpg61hro1" path="res://Sounds/click.wav" id="5_xsa4s"]
 [ext_resource type="FontFile" uid="uid://cn25gdhs56fp8" path="res://Art/Fonts/advanced_pixel-7.ttf" id="6_ulww2"]
-[ext_resource type="Script" uid="uid://chm08jy666gn1" path="res://Scripts/Select/mouse_label_effect.gd" id="7_lc6pq"]
+[ext_resource type="Script" path="res://Scripts/Select/mouse_label_effect.gd" id="7_lc6pq"]
 [ext_resource type="AudioStream" uid="uid://boer2xv51576g" path="res://Sounds/button.mp3" id="8_7qflk"]
 [ext_resource type="Texture2D" uid="uid://b7y377w8puv7x" path="res://Icons/keys.png" id="9_88440"]
 [ext_resource type="Texture2D" uid="uid://cr18y08gy426e" path="res://Icons/keys_light.png" id="10_0b87j"]
 [ext_resource type="AudioStream" uid="uid://btpr24272lj7s" path="res://Sounds/store.mp3" id="11_uc76u"]
 [ext_resource type="Texture2D" uid="uid://mebmp7ojhhgw" path="res://Icons/paper.png" id="12_lo4j1"]
-[ext_resource type="Script" uid="uid://ctxaa551oo0q3" path="res://Scripts/Select/free_collage_label_effect.gd" id="13_3avfl"]
+[ext_resource type="Script" path="res://Scripts/Select/free_collage_label_effect.gd" id="13_3avfl"]
 [ext_resource type="AudioStream" uid="uid://xeufwhc5r7no" path="res://Sounds/paper.wav" id="14_pbtad"]
 [ext_resource type="Texture2D" uid="uid://cpnuw5asxv7ca" path="res://Icons/ruler.png" id="15_vcven"]
 [ext_resource type="Texture2D" uid="uid://drcpgnurvx6yu" path="res://Icons/sissors.png" id="16_rymru"]
@@ -75,7 +75,7 @@ offset_left = -2.0
 offset_top = 1525.0
 offset_right = 792.0
 offset_bottom = 1928.0
-scale = Vector2(0.959456, 0.959456)
+scale = Vector2(0.982776, 0.982776)
 pivot_offset = Vector2(397, 201.5)
 theme_override_colors/font_color = Color(0.537255, 0.32549, 0.882353, 1)
 theme_override_fonts/font = ExtResource("6_ulww2")
@@ -114,8 +114,8 @@ offset_left = 114.919
 offset_top = 1300.0
 offset_right = 1634.92
 offset_bottom = 1700.0
-scale = Vector2(0.959456, 0.959456)
-pivot_offset = Vector2(760.001, 401.5)
+scale = Vector2(0.982776, 0.982776)
+pivot_offset = Vector2(760.001, 200)
 theme_override_colors/font_color = Color(0.537255, 0.32549, 0.882353, 1)
 theme_override_fonts/font = ExtResource("6_ulww2")
 theme_override_font_sizes/font_size = 400
@@ -150,8 +150,8 @@ offset_top = 2150.0
 offset_right = 3499.36
 offset_bottom = 2850.0
 rotation = -0.270526
-scale = Vector2(0.959456, 0.959456)
-pivot_offset = Vector2(1295, 701.5)
+scale = Vector2(0.982776, 0.982776)
+pivot_offset = Vector2(1295, 350)
 theme_override_colors/font_color = Color(0.537255, 0.32549, 0.882353, 1)
 theme_override_fonts/font = ExtResource("6_ulww2")
 theme_override_font_sizes/font_size = 700

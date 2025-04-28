@@ -1,46 +1,20 @@
-[gd_scene load_steps=10 format=3 uid="uid://d02wx4usov1fy"]
+[gd_scene load_steps=13 format=3 uid="uid://djbn8vfvr6ww1"]
 
 [ext_resource type="Texture2D" uid="uid://bktqokq8lff04" path="res://Art/Pixel Shape Tiles/Pixel background/32x32/3. Color/Picture/color_background_70.png" id="1_5soyu"]
+[ext_resource type="Script" path="res://Scripts/Email/yapping_3.gd" id="1_gn4ju"]
 [ext_resource type="FontFile" uid="uid://cn25gdhs56fp8" path="res://Art/Fonts/advanced_pixel-7.ttf" id="2_xggus"]
 [ext_resource type="AudioStream" uid="uid://bd7vmpg61hro1" path="res://Sounds/click.wav" id="3_y7vd0"]
 [ext_resource type="Texture2D" uid="uid://dvdtrc85x7x86" path="res://Characters/Mom/Mom_1.png" id="4_1w18o"]
 [ext_resource type="Texture2D" uid="uid://dsxk3s3wiy7m7" path="res://Characters/Mom/Mom_2.png" id="5_ohcfw"]
-
-[sub_resource type="GDScript" id="GDScript_yog2f"]
-script/source = "@tool
-
-extends Control
-
-@onready var animation = $AnimationPlayer
-
-@onready var sprite = $Mom
-
-@onready var click = $AudioStreamPlayer
-
-@onready var canvas_button = $GoToCanvas
-
-var is_playing = false
-
-func _on_go_to_canvas_pressed() -> void:
-	click.play()
-	await click.finished
-	get_tree().change_scene_to_file(\"res://Scenes/collage.tscn\")
-	
-func _ready() -> void:
-	animation.play(\"talking_mom\")
-	$Timer.start(3.0)
-
-func _on_timer_timeout() -> void:
-	animation.stop()
-	sprite.texture = preload(\"res://Characters/Mom/Mom_Idle.png\")
-"
+[ext_resource type="Texture2D" uid="uid://cu0rtjmhu2bic" path="res://Characters/King/King 1.png" id="7_xsist"]
+[ext_resource type="Texture2D" uid="uid://ddfduse0ca44m" path="res://Characters/King/King 2.png" id="8_s6wfa"]
 
 [sub_resource type="Animation" id="Animation_k6uy1"]
 length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Mom:texture")
+tracks/0/path = NodePath("King:texture")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -50,6 +24,23 @@ tracks/0/keys = {
 "values": [ExtResource("4_1w18o")]
 }
 
+[sub_resource type="Animation" id="Animation_nc0we"]
+resource_name = "talking_king"
+length = 0.5
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("King:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.0333333, 0.233333, 0.433333, 0.633333),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("7_xsist"), ExtResource("8_s6wfa"), ExtResource("7_xsist"), ExtResource("8_s6wfa")]
+}
+
 [sub_resource type="Animation" id="Animation_4334y"]
 resource_name = "talking_mom"
 length = 0.5
@@ -57,7 +48,7 @@ loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Mom:texture")
+tracks/0/path = NodePath("King:texture")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -69,14 +60,15 @@ tracks/0/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_3l4v2"]
 _data = {
-&"RESET": SubResource("Animation_k6uy1"),
-&"talking_mom": SubResource("Animation_4334y")
+"RESET": SubResource("Animation_k6uy1"),
+"talking_king": SubResource("Animation_nc0we"),
+"talking_mom": SubResource("Animation_4334y")
 }
 
 [node name="Control" type="Control"]
 layout_mode = 3
 anchors_preset = 0
-script = SubResource("GDScript_yog2f")
+script = ExtResource("1_gn4ju")
 
 [node name="Background" type="Sprite2D" parent="."]
 position = Vector2(640, 360)
@@ -92,7 +84,7 @@ offset_bottom = 1759.0
 scale = Vector2(0.4, 0.4)
 theme_override_colors/font_color = Color(0.0430392, 0.0430392, 0.0430392, 1)
 theme_override_fonts/font = ExtResource("2_xggus")
-theme_override_font_sizes/font_size = 69
+theme_override_font_sizes/font_size = 73
 text = "Hello Royalty Collage of the Paper Trail Kingdom,
 
 It is I, King Gustav II Adolph, the former King of Sweden. You may be wondering, how am I here, writing to you one of these fine… um… what are these things called..? Oh yes, “emails”! Well, you see, I am summoned back to life when I see an ethical dilemma about, and that certainly is what is happening right now… 
@@ -124,14 +116,14 @@ text = "Get to Work"
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("3_y7vd0")
 
-[node name="Mom" type="Sprite2D" parent="."]
-position = Vector2(1071, 216)
+[node name="King" type="Sprite2D" parent="."]
+position = Vector2(1070, 273)
 scale = Vector2(25.25, 24)
 texture = ExtResource("4_1w18o")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
-&"": SubResource("AnimationLibrary_3l4v2")
+"": SubResource("AnimationLibrary_3l4v2")
 }
 
 [node name="Timer" type="Timer" parent="."]
