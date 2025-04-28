@@ -32,7 +32,7 @@ func remove_asset(path: String) -> void:
 # Evaluate performance (Confidant always passes, Client can fail)
 func evaluate_performance() -> int:
 	for path in assets_used:
-		var data = assets.get_asset_info(path)
+		var data = assets.get_item_info(path)
 
 		if data[0] < 0:
 			dark -= data[0]

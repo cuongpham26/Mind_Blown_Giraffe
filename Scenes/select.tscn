@@ -24,7 +24,9 @@
 [sub_resource type="Theme" id="Theme_nm6vq"]
 
 [sub_resource type="GDScript" id="GDScript_pd01v"]
-script/source = "extends Label
+script/source = "@tool
+
+extends Label
 
 @export var speed: float = 2.0  # Speed of pulsation
 @export var scale_amount: float = 0.05  # Subtle pulsing
@@ -77,6 +79,8 @@ offset_left = -2.0
 offset_top = 1525.0
 offset_right = 792.0
 offset_bottom = 1928.0
+scale = Vector2(0.954096, 0.954096)
+pivot_offset = Vector2(397, 201.5)
 theme_override_colors/font_color = Color(0.537255, 0.32549, 0.882353, 1)
 theme_override_fonts/font = ExtResource("6_ulww2")
 theme_override_font_sizes/font_size = 200
@@ -114,6 +118,8 @@ offset_left = 114.919
 offset_top = 1300.0
 offset_right = 1634.92
 offset_bottom = 1700.0
+scale = Vector2(0.954096, 0.954096)
+pivot_offset = Vector2(760.001, 401.5)
 theme_override_colors/font_color = Color(0.537255, 0.32549, 0.882353, 1)
 theme_override_fonts/font = ExtResource("6_ulww2")
 theme_override_font_sizes/font_size = 400
@@ -148,6 +154,8 @@ offset_top = 2150.0
 offset_right = 3499.36
 offset_bottom = 2850.0
 rotation = -0.270526
+scale = Vector2(0.954096, 0.954096)
+pivot_offset = Vector2(1295, 701.5)
 theme_override_colors/font_color = Color(0.537255, 0.32549, 0.882353, 1)
 theme_override_fonts/font = ExtResource("6_ulww2")
 theme_override_font_sizes/font_size = 700

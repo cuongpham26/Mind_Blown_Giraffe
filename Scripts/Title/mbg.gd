@@ -1,3 +1,5 @@
+@tool
+
 extends Sprite2D
 
 var angle_amount: int = 20 # max degrees to rotate (you can make this smaller)

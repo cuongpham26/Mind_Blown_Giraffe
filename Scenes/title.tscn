@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://d0b44yhwb3r7h"]
+[gd_scene load_steps=13 format=3 uid="uid://d0b44yhwb3r7h"]
 
 [ext_resource type="Script" uid="uid://12dykyi3vd3x" path="res://Scripts/Title/title_screen.gd" id="1_6aagf"]
 [ext_resource type="Texture2D" uid="uid://be2c6ipkeavsi" path="res://Art/Pixel Shape Tiles/Pixel background/32x32/3. Color/Picture/color_background_83.png" id="2_kyk5u"]
@@ -20,18 +20,6 @@ default_font_size = 200
 default_base_scale = 2.0
 default_font = ExtResource("3_cwqts")
 
-[sub_resource type="GDScript" id="GDScript_66w1k"]
-script/source = "extends Sprite2D
-
-var angle_amount = 20 # max degrees to rotate (you can make this smaller)
-var speed = 2 # how fast it rotates back and forth
-var time_passed = 0.0
-
-func _process(delta):
-	time_passed += delta
-	rotation_degrees = sin(time_passed * speed) * angle_amount
-"
-
 [node name="TitleScreen" type="Control"]
 layout_mode = 3
 anchor_right = 1.054
@@ -44,8 +32,8 @@ theme = SubResource("Theme_v303f")
 script = ExtResource("1_6aagf")
 
 [node name="Background" type="Sprite2D" parent="."]
-position = Vector2(645.5, 354.5)
-scale = Vector2(40.3438, 23.4063)
+position = Vector2(640, 360)
+scale = Vector2(40, 22.5)
 texture = ExtResource("2_kyk5u")
 
 [node name="TitleLabel1" type="Label" parent="."]
@@ -54,6 +42,8 @@ offset_left = 132.0
 offset_top = 34.0
 offset_right = 1152.0
 offset_bottom = 285.0
+scale = Vector2(1.04992, 1.04992)
+pivot_offset = Vector2(510, 125.5)
 theme = SubResource("Theme_sgcfn")
 theme_override_colors/font_color = Color(0.537308, 0.324746, 0.882955, 1)
 theme_override_font_sizes/font_size = 250
@@ -98,24 +88,26 @@ text = "Options
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("5_qh4d7")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="Giraffe1" type="Sprite2D" parent="."]
 position = Vector2(220, 503)
+rotation = 0.348499
 scale = Vector2(0.544922, 0.539062)
 texture = ExtResource("6_lv7gn")
 script = ExtResource("7_5vuho")
 
-[node name="Sprite2D" type="Sprite2D" parent="Sprite2D"]
+[node name="Bomb1" type="Sprite2D" parent="Giraffe1"]
 position = Vector2(93.5914, -324.638)
 scale = Vector2(0.428315, 0.391304)
 texture = ExtResource("8_ohkfa")
 
-[node name="Sprite2D2" type="Sprite2D" parent="."]
+[node name="Giraffe2" type="Sprite2D" parent="."]
 position = Vector2(1038, 501)
+rotation = 0.348499
 scale = Vector2(0.545, 0.602)
 texture = ExtResource("9_ps378")
-script = SubResource("GDScript_66w1k")
+script = ExtResource("7_5vuho")
 
-[node name="Sprite2D" type="Sprite2D" parent="Sprite2D2"]
+[node name="Bomb2" type="Sprite2D" parent="Giraffe2"]
 position = Vector2(91.7431, -302.326)
 scale = Vector2(0.371846, 0.342465)
 texture = ExtResource("8_ohkfa")

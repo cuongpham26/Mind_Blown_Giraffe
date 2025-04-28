@@ -1,0 +1,134 @@
+[gd_scene load_steps=10 format=3 uid="uid://did0yr2at6fek"]
+
+[ext_resource type="Texture2D" uid="uid://bktqokq8lff04" path="res://Art/Pixel Shape Tiles/Pixel background/32x32/3. Color/Picture/color_background_70.png" id="1_7a1bc"]
+[ext_resource type="FontFile" uid="uid://cn25gdhs56fp8" path="res://Art/Fonts/advanced_pixel-7.ttf" id="1_lhnut"]
+[ext_resource type="AudioStream" uid="uid://bd7vmpg61hro1" path="res://Sounds/click.wav" id="2_7a1bc"]
+[ext_resource type="Texture2D" uid="uid://dvdtrc85x7x86" path="res://Characters/Mom/Mom_1.png" id="3_4im0p"]
+[ext_resource type="Texture2D" uid="uid://dsxk3s3wiy7m7" path="res://Characters/Mom/Mom_2.png" id="4_c0y2o"]
+
+[sub_resource type="GDScript" id="GDScript_yog2f"]
+script/source = "@tool
+
+extends Control
+
+@onready var animation = $AnimationPlayer
+
+@onready var sprite = $Mom
+
+@onready var click = $AudioStreamPlayer
+
+@onready var canvas_button = $GoToCanvas
+
+var is_playing = false
+
+func _on_go_to_canvas_pressed() -> void:
+	click.play()
+	await click.finished
+	get_tree().change_scene_to_file(\"res://Scenes/collage.tscn\")
+	
+func _ready() -> void:
+	animation.play(\"talking_mom\")
+	$Timer.start(3.0)
+
+func _on_timer_timeout() -> void:
+	animation.stop()
+	sprite.texture = preload(\"res://Characters/Mom/Mom_Idle.png\")
+"
+
+[sub_resource type="Animation" id="Animation_k6uy1"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Mom:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("3_4im0p")]
+}
+
+[sub_resource type="Animation" id="Animation_4334y"]
+resource_name = "talking_mom"
+length = 0.5
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Mom:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.166667, 0.3, 0.433333),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("4_c0y2o"), ExtResource("3_4im0p"), ExtResource("4_c0y2o"), ExtResource("3_4im0p")]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_3l4v2"]
+_data = {
+&"RESET": SubResource("Animation_k6uy1"),
+&"talking_mom": SubResource("Animation_4334y")
+}
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = SubResource("GDScript_yog2f")
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(640, 360)
+scale = Vector2(40, 22.703)
+texture = ExtResource("1_7a1bc")
+
+[node name="Message" type="Label" parent="."]
+layout_mode = 0
+offset_left = 49.0
+offset_top = 39.0
+offset_right = 1773.0
+offset_bottom = 1323.0
+scale = Vector2(0.5, 0.5)
+theme_override_colors/font_color = Color(0.0430392, 0.0430392, 0.0430392, 1)
+theme_override_fonts/font = ExtResource("1_lhnut")
+theme_override_font_sizes/font_size = 69
+text = "Honey??
+
+Have you been putting too much work into your collages? I just got a letter from your school saying that you are failing your course “MCS-394: Game Development”! 
+
+Since you can’t stop making collages, I might as well have you make me an inspiring collage… Maybe you will get some motivation to get those grades up in your class while making it!
+
+Love, Mom
+(P.S., have you been taking your vitamins?)"
+autowrap_mode = 3
+
+[node name="GoToCanvas" type="Button" parent="."]
+layout_mode = 0
+offset_left = 1086.0
+offset_top = 665.0
+offset_right = 1279.0
+offset_bottom = 724.0
+theme_override_fonts/font = ExtResource("1_lhnut")
+theme_override_font_sizes/font_size = 50
+text = "Get to Work"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_7a1bc")
+
+[node name="Mom" type="Sprite2D" parent="."]
+position = Vector2(1071, 216)
+scale = Vector2(25.25, 24)
+texture = ExtResource("3_4im0p")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_3l4v2")
+}
+
+[node name="Timer" type="Timer" parent="."]
+
+[connection signal="pressed" from="GoToCanvas" to="." method="_on_go_to_canvas_pressed"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

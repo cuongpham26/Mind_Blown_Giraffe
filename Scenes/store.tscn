@@ -7,7 +7,9 @@
 [ext_resource type="Texture2D" uid="uid://h0fjiy4m0hjc" path="res://Characters/Robby/Robby-Talk-2.png" id="5_cb1sj"]
 
 [sub_resource type="GDScript" id="GDScript_kyo8m"]
-script/source = "extends Control
+script/source = "@tool
+
+extends Control
 
 @onready var animation = $AnimationPlayer
 @onready var sprite = $Robby
@@ -125,9 +127,10 @@ theme_override_colors/font_color = Color(0.0274091, 0.0274092, 0.0274092, 1)
 theme_override_fonts/font = ExtResource("2_21cys")
 theme_override_font_sizes/font_size = 70
 text = "Robby:
-How can I help you today? "
+	Come back later!!!"
 
 [node name="Timer" type="Timer" parent="."]
+wait_time = 3.0
 
 [connection signal="pressed" from="BackButton" to="." method="_on_back_button_pressed"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

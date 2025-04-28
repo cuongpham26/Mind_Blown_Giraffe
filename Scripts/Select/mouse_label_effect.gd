@@ -1,3 +1,5 @@
+@tool
+
 extends Label
 
 @export var speed: float = 2.0  # Speed of pulsation

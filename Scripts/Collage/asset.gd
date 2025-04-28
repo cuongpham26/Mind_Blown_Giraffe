@@ -4,7 +4,7 @@ class_name Asset
 
 # ["Dark/Light", "Cool/Warm", "Sad/Happy", "Comforting/Inspiring"]
 
-var data = {
+var items = {
 	"02_dish_2.png": [4.0, -2.0, 0.0, -1.0],
 	"15_burger.png": [1.0, 3.0, 2.0, -4.0],
 	"16x32 trees 2.png": [1.0, 0.0, 3.0, -2.0],
@@ -15,6 +15,20 @@ var data = {
 	"48x48 trees 3.png": [0.0, -1.0, 3.0, -2.0],
 	"54_hotdog.png": [-1.0, 3.0, 2.0, -4.0],
 	"81_pizza.png": [1.0, 4.0, 2.0, -3.0],
+	"BirdFly.png": [0.0, 2.0, 2.0, 2.0],
+	"Bunny.png": [1.0, 1.0, 3.0, 0.0],
+	"Cattt.png": [1.0, 0.0, 3.0, -3.0],
+	"FrogIdle.png": [2.0, -2.0, 3.0, 0.0],
+	"Golden.png": [1.0, 1.0, 3.0, 0.0],
+	"PlaceholderGlinko_scaled_16x_pngcrushed.png": [-2.0, 1.0, 3.0, -3.0],
+	"Pig.png": [2.0, 2.0, 0.0, -2.0],
+	"girl.png": [1.0, 2.0, 4.0, 2.0],
+	"sargent_relish_large.png": [-2.0, -2.0, 3.0, 1.0],
+	"shirt1.png": [4.0, -1.0, 4.0, 3.0],
+	"unnamed.png": [1.0, 0.0, -2.0, 3.0],
+}
+
+var backgrounds = {
 	"Art Texture 01.jpg": [2.0, -1.0, 1.0, 3.0],
 	"Art Texture 011.jpg": [-2.0, 1.0, -3.0, 1.0],
 	"Art Texture 014.jpg": [-2.0, 2.0, 0.0, 1.0],
@@ -28,9 +42,6 @@ var data = {
 	"Art Texture 056.JPG": [4.0, 1.0, 2.0, 0.0],
 	"Art Texture 057.JPG": [-1.0, -3.0, -2.0, 0.0],
 	"Art Texture 059.JPG": [4.0, -1.0, 2.0, 0.0],
-	"BirdFly.png": [0.0, 2.0, 2.0, 2.0],
-	"Bunny.png": [1.0, 1.0, 3.0, 0.0],
-	"Cattt.png": [1.0, 0.0, 3.0, -3.0],
 	"Cloth_01-256x256.png": [-2.0, -4.0, -1.0, 0.0],
 	"Cloth_02-256x256.png": [-2.0, 3.0, 0.0, -1.0],
 	"Cloth_04-256x256.png": [3.0, 2.0, 0.0, -1.0],
@@ -45,10 +56,6 @@ var data = {
 	"Cloth_19-256x256.png": [1.0, -3.0, 0.0, 1.0],
 	"Cloth_22-256x256.png": [-2.0, 4.0, -1.0, 1.0],
 	"Cloth_24-256x256.png": [3.0, 4.0, 0.0, -1.0],
-	"FrogIdle.png": [2.0, -2.0, 3.0, 0.0],
-	"Golden.png": [1.0, 1.0, 3.0, 0.0],
-	"PlaceholderGlinko_scaled_16x_pngcrushed.png": [-2.0, 1.0, 3.0, -3.0],
-	"Pig.png": [2.0, 2.0, 0.0, -2.0],
 	"color_background_34.png": [1.0, -4.0, -1.0, 0.0],
 	"color_background_48.png": [1.0, 3.0, 1.0, -2.0],
 	"color_background_47.png": [1.0, -2.0, 1.0, -1.0],
@@ -60,17 +67,19 @@ var data = {
 	"color_background_76.png": [-3.0, -3.0, -1.0, 0.0],
 	"color_background_77.png": [3.0, 4.0, 1.0, 0.0],
 	"color_background_79.png": [-3.0, -3.0, -1.0, 0.0],
-	"color_background_86.png": [2.0, 3.0, 4.0, -1.0],
-	"girl.png": [1.0, 2.0, 4.0, 2.0],
-	"sargent_relish_large.png": [-2.0, -2.0, 3.0, 1.0],
-	"shirt1.png": [4.0, -1.0, 4.0, 3.0],
-	"unamed.png": [1.0, 0.0, -2.0, 3.0]
+	"color_background_86.png": [2.0, 3.0, 4.0, -1.0]
 }
 
-func get_asset_info(path: String):
-	if data.has(path):
-		print(data.get(path))
-		return data.get(path)
+func get_item_info(path: String):
+	if items.has(path):
+		return items.get(path)
 	else:
-		print("Asset " + path + " does not exist")
+		print("Item " + path + " does not exist")
+		return [0.0, 0.0, 0.0, 0.0]
+
+func get_background_info(path: String):
+	if backgrounds.has(path):
+		return items.get(path)
+	else:
+		print("Background " + path + " does not exist")
 		return [0.0, 0.0, 0.0, 0.0]
