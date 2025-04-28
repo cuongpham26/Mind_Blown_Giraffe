@@ -92,7 +92,7 @@ script = SubResource("GDScript_kyo8m")
 
 [node name="Background" type="Sprite2D" parent="."]
 position = Vector2(640, 360)
-scale = Vector2(20, 11.331)
+scale = Vector2(20, 11.25)
 texture = ExtResource("1_myanm")
 
 [node name="BackButton" type="Button" parent="."]
@@ -113,7 +113,7 @@ libraries = {
 }
 
 [node name="Robby" type="Sprite2D" parent="."]
-position = Vector2(604, 260)
+position = Vector2(640, 271)
 scale = Vector2(35.8672, 33.7734)
 texture = ExtResource("4_32xlu")
 
@@ -126,8 +126,6 @@ offset_bottom = 678.0
 theme_override_colors/font_color = Color(0.0274091, 0.0274092, 0.0274092, 1)
 theme_override_fonts/font = ExtResource("2_21cys")
 theme_override_font_sizes/font_size = 70
-text = "Robby:
-	Come back later!!!"
 
 [node name="Timer" type="Timer" parent="."]
 wait_time = 3.0

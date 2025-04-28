@@ -22,12 +22,7 @@ default_font = ExtResource("3_cwqts")
 
 [node name="TitleScreen" type="Control"]
 layout_mode = 3
-anchor_right = 1.054
-anchor_bottom = 1.07
-offset_right = -51.12
-offset_bottom = -38.4
-grow_horizontal = 2
-grow_vertical = 2
+anchors_preset = 0
 theme = SubResource("Theme_v303f")
 script = ExtResource("1_6aagf")
 
@@ -42,7 +37,7 @@ offset_left = 132.0
 offset_top = 34.0
 offset_right = 1152.0
 offset_bottom = 285.0
-scale = Vector2(1.04992, 1.04992)
+scale = Vector2(1.00978, 1.00978)
 pivot_offset = Vector2(510, 125.5)
 theme = SubResource("Theme_sgcfn")
 theme_override_colors/font_color = Color(0.537308, 0.324746, 0.882955, 1)
@@ -90,7 +85,7 @@ stream = ExtResource("5_qh4d7")
 
 [node name="Giraffe1" type="Sprite2D" parent="."]
 position = Vector2(220, 503)
-rotation = 0.348499
+rotation = 0.0682573
 scale = Vector2(0.544922, 0.539062)
 texture = ExtResource("6_lv7gn")
 script = ExtResource("7_5vuho")
@@ -102,7 +97,7 @@ texture = ExtResource("8_ohkfa")
 
 [node name="Giraffe2" type="Sprite2D" parent="."]
 position = Vector2(1038, 501)
-rotation = 0.348499
+rotation = 0.0682573
 scale = Vector2(0.545, 0.602)
 texture = ExtResource("9_ps378")
 script = ExtResource("7_5vuho")
