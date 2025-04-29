@@ -37,12 +37,26 @@ func set_background_texture(sprite: Sprite2D, index: int) -> void:
 		sprite.texture = texture
 		
 		if texture:
-			var max_width: float = size[0]
-			var max_height: float = 96
-			var texture_width: float = texture.get_width()
-			var texture_height: float = texture.get_height()
+			var target_width: float = size[0] # Set target_width to panel width
+			# If you want more backgrounds on the panel decrease the target_height
+			# then manually put another object, and vice versa
+			var target_height: float = 96
 
-			sprite.scale = Vector2(max_width / texture_width, max_height / texture_height)
+			sprite.scale = Vector2(target_width / texture.get_width(), target_height / texture.get_height())
 			
 	else:
 		sprite.texture = null
+
+# Set your big background using the background list from the panel	
+func _input(event: InputEvent) -> void:
+	if event is InputEventMouseButton and event.pressed:
+		var background_list = find_children("Background?", "Sprite2D", false, true)
+		
+		for background in background_list:
+			if background.get_rect().has_point(background.to_local(event.position)): 			
+				# We plan to release this game on a 1280 * 720 computer screen
+				var target_width: float = 1280
+				var target_height: float = 720
+
+				get_node("../Background").scale = Vector2(target_width / background.texture.get_width(), target_height / background.texture.get_height())
+				get_node("../Background").set_texture(background.texture)
