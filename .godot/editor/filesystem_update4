@@ -18,3 +18,7 @@ res://Scenes/select.tscn
 res://Scripts/Select/level_select_screen.gd
 res://Scenes/collage.tscn
 res://Scripts/Collage/back_button.gd
+res://Scripts/Title/title_screen.gd
+res://Scripts/Settings/volume_slider.gd
+res://Scripts/Email/email_client.gd
+res://Scenes/email.tscn

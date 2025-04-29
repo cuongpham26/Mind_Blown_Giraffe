@@ -24,23 +24,6 @@ tracks/0/keys = {
 "values": [ExtResource("4_mcu5e")]
 }
 
-[sub_resource type="Animation" id="Animation_4334y"]
-resource_name = "talking_mom"
-length = 0.5
-loop_mode = 1
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Guario:texture")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.166667, 0.3, 0.433333),
-"transitions": PackedFloat32Array(1, 1, 1, 1),
-"update": 1,
-"values": [ExtResource("5_mb7ge"), ExtResource("4_mcu5e"), ExtResource("5_mb7ge"), ExtResource("4_mcu5e")]
-}
-
 [sub_resource type="Animation" id="Animation_ixstc"]
 resource_name = "talking_guario"
 length = 0.5
@@ -56,6 +39,23 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 1,
 "values": [ExtResource("7_gwlxt"), ExtResource("8_so67n"), ExtResource("7_gwlxt"), ExtResource("8_so67n")]
+}
+
+[sub_resource type="Animation" id="Animation_4334y"]
+resource_name = "talking_mom"
+length = 0.5
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Guario:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.166667, 0.3, 0.433333),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("5_mb7ge"), ExtResource("4_mcu5e"), ExtResource("5_mb7ge"), ExtResource("4_mcu5e")]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_3l4v2"]
@@ -124,7 +124,7 @@ libraries = {
 }
 
 [node name="Timer" type="Timer" parent="."]
-wait_time = 3.0
+wait_time = 5.0
 
 [connection signal="pressed" from="GoToCanvas" to="." method="_on_go_to_canvas_pressed"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
