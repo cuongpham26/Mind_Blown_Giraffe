@@ -79,8 +79,8 @@ tracks/0/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_3hujf"]
 _data = {
-"RESET": SubResource("Animation_bglii"),
-"talking": SubResource("Animation_qwvhl")
+&"RESET": SubResource("Animation_bglii"),
+&"talking": SubResource("Animation_qwvhl")
 }
 
 [node name="Control" type="Control"]

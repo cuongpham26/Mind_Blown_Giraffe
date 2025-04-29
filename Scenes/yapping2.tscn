@@ -1,6 +1,6 @@
-[gd_scene load_steps=12 format=3 uid="uid://chroq6l71c335"]
+[gd_scene load_steps=12 format=3 uid="uid://dopcwskc4s7uu"]
 
-[ext_resource type="Script" path="res://Scripts/Email/yapping_2.gd" id="1_2a6et"]
+[ext_resource type="Script" uid="uid://ea2ho8h32i8q" path="res://Scripts/Email/yapping_2.gd" id="1_2a6et"]
 [ext_resource type="Texture2D" uid="uid://bktqokq8lff04" path="res://Art/Pixel Shape Tiles/Pixel background/32x32/3. Color/Picture/color_background_70.png" id="1_6y660"]
 [ext_resource type="FontFile" uid="uid://cn25gdhs56fp8" path="res://Art/Fonts/advanced_pixel-7.ttf" id="2_ershn"]
 [ext_resource type="AudioStream" uid="uid://bd7vmpg61hro1" path="res://Sounds/click.wav" id="3_d85y7"]
@@ -47,9 +47,9 @@ tracks/0/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_3l4v2"]
 _data = {
-"RESET": SubResource("Animation_k6uy1"),
-"talking_mom": SubResource("Animation_4334y"),
-"talking_provost": SubResource("Animation_ikwrm")
+&"RESET": SubResource("Animation_k6uy1"),
+&"talking_mom": SubResource("Animation_4334y"),
+&"talking_provost": SubResource("Animation_ikwrm")
 }
 
 [node name="Control" type="Control"]
@@ -98,7 +98,7 @@ stream = ExtResource("3_d85y7")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
-"": SubResource("AnimationLibrary_3l4v2")
+&"": SubResource("AnimationLibrary_3l4v2")
 }
 
 [node name="Timer" type="Timer" parent="."]

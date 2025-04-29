@@ -1,7 +1,7 @@
 [gd_scene load_steps=13 format=3 uid="uid://djbn8vfvr6ww1"]
 
 [ext_resource type="Texture2D" uid="uid://bktqokq8lff04" path="res://Art/Pixel Shape Tiles/Pixel background/32x32/3. Color/Picture/color_background_70.png" id="1_5soyu"]
-[ext_resource type="Script" path="res://Scripts/Email/yapping_3.gd" id="1_gn4ju"]
+[ext_resource type="Script" uid="uid://bnpnx7s5i8hel" path="res://Scripts/Email/yapping_3.gd" id="1_gn4ju"]
 [ext_resource type="FontFile" uid="uid://cn25gdhs56fp8" path="res://Art/Fonts/advanced_pixel-7.ttf" id="2_xggus"]
 [ext_resource type="AudioStream" uid="uid://bd7vmpg61hro1" path="res://Sounds/click.wav" id="3_y7vd0"]
 [ext_resource type="Texture2D" uid="uid://dvdtrc85x7x86" path="res://Characters/Mom/Mom_1.png" id="4_1w18o"]
@@ -60,9 +60,9 @@ tracks/0/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_3l4v2"]
 _data = {
-"RESET": SubResource("Animation_k6uy1"),
-"talking_king": SubResource("Animation_nc0we"),
-"talking_mom": SubResource("Animation_4334y")
+&"RESET": SubResource("Animation_k6uy1"),
+&"talking_king": SubResource("Animation_nc0we"),
+&"talking_mom": SubResource("Animation_4334y")
 }
 
 [node name="Control" type="Control"]

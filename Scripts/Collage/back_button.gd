@@ -5,11 +5,10 @@ extends Control
 @onready var back_button: Button = $TexturePanel/BackButton
 @onready var submit = $SubmitButton
 
-var is_playing = false 
+var is_playing = false # To fix double cick
 
 func _on_back_button_pressed() -> void:
-	if is_playing:
-		return
+	if is_playing: return
 	is_playing = true
 	back_button.disabled = true
 	back_button_sound.play()

@@ -1,9 +1,9 @@
 [gd_scene load_steps=8 format=3 uid="uid://6jlafq26gg7g"]
 
-[ext_resource type="Script" path="res://Scripts/Settings/volume_slider.gd" id="1_6kysc"]
+[ext_resource type="Script" uid="uid://c5s0lhablcypx" path="res://Scripts/Settings/volume_slider.gd" id="1_6kysc"]
 [ext_resource type="Texture2D" uid="uid://bpenb88366m05" path="res://Art/Pixel Shape Tiles/Pixel background/64x64/3. Color/Picture/color_background_83.png" id="2_6vr2p"]
 [ext_resource type="FontFile" uid="uid://cn25gdhs56fp8" path="res://Art/Fonts/advanced_pixel-7.ttf" id="3_f60ng"]
-[ext_resource type="Script" path="res://Scripts/Settings/settings_label_effect.gd" id="4_bismi"]
+[ext_resource type="Script" uid="uid://b7lv3jt5q22wy" path="res://Scripts/Settings/settings_label_effect.gd" id="4_bismi"]
 [ext_resource type="Texture2D" uid="uid://c8h0nbyd7eiad" path="res://Art/Pixel Shape Tiles/Pixel background/64x64/3. Color/Picture/color_background_91.png" id="5_rgw85"]
 [ext_resource type="AudioStream" uid="uid://boer2xv51576g" path="res://Sounds/button.mp3" id="6_l7vst"]
 

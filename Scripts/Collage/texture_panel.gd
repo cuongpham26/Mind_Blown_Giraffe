@@ -5,16 +5,11 @@ extends Panel
 @onready var background3: Sprite2D = $Background3
 @onready var background4: Sprite2D = $Background4
 
-var background_keys: Array = []
+var background_keys: Array = Asset.new().backgrounds.keys()
 var background_index: int = 0
 const BACKGROUNDS_PER_PAGE: int = 5
 
-
-var asset: Asset = Asset.new()
-
 func _ready():
-	# Load all background filenames once from Asset
-	background_keys = asset.backgrounds.keys()
 	update_backgrounds()
 
 func _on_prev_set_pressed() -> void:
@@ -35,10 +30,10 @@ func update_backgrounds() -> void:
 
 func set_background_texture(sprite: Sprite2D, index: int) -> void:
 	if index < background_keys.size():
-		var filename = background_keys[index]
-		var texture = load("res://Inventory/Backgrounds/" + filename)
+		var filename: String = background_keys[index]
+		var texture: Texture = load("res://Inventory/Backgrounds/" + filename)
 		sprite.texture = texture
-
+		
 		if texture:
 			var max_width: float = size[0]
 			var max_height: float = 96
@@ -51,5 +46,6 @@ func set_background_texture(sprite: Sprite2D, index: int) -> void:
 			var final_scale = min(scale_x, scale_y)
 
 			sprite.scale = Vector2(final_scale, final_scale)
+			
 	else:
 		sprite.texture = null
