@@ -78,7 +78,7 @@ func _input(event: InputEvent) -> void:
 		for item in created_item_list:
 			if item.get_rect().has_point(item.to_local(event.position)) and !item.highlighted:
 				item.highlighted = true
-				item.set_self_modulate(Color(1,1,1,.5))
+				item.set_self_modulate(Color(1,1,1,.7))
 				max_z_score += 1
 				item.z_index = max_z_score
 				item.mouse_offset = get_global_mouse_position() - item.global_position
@@ -94,7 +94,7 @@ func _process(_delta: float) -> void:
 			if Input.is_action_just_pressed("ui_right"):
 				item.rotation_degrees += 30
 			if Input.is_action_just_pressed("ui_text_indent"):
-				item.item.set_flip_h(!item.is_flipped_h())
+				item.set_flip_h(!item.is_flipped_h())
 			if Input.is_action_just_pressed("ui_up"):
 				item.scale *= 2
 			if Input.is_action_just_pressed("ui_down"):

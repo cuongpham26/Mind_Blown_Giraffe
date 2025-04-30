@@ -1,14 +1,14 @@
-## Overview
-The project currently consists of two scenes: `collage_editor.tscn` and `title_screen.tscn`. The `title_screen.tscn` serves as the main entry point, allowing users to access the collage editor or exit the application.
+## How to Add New Assets (Backgrounds or Items) to the Collage
 
+### Add the Asset File
+Place your asset image (e.g., `doctor.png`) into the appropriate folder:
+	- For items: `res://Inventory/Items`
+	- For backgrounds: `res://Inventory/Backgrounds`
 
-## Features
-- The `title_screen.tscn`provides navigation options to enter `collage_editor.tscn` or quit the project.
-- Within `collage_editor.tscn`, users can drag images from the sidebar into the canvas.
-- Users can resize images by either right-clicking or using the middle mouse button.
+### Update the Collage Script
+- Open the script at `res://Scripts/Collage.gd`.
+- Inside the corresponding dictionary variable (`var items` for items, `var backgrounds` for backgrounds), add an entry for your new asset. Use the file name as the key and a dictionary of attributes as the value.
 
-
-## Bugs
-- The `image.gd script` appears to trigger the debugger around 100 times/second, likely due to `tween`. It doesn't seem to affect our program but it's worth looking into.
-- Enlarging an image in the sidebar also enlarges the corresponding image on the canvas.
-- If two images are stacked, moving one will cause both to move together instead of just the top image.
+### Example
+To add a "Doctor" item described as extremely evil (dark: -4.0), very distant (cold: -3.0), emotionally neutral (mood: 0.0), and slightly inspiring (inspiring: 1.0), add the following entry to var items:
+```"doctor.png": {-4.0, -3.0, 0.0, 1.0}```

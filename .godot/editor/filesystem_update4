@@ -1,3 +1,4 @@
 res://Scenes/collage.tscn
 res://Scripts/Collage/image.gd
 res://Scripts/Collage/item_panel.gd
+res://README.md
