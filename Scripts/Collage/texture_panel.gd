@@ -1,3 +1,4 @@
+@tool
 extends Panel
 
 @onready var background1: Sprite2D = $Background1

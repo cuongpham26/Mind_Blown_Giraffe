@@ -1,3 +1,3 @@
 res://Scenes/collage.tscn
-res://Scripts/Collage/texture_items.gd
-res://Scripts/Collage/texture_panel.gd
+res://Scripts/Collage/image.gd
+res://Scripts/Collage/item_panel.gd
