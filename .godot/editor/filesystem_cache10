@@ -1,7 +1,7 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1746031620
+::res://::1746077017
 export_presets.cfg::TextFile/TextFile::-1::1745995400::0::1::::<><><>0<>0<><>::
-README.md::TextFile/TextFile::-1::1745487491::0::1::::<><><>0<>0<><>::
+README.md::TextFile::-1::1746076986::0::1::::<><><>0<>0<><>::
 ::res://Art/::1745684799
 ::res://Art/Collage Items/::1745684989
 girl.png::CompressedTexture2D/CompressedTexture2D::1280037215048504366::1745684797::1745684982::1::::<><><>0<>0<>c0c7da54a2928529366ac8408741f5db<>res://.godot/imported/girl.png-c3f099cb0d5c329623b8c17def2f244f.ctex::
@@ -899,8 +899,8 @@ shirt1.png::CompressedTexture2D/CompressedTexture2D::7091426751901572219::174593
 unnamed.png::CompressedTexture2D/CompressedTexture2D::5727311784043646021::1746002356::1746002364::1::::<><><>0<>0<>921b91ee3a30308aa27dc68a30607b06<>res://.godot/imported/unnamed.png-d0b275b018ecbe918bc9b973f96ba2a0.ctex::
 ::res://Music/::1745684839
 mbg main theme demo.mp3::AudioStreamMP3/AudioStreamMP3::282885326515714954::1745487491::1745684839::1::::<><><>0<>0<>eb9a92efd989231e2fe107c89e7a420c<>res://.godot/imported/mbg main theme demo.mp3-7c7ae9eafd48572e7d6b6111657b7e7f.mp3str::
-::res://Scenes/::1746003361
-collage.tscn::PackedScene::2114643130823420790::1746003361::0::1::::<><><>0<>0<><>::uid://cp7i5uxpm2uao::::res://Scripts/Collage/back_button.gd<>uid://cnj20m55m02y4::::res://Scripts/Collage/item_panel.gd<>uid://d23s2n4ngpuw4::::res://Art/Pixel Shape Tiles/Pixel background/32x32/3. Color/Picture/color_background_88.png<>uid://b3vedihjqeir1::::res://Scripts/Collage/image.gd<>uid://chu0alfmn5j7m::::res://Scripts/Collage/texture_panel.gd<>uid://csaexiq8xhdkl::::res://Art/Pixel Shape Tiles/Pixel background/32x32/3. Color/Picture/color_background_66.png<>uid://crjusabp7xfhe::::res://Art/Pixel Shape Tiles/Pixel background/32x32/3. Color/Picture/color_background_71.png<>uid://bebnsnpo50htr::::res://Art/Pixel Shape Tiles/Pixel background/32x32/3. Color/Picture/color_background_76.png<>uid://cv52rpovb5oul::::res://Art/Pixel Shape Tiles/Pixel background/32x32/3. Color/Picture/color_background_77.png<>uid://cn25gdhs56fp8::::res://Art/Fonts/advanced_pixel-7.ttf<>uid://cayro4wetrhvg::::res://Scripts/Collage/popup_menu.gd<>uid://boer2xv51576g::::res://Sounds/button.mp3
+::res://Scenes/::1746048480
+collage.tscn::PackedScene::2114643130823420790::1746048480::0::1::::<><><>0<>0<><>::uid://cp7i5uxpm2uao::::res://Scripts/Collage/back_button.gd<>uid://cnj20m55m02y4::::res://Scripts/Collage/item_panel.gd<>uid://d23s2n4ngpuw4::::res://Art/Pixel Shape Tiles/Pixel background/32x32/3. Color/Picture/color_background_88.png<>uid://b3vedihjqeir1::::res://Scripts/Collage/image.gd<>uid://b2g7e5kb6iyry::::res://Inventory/Items/02_dish_2.png<>uid://c45r41uookhmd::::res://Inventory/Items/15_burger.png<>uid://c8shj4pd66yqf::::res://Inventory/Items/16x32 trees 2.png<>uid://b5wrvefrjs0cb::::res://Inventory/Items/16x32 trees 3.png<>uid://cec2i7b0gdr80::::res://Inventory/Items/16x32 trees 4.png<>uid://bm2g7d51baoj7::::res://Inventory/Backgrounds/Art Texture 01.jpg<>uid://e1chf341bemh::::res://Inventory/Backgrounds/Art Texture 011.jpg<>uid://kkqukpxqoc4o::::res://Inventory/Backgrounds/Art Texture 014.jpg<>uid://dw76h71gfghpk::::res://Inventory/Backgrounds/Art Texture 020.jpg<>uid://chu0alfmn5j7m::::res://Scripts/Collage/texture_panel.gd<>uid://cn25gdhs56fp8::::res://Art/Fonts/advanced_pixel-7.ttf<>uid://cayro4wetrhvg::::res://Scripts/Collage/popup_menu.gd<>uid://boer2xv51576g::::res://Sounds/button.mp3
 email.tscn::PackedScene/PackedScene::4145813357900289170::1745935502::0::1::::<><><>0<>0<><>::uid://m30jvmh6sx0n::::res://Scripts/Email/email_client.gd<>uid://bpenb88366m05::::res://Art/Pixel Shape Tiles/Pixel background/64x64/3. Color/Picture/color_background_83.png<>uid://5wsfprv8bn24::::res://Icons/computer.png<>uid://cn25gdhs56fp8::::res://Art/Fonts/advanced_pixel-7.ttf<>uid://mvdeu6ekqdrj::::res://Icons/character.png<>uid://wpb432scuqyb::::res://Icons/search.png<>uid://mrv3gotrkkkg::::res://Icons/pencil.png<>uid://oc8ybg10qds0::::res://Icons/inbox.png<>uid://d1tou1rpqgsnv::::res://Icons/star.png<>uid://yfdywumq3dl1::::res://Icons/send.png<>uid://cnhdvlo0vmbnj::::res://Icons/spam.png<>uid://dmn6aqsw037::::res://Icons/email_boxes.png<>uid://bd7vmpg61hro1::::res://Sounds/click.wav<>uid://boer2xv51576g::::res://Sounds/button.mp3
 result.tscn::PackedScene/PackedScene::8530642958215168696::1745935502::0::1::::<><><>0<>0<><>::uid://bt5yjym3dnsoj::::res://Scripts/result.gd
 select.tscn::PackedScene/PackedScene::8634105111826733513::1745935502::0::1::::<><><>0<>0<><>::uid://fryghld3ya6c::::res://Scripts/Select/level_select_screen.gd<>uid://be2c6ipkeavsi::::res://Art/Pixel Shape Tiles/Pixel background/32x32/3. Color/Picture/color_background_83.png<>uid://dpbl0ghyanb23::::res://Icons/mouse.png<>uid://b3p3m5pcx7fw5::::res://Icons/mouse_lighter.png<>uid://bd7vmpg61hro1::::res://Sounds/click.wav<>uid://cn25gdhs56fp8::::res://Art/Fonts/advanced_pixel-7.ttf<>uid://chm08jy666gn1::::res://Scripts/Select/mouse_label_effect.gd<>uid://boer2xv51576g::::res://Sounds/button.mp3<>uid://b7y377w8puv7x::::res://Icons/keys.png<>uid://cr18y08gy426e::::res://Icons/keys_light.png<>uid://btpr24272lj7s::::res://Sounds/store.mp3<>uid://mebmp7ojhhgw::::res://Icons/paper.png<>uid://ctxaa551oo0q3::::res://Scripts/Select/free_collage_label_effect.gd<>uid://xeufwhc5r7no::::res://Sounds/paper.wav<>uid://cpnuw5asxv7ca::::res://Icons/ruler.png<>uid://drcpgnurvx6yu::::res://Icons/sissors.png
@@ -914,15 +914,15 @@ yapping4.tscn::PackedScene/PackedScene::29491789078122933::1745935484::0::1::::<
 ::res://Scripts/::1745684799
 music_player.gd::GDScript/GDScript::3321060010057289943::1745684799::0::1::::<>Node<><>0<>0<><>::
 result.gd::GDScript/GDScript::3783414605783838405::1745684799::0::1::::<>Control<><>0<>0<><>::
-::res://Scripts/Collage/::1746003304
+::res://Scripts/Collage/::1746076986
 asset.gd::GDScript/GDScript::4752598118964773595::1745935384::0::1::::Asset<>Node<><>0<>0<><>::
 back_button.gd::GDScript/GDScript::5892274506542035478::1745995288::0::1::::<>Control<><>0<>0<><>::
-image.gd::GDScript::4395308895176942972::1746000252::0::1::::<>Sprite2D<><>0<>0<><>::
-item_panel.gd::GDScript::5705560416123925633::1746003304::0::1::::<>Panel<><>0<>1<><>::
+image.gd::GDScript::4395308895176942972::1746033621::0::1::::<>Sprite2D<><>0<>0<><>::
+item_panel.gd::GDScript::5705560416123925633::1746076986::0::1::::<>Panel<><>0<>1<><>::
 mission.gd::GDScript/GDScript::3194168081262866489::1745935384::0::1::::Mission<>Node<><>0<>0<><>::
 player.gd::GDScript/GDScript::5987153776803543885::1745935384::0::1::::Player<>RefCounted<><>0<>0<><>::
 popup_menu.gd::GDScript/GDScript::4823445180845995556::1745684799::0::1::::<>PopupMenu<><>0<>0<><>::
-texture_panel.gd::GDScript::5306969338797447664::1745996414::0::1::::<>Panel<><>0<>1<><>::
+texture_panel.gd::GDScript/GDScript::5306969338797447664::1745996414::0::1::::<>Panel<><>0<>1<><>::
 ::res://Scripts/Email/::1745935396
 email_client.gd::GDScript/GDScript::901603819622583323::1745935384::0::1::::<>Control<><>0<>0<><>::
 yapping_1.gd::GDScript/GDScript::1559954881024761149::1745935384::0::1::::<>Control<><>0<>1<><>::

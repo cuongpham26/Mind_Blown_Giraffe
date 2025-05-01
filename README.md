@@ -2,8 +2,8 @@
 
 ### Add the Asset File
 Place your asset image (e.g., `doctor.png`) into the appropriate folder:
-	- For items: `res://Inventory/Items`
-	- For backgrounds: `res://Inventory/Backgrounds`
+- For items: `res://Inventory/Items`
+- For backgrounds: `res://Inventory/Backgrounds`
 
 ### Update the Collage Script
 - Open the script at `res://Scripts/Collage.gd`.

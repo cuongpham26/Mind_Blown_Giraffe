@@ -72,8 +72,7 @@ func _input(event: InputEvent) -> void:
 				new_sprite.z_index = max_z_score
 				get_parent().add_child(new_sprite, true)
 				
-				file_path = new_sprite.get_texture().load_path.get_file().get_slice("-", 0)
-				mission.add_asset(file_path)
+				mission.add_asset(new_sprite.get_texture().load_path.get_file().get_slice("-", 0))
 					
 		for item in created_item_list:
 			if item.get_rect().has_point(item.to_local(event.position)) and !item.highlighted:
@@ -89,18 +88,18 @@ func _input(event: InputEvent) -> void:
 func _process(_delta: float) -> void:
 	for item in get_parent().get_children().filter(func(node): return node.name.match("Item*") and node.name != "ItemPanel"):
 		if item.highlighted:
-			if Input.is_action_just_pressed("ui_left"):
-				item.rotation_degrees -= 30
-			if Input.is_action_just_pressed("ui_right"):
-				item.rotation_degrees += 30
+			if Input.is_action_pressed("ui_left"):
+				item.rotation_degrees -= 0.7
+			if Input.is_action_pressed("ui_right"):
+				item.rotation_degrees += 0.8
 			if Input.is_action_just_pressed("ui_text_indent"):
 				item.set_flip_h(!item.is_flipped_h())
-			if Input.is_action_just_pressed("ui_up"):
-				item.scale *= 2
-			if Input.is_action_just_pressed("ui_down"):
-				item.scale *= .5
+			if Input.is_action_pressed("ui_up"):
+				item.scale *= 1.03
+			if Input.is_action_pressed("ui_down"):
+				item.scale *= 0.97
 			if Input.is_action_just_pressed("ui_text_backspace"):
-				mission.remove_asset(file_path)
+				mission.remove_asset(item.get_texture().load_path.get_file().get_slice("-", 0))
 				item.queue_free()
 
 			item.global_position = get_global_mouse_position() - item.mouse_offset  # Move directly for smoother dragging
