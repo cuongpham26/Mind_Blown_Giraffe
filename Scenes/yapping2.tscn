@@ -108,6 +108,3 @@ wait_time = 3.0
 position = Vector2(1081, 284)
 scale = Vector2(22.6875, 23.25)
 texture = ExtResource("4_yqt67")
-
-[connection signal="pressed" from="GoToCanvas" to="." method="_on_go_to_canvas_pressed"]
-[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

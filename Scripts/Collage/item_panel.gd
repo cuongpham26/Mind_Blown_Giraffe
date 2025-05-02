@@ -15,7 +15,9 @@ var mission = Mission.new()
 var file_path: String
 static var max_z_score: int = 0
 
-func _ready():
+func _ready() -> void:
+	get_node("PrevButton").pressed.connect(_on_prev_button_pressed)
+	get_node("NextButton").pressed.connect(_on_next_button_pressed)
 	update_items()
 
 func _on_prev_button_pressed() -> void:
@@ -29,7 +31,7 @@ func _on_next_button_pressed() -> void:
 		item_index += ITEMS_PER_PAGE
 		update_items()
 
-func update_items():
+func update_items() -> void:
 	set_sprite_texture(itemOne, item_index)
 	set_sprite_texture(itemTwo, item_index + 1)
 	set_sprite_texture(itemThree, item_index + 2)

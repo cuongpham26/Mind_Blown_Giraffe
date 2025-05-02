@@ -1,30 +1,27 @@
 @tool
-
 extends Control
 
-@onready var animation = $AnimationPlayer
+@onready var animation: AnimationPlayer = $AnimationPlayer
+@onready var sprite: Sprite2D = $Mom
+@onready var audio: AudioStreamPlayer = $AudioStreamPlayer
+@onready var canvas_button: Button = $GoToCanvas
 
-@onready var sprite = $Mom
+var is_playing: bool = false
 
-@onready var click = $AudioStreamPlayer
-
-@onready var canvas_button = $GoToCanvas
-
-var is_playing = false
-
-func _on_go_to_canvas_pressed() -> void:
-	if is_playing:
-		return
-	is_playing = true
-	canvas_button.disabled = true
-	click.play()
-	await click.finished
-	get_tree().change_scene_to_file("res://Scenes/collage.tscn")
-	
 func _ready() -> void:
+	canvas_button.pressed.connect(_on_go_to_canvas_pressed)
+	get_node("Timer").timeout.connect(_on_timer_timeout)
 	sprite.texture = preload("res://Characters/Mom/Mom_Idle.png")
 	animation.play("talking_mom")
 	$Timer.start(5.0)
+
+func _on_go_to_canvas_pressed() -> void:
+	if is_playing: return
+	is_playing = true
+	canvas_button.disabled = true
+	audio.play()
+	await audio.finished
+	get_tree().change_scene_to_file("res://Scenes/collage.tscn")
 
 func _on_timer_timeout() -> void:
 	animation.stop()

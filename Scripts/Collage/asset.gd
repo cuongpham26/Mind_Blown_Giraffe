@@ -4,7 +4,7 @@ class_name Asset
 
 # ["Dark/Light", "Cool/Warm", "Sad/Happy", "Comforting/Inspiring"]
 
-var items = {
+var items: Dictionary = {
 	"02_dish_2.png": [4.0, -2.0, 0.0, -1.0],
 	"15_burger.png": [1.0, 3.0, 2.0, -4.0],
 	"16x32 trees 2.png": [1.0, 0.0, 3.0, -2.0],
@@ -28,7 +28,7 @@ var items = {
 	"unnamed.png": [1.0, 0.0, -2.0, 3.0],
 }
 
-var backgrounds = {
+var backgrounds: Dictionary = {
 	"Art Texture 01.jpg": [2.0, -1.0, 1.0, 3.0],
 	"Art Texture 011.jpg": [-2.0, 1.0, -3.0, 1.0],
 	"Art Texture 014.jpg": [-2.0, 2.0, 0.0, 1.0],
@@ -70,14 +70,14 @@ var backgrounds = {
 	"color_background_86.png": [2.0, 3.0, 4.0, -1.0]
 }
 
-func get_item_info(path: String):
+func get_item_info(path: String) -> Array:
 	if items.has(path):
 		return items.get(path)
 	else:
 		print("Item " + path + " does not exist")
 		return [0.0, 0.0, 0.0, 0.0]
 
-func get_background_info(path: String):
+func get_background_info(path: String) -> Array:
 	if backgrounds.has(path):
 		return items.get(path)
 	else:

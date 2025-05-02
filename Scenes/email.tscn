@@ -360,9 +360,3 @@ offset_bottom = 423.0
 theme_override_colors/font_color = Color(0.0159718, 0.0159718, 0.0159718, 1)
 theme_override_fonts/font = ExtResource("4_tt3ch")
 text = "I’VE TRICKED YOU!!"
-
-[connection signal="pressed" from="BackButton" to="." method="_on_back_button_pressed"]
-[connection signal="pressed" from="OrderButton1" to="." method="_on_order_button_1_pressed"]
-[connection signal="pressed" from="OrderButton2" to="." method="_on_order_button_2_pressed"]
-[connection signal="pressed" from="OrderButton3" to="." method="_on_order_button_3_pressed"]
-[connection signal="pressed" from="OrderButton4" to="." method="_on_order_button_4_pressed"]

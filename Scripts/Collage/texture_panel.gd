@@ -10,15 +10,17 @@ var background_keys: Array = Asset.new().backgrounds.keys()
 var background_index: int = 0
 const BACKGROUNDS_PER_PAGE: int = 5
 
-func _ready():
+func _ready() -> void:
+	get_node("PrevButton").pressed.connect(_on_prev_button_pressed)
+	get_node("NextButton").pressed.connect(_on_next_button_pressed)
 	update_backgrounds()
 
-func _on_prev_set_pressed() -> void:
+func _on_prev_button_pressed() -> void:
 	if background_index >= BACKGROUNDS_PER_PAGE:
 		background_index -= BACKGROUNDS_PER_PAGE
 		update_backgrounds()
 
-func _on_next_set_pressed() -> void:
+func _on_next_button_pressed() -> void:
 	if background_index + BACKGROUNDS_PER_PAGE < background_keys.size():
 		background_index += BACKGROUNDS_PER_PAGE
 		update_backgrounds()

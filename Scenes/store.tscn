@@ -12,36 +12,32 @@ script/source = "@tool
 extends Control
 
 @onready var animation = $AnimationPlayer
-@onready var sprite = $Robby
-@onready var button = $AudioStreamPlayer
-
-@onready var back_button  = $BackButton
-
+@onready var audio = $AudioStreamPlayer
+@onready var back_button: Button  = $BackButton
 @onready var label = $Label
 
 var is_playing = false 
 
-
 func _on_back_button_pressed() -> void:
-	if is_playing:
-		return
+	if is_playing: return
 	is_playing = true
 	back_button.disabled = true 
-	button.play()
-	await button.finished
+	audio.play()
+	await audio.finished
 	get_tree().change_scene_to_file(\"res://Scenes/select.tscn\")
 	is_playing = false
 	back_button.disabled = false 
 
 func _ready() -> void:
+	back_button.pressed.connect(_on_back_button_pressed)
+	get_node(\"Timer\").timeout.connect(_on_timer_timeout)
 	animation.play(\"talking\")
-	label.text = \"Robby:
-	Come back later!!!\"
+	label.text = \"Robby:\\nCome back later!!!\"
 	$Timer.start(3.0)
 
 func _on_timer_timeout() -> void:
 	animation.stop()
-	sprite.texture = preload(\"res://Characters/Robby/Robby-Idle.png\")
+	get_node(\"Robby\").texture = preload(\"res://Characters/Robby/Robby-Idle.png\")
 	label.text = \"\"
 "
 
@@ -109,7 +105,7 @@ stream = ExtResource("3_j105s")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
-"": SubResource("AnimationLibrary_3hujf")
+&"": SubResource("AnimationLibrary_3hujf")
 }
 
 [node name="Robby" type="Sprite2D" parent="."]
@@ -126,11 +122,6 @@ offset_bottom = 678.0
 theme_override_colors/font_color = Color(0.0274091, 0.0274092, 0.0274092, 1)
 theme_override_fonts/font = ExtResource("2_21cys")
 theme_override_font_sizes/font_size = 70
-text = "Robby:
-	Come back later!!!"
 
 [node name="Timer" type="Timer" parent="."]
 wait_time = 3.0
-
-[connection signal="pressed" from="BackButton" to="." method="_on_back_button_pressed"]
-[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

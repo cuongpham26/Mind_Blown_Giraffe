@@ -1,7 +1,7 @@
 extends Node
 
-var audio_player : AudioStreamPlayer
-var volume_slider : HSlider
+var audio_player: AudioStreamPlayer
+var volume_slider: HSlider
 
 func _ready() -> void:
 	audio_player = AudioStreamPlayer.new()
@@ -15,9 +15,6 @@ func _ready() -> void:
 
 	audio_player.volume_db = linear_to_db(1.0)
 
-func set_volume(value):
+func set_volume(value) -> void:
 	var clamped_value = clamp(value, 0.0, 1.0)
 	audio_player.volume_db = linear_to_db(clamped_value)
-
-func linear2db(linear):
-	return 20 * log(linear)

@@ -1,6 +1,6 @@
-[gd_scene load_steps=19 format=3 uid="uid://5el4mdr1tys1"]
+[gd_scene load_steps=18 format=3 uid="uid://5el4mdr1tys1"]
 
-[ext_resource type="Script" uid="uid://cp7i5uxpm2uao" path="res://Scripts/Collage/back_button.gd" id="1_0o4s1"]
+[ext_resource type="Script" uid="uid://cp7i5uxpm2uao" path="res://Scripts/Collage/collage.gd" id="1_0o4s1"]
 [ext_resource type="Script" uid="uid://cnj20m55m02y4" path="res://Scripts/Collage/item_panel.gd" id="2_785bu"]
 [ext_resource type="Texture2D" uid="uid://d23s2n4ngpuw4" path="res://Art/Pixel Shape Tiles/Pixel background/32x32/3. Color/Picture/color_background_88.png" id="2_vc403"]
 [ext_resource type="Script" uid="uid://b3vedihjqeir1" path="res://Scripts/Collage/image.gd" id="4_fbery"]
@@ -15,7 +15,6 @@
 [ext_resource type="Texture2D" uid="uid://dw76h71gfghpk" path="res://Inventory/Backgrounds/Art Texture 020.jpg" id="14_ww05b"]
 [ext_resource type="Script" uid="uid://chu0alfmn5j7m" path="res://Scripts/Collage/texture_panel.gd" id="40_085ow"]
 [ext_resource type="FontFile" uid="uid://cn25gdhs56fp8" path="res://Art/Fonts/advanced_pixel-7.ttf" id="54_2hmud"]
-[ext_resource type="Script" uid="uid://cayro4wetrhvg" path="res://Scripts/Collage/popup_menu.gd" id="55_uwl6b"]
 [ext_resource type="AudioStream" uid="uid://boer2xv51576g" path="res://Sounds/button.mp3" id="56_touqt"]
 
 [sub_resource type="Theme" id="Theme_pujwx"]
@@ -38,15 +37,6 @@ offset_right = 1280.0
 offset_bottom = 720.0
 script = ExtResource("2_785bu")
 
-[node name="NextButton" type="Button" parent="ItemPanel"]
-layout_mode = 0
-offset_left = 1049.0
-offset_right = 1144.0
-offset_bottom = 160.0
-scale = Vector2(0.75, 0.75)
-theme_override_font_sizes/font_size = 100
-text = ">"
-
 [node name="PrevButton" type="Button" parent="ItemPanel"]
 layout_mode = 0
 offset_left = 28.0
@@ -55,6 +45,15 @@ offset_bottom = 160.0
 scale = Vector2(0.75, 0.75)
 theme_override_font_sizes/font_size = 100
 text = "<"
+
+[node name="NextButton" type="Button" parent="ItemPanel"]
+layout_mode = 0
+offset_left = 1049.0
+offset_right = 1144.0
+offset_bottom = 160.0
+scale = Vector2(0.75, 0.75)
+theme_override_font_sizes/font_size = 100
+text = ">"
 
 [node name="Item1" type="Sprite2D" parent="ItemPanel"]
 position = Vector2(210, 60)
@@ -112,7 +111,39 @@ position = Vector2(80, 520)
 scale = Vector2(0.0527009, 0.0213808)
 texture = ExtResource("14_ww05b")
 
-[node name="SettingsButton" type="Button" parent="TexturePanel"]
+[node name="PrevButton" type="Button" parent="TexturePanel"]
+layout_mode = 0
+offset_right = 70.0
+offset_bottom = 132.0
+scale = Vector2(1, 0.7)
+theme_override_font_sizes/font_size = 90
+text = "<"
+
+[node name="NextButton" type="Button" parent="TexturePanel"]
+layout_mode = 0
+offset_left = 90.0
+offset_right = 160.0
+offset_bottom = 132.0
+scale = Vector2(1, 0.7)
+theme_override_font_sizes/font_size = 90
+text = ">"
+
+[node name="BackButton" type="Button" parent="."]
+layout_mode = 0
+offset_top = 600.0
+offset_right = 200.0
+offset_bottom = 675.0
+scale = Vector2(0.8, 0.75)
+theme = SubResource("Theme_pujwx")
+theme_override_fonts/font = ExtResource("54_2hmud")
+theme_override_font_sizes/font_size = 60
+text = "Main Menu
+"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="BackButton"]
+stream = ExtResource("56_touqt")
+
+[node name="ControlButton" type="Button" parent="."]
 layout_mode = 0
 offset_top = 663.75
 offset_right = 200.0
@@ -122,12 +153,10 @@ theme_override_fonts/font = ExtResource("54_2hmud")
 theme_override_font_sizes/font_size = 65
 text = "Controls"
 
-[node name="PopupMenu" type="PopupMenu" parent="TexturePanel/SettingsButton"]
+[node name="PopupMenu" type="PopupMenu" parent="ControlButton"]
 position = Vector2i(500, 250)
 size = Vector2i(250, 250)
-visible = true
 unresizable = false
-unfocusable = true
 content_scale_factor = 1.42
 item_count = 6
 item_0/text = "Decrease Size - ↓"
@@ -142,39 +171,6 @@ item_4/text = "Flip - Tab"
 item_4/id = 4
 item_5/text = "Delete - Backspace"
 item_5/id = 5
-script = ExtResource("55_uwl6b")
-
-[node name="PrevSet" type="Button" parent="TexturePanel"]
-layout_mode = 0
-offset_right = 70.0
-offset_bottom = 132.0
-scale = Vector2(1, 0.7)
-theme_override_font_sizes/font_size = 90
-text = "<"
-
-[node name="NextSet" type="Button" parent="TexturePanel"]
-layout_mode = 0
-offset_left = 90.0
-offset_right = 160.0
-offset_bottom = 132.0
-scale = Vector2(1, 0.7)
-theme_override_font_sizes/font_size = 90
-text = ">"
-
-[node name="BackButton" type="Button" parent="TexturePanel"]
-layout_mode = 0
-offset_top = 600.0
-offset_right = 200.0
-offset_bottom = 675.0
-scale = Vector2(0.8, 0.75)
-theme = SubResource("Theme_pujwx")
-theme_override_fonts/font = ExtResource("54_2hmud")
-theme_override_font_sizes/font_size = 60
-text = "Main Menu
-"
-
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="TexturePanel/BackButton"]
-stream = ExtResource("56_touqt")
 
 [node name="SubmitButton" type="Button" parent="."]
 layout_mode = 0
@@ -182,11 +178,3 @@ offset_left = 1080.0
 offset_right = 1280.0
 offset_bottom = 150.0
 text = "Submit"
-
-[connection signal="pressed" from="ItemPanel/NextButton" to="ItemPanel" method="_on_next_button_pressed"]
-[connection signal="pressed" from="ItemPanel/PrevButton" to="ItemPanel" method="_on_prev_button_pressed"]
-[connection signal="pressed" from="TexturePanel/SettingsButton" to="TexturePanel/SettingsButton/PopupMenu" method="_on_settings_button_pressed"]
-[connection signal="pressed" from="TexturePanel/PrevSet" to="TexturePanel" method="_on_prev_set_pressed"]
-[connection signal="pressed" from="TexturePanel/NextSet" to="TexturePanel" method="_on_next_set_pressed"]
-[connection signal="pressed" from="TexturePanel/BackButton" to="." method="_on_back_button_pressed"]
-[connection signal="pressed" from="SubmitButton" to="." method="_on_submit_button_pressed"]

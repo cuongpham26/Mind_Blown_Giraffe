@@ -17,7 +17,7 @@ config/icon="res://Icons/icon.svg"
 
 [autoload]
 
-MusicPlayer="*res://Scripts/music_player.gd"
+MusicPlayer="*res://Scripts/Title/music_player.gd"
 
 [display]
 
