@@ -21,9 +21,7 @@ func _on_back_button_pressed() -> void:
 	
 	
 func _on_control_button_pressed() -> void:
-	control_button.get_node("PopupMenu").visible = true
-	await get_tree().create_timer(3).timeout
-	control_button.get_node("PopupMenu").visible = false
+	control_button.get_node("PopupMenu").set_visible(!control_button.get_node("PopupMenu").is_visible())
 
 	
 func _on_submit_button_pressed() -> void:

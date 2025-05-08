@@ -94,12 +94,14 @@ func _process(_delta: float) -> void:
 				item.rotation_degrees -= 0.7
 			if Input.is_action_pressed("ui_right"):
 				item.rotation_degrees += 0.8
-			if Input.is_action_just_pressed("ui_text_indent"):
-				item.set_flip_h(!item.is_flipped_h())
 			if Input.is_action_pressed("ui_up"):
 				item.scale *= 1.03
 			if Input.is_action_pressed("ui_down"):
 				item.scale *= 0.97
+			if Input.is_action_just_pressed("ui_q"):
+				item.set_flip_h(!item.is_flipped_h())
+			if Input.is_action_just_pressed("ui_e"):
+				pass # Put in reset 
 			if Input.is_action_just_pressed("ui_text_backspace"):
 				mission.remove_asset(item.get_texture().load_path.get_file().get_slice("-", 0))
 				item.queue_free()
